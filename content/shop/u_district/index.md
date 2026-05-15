@@ -1,18 +1,27 @@
 ---
 title: "U-District"
 date: 2025-03-10
-specs: "Urban commuter · Single speed · 700c wheels"
+specs: "Urban commuter · 7-speed Shimano IGH · 700c wheels"
 year: "2025"
-price: 275
+price: 400
 status: "sold"
-summary: "A single-speed street commuter built for the hills and chaos of Seattle's University District."
+summary: "A simple street commuter built for solid service and low theft worries"
 ---
 
-The U-District bike is a commuter built for the streets of Seattle's University District — cracked pavement, steep hills, bike lanes that vanish without warning. Light enough to carry up stairs. Tough enough to lock outside.
+We built this U-District up by swapping out the silly two speed
+internally geared hub for a Shimano 7-speed hub, and a primo shifter.
 
-## Philosophy
+The U-District bike is a commuter built for the cracked pavement and steep
+hills of Seattle. Light enough to carry
+up stairs. 
 
-Single speed keeps it simple. No cable stretch, no derailleur to knock out of alignment on a curb. Just legs and chain and the hill in front of you.
+## Build
+
+- Shimano 7-speed internally geared hub
+- WTB paddle grips
+- WTB saddle
+- Bigger flat pedals for comfort and style
+- Old Man Mountain rack with Ortlieb panniers (not included)
 
 ## Background Removal Experiments
 
