@@ -1,0 +1,30 @@
+{{/* Shared bike card partial — used on home page and shop list */}}
+{{ $status := .Params.status | default "available" }}
+<article class="bike-card {{ if eq $status "sold" }}bike-card--sold{{ end }}">
+  <a href="{{ .RelPermalink }}" class="card-link">
+    {{ $imgs := .Resources.ByType "image" }}
+    {{ if $imgs }}
+      {{ $cover := index $imgs 0 }}
+      <div class="card-img-wrap">
+        <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
+        <div class="card-img-overlay"></div>
+        {{ if eq $status "sold" }}
+        <span class="card-badge card-badge--sold">SOLD</span>
+        {{ end }}
+      </div>
+    {{ else }}
+      <div class="card-img-wrap card-no-img">
+        <span>NO SIGNAL</span>
+      </div>
+    {{ end }}
+    <div class="card-body">
+      <h3 class="card-title">{{ .Title }}</h3>
+      {{ with .Params.specs }}<p class="card-spec">{{ . }}</p>{{ end }}
+      <div class="card-footer">
+        {{ with .Params.price }}
+        <span class="card-price">${{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </a>
+</article>

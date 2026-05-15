@@ -1,0 +1,32 @@
+{{/* Generic section fallback — section-specific layouts in shop/ and posts/ take precedence */}}
+{{ define "main" }}
+<section class="builds-grid">
+  <header class="section-header">
+    <h1 class="section-title">// {{ .Title | upper }}</h1>
+    <p class="section-sub">{{ len .Pages }} item{{ if ne (len .Pages) 1 }}s{{ end }}</p>
+  </header>
+  <div class="card-grid">
+    {{ range .Pages }}
+    <article class="bike-card">
+      <a href="{{ .RelPermalink }}" class="card-link">
+        {{ $imgs := .Resources.ByType "image" }}
+        {{ if $imgs }}
+          {{ $cover := index $imgs 0 }}
+          <div class="card-img-wrap">
+            <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
+            <div class="card-img-overlay"></div>
+          </div>
+        {{ else }}
+          <div class="card-img-wrap card-no-img"><span>NO SIGNAL</span></div>
+        {{ end }}
+        <div class="card-body">
+          <h3 class="card-title">{{ .Title }}</h3>
+          {{ with .Params.specs }}<p class="card-spec">{{ . }}</p>{{ end }}
+          <span class="card-cta">VIEW →</span>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

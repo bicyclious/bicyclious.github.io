@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="posts-section">
+  <header class="section-header">
+    <h1 class="section-title">// BLOG</h1>
+    <p class="section-sub">{{ len .Pages }} dispatch{{ if ne (len .Pages) 1 }}es{{ end }} from the workshop</p>
+  </header>
+
+  <div class="post-list post-list--full">
+    {{ range .Pages }}
+    <article class="post-row post-row--full">
+      <a href="{{ .RelPermalink }}" class="post-row-link">
+        <div class="post-row-header">
+          <span class="post-row-date">{{ .Date | time.Format "2006.01.02" }}</span>
+          {{ with .Params.tags }}
+          <span class="post-row-tags">
+            {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+          </span>
+          {{ end }}
+        </div>
+        <h2 class="post-row-title">{{ .Title }}</h2>
+        <p class="post-row-summary">{{ .Summary }}</p>
+        <span class="post-row-cta">READ →</span>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

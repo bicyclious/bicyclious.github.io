@@ -1,0 +1,18 @@
+{{ $slides := site.Data.carousel }}
+{{ if $slides }}
+<div class="swiper bike-carousel">
+  <div class="swiper-wrapper">
+    {{ range $slides }}
+    <div class="swiper-slide" data-href="{{ printf "/shop/%s/" .slug | relURL }}">
+      <img
+        src="{{ printf "/shop/%s/%s" .slug .image | relURL }}"
+        alt="{{ .title }}"
+        loading="lazy"
+        class="carousel-slide-img"
+      >
+    </div>
+    {{ end }}
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+{{ end }}

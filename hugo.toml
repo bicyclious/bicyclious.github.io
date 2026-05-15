@@ -1,0 +1,53 @@
+baseURL = "https://bicyclious.com/"
+languageCode = "en-us"
+title = "Bicyclious"
+theme = "bicyclious-retro"
+
+# Suppress theme scaffold sample content
+ignoreFiles = [
+  "themes/bicyclious-retro/content/.*"
+]
+
+[params]
+  subtitle = "A Cascadian bicycle build shop"
+  description = "Bicyclious — restomodded bicycles for sale and dispatches from the workshop."
+  author = "Bicyclious"
+  logo = "/images/bicyclious_wordmark.png"
+  ogImage = "/images/og-default.jpg"
+
+[menus]
+  [[menus.main]]
+    name = "SHOP"
+    url  = "/shop/"
+    weight = 2
+  [[menus.main]]
+    name = "BLOG"
+    url  = "/posts/"
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+
+[deployment]
+  [[deployment.targets]]
+    name = "production"
+    URL  = "s3://bicyclious.com?region=us-east-1"
+    cloudFrontDistributionID = "EGNG1S5RW0OO9"
+
+  [[deployment.matchers]]
+    pattern = "^.+\\.(html|xml|json)$"
+    cacheControl = "max-age=300, s-maxage=600"
+    gzip = true
+
+  [[deployment.matchers]]
+    pattern = "^.+\\.(jpg|jpeg|png|gif|svg|ico|css|js|woff2)$"
+    cacheControl = "max-age=31536000, immutable"
+    gzip = false

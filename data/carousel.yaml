@@ -1,0 +1,35 @@
+- slug: bubblicious
+  image: bubs_at_crescent.jpeg
+  title: Bubblicious
+  price: 1200
+
+- slug: seahawk
+  image: drive_in_yard_with_dog_2.jpg
+  title: Seahawk
+  price: 485
+
+- slug: mfr
+  image: mfr_6.jpeg
+  title: Mountain Fresh Rainier
+  price: 1500
+
+- slug: green_hardrock
+  image: hard_jade_night_lights.jpg
+  title: Green Hardrock
+  price: 450
+
+- slug: raleigh_crested_butte
+  image: PXL_20251021_145549878.PORTRAIT.jpg
+  title: Raleigh Crested Butte
+  price: 700
+
+- slug: bad_banana
+  image: bad_banana_with_yellow_truck.jpeg
+  title: Bad Banana
+  price: 350
+
+- slug: port_townsend
+  image: signal-2024-08-05-174942.jpeg
+  title: Blue Rockhopper
+  price: 450
+  
