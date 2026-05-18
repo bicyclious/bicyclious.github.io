@@ -17,12 +17,13 @@
     </div>
   </header>
 
-  {{ $imgs := .Resources.ByType "image" }}
-  {{ if $imgs }}
-  <div class="post-hero-img">
-    {{ $hero := index $imgs 0 }}
-    <img src="{{ $hero.RelPermalink }}" alt="{{ .Title }}">
-  </div>
+  {{ if .Resources.ByType "image" }}
+    {{ if not .Params.hide_hero_image }}
+    <div class="post-hero-img">
+      {{ $hero := index (.Resources.ByType "image") 0 }}
+      <img src="{{ $hero.RelPermalink }}" alt="{{ .Title }}">
+    </div>
+    {{ end }}
   {{ end }}
 
   <div class="post-body">
@@ -31,7 +32,7 @@
 
   <footer class="post-footer">
     <a href="{{ "/posts/" | relURL }}" class="back-link">← BACK TO BLOG</a>
-    <a href="{{ "/shop/" | relURL }}" class="btn-retro btn-small">BROWSE THE SHOP →</a>
+    <a href="{{ "/builds/" | relURL }}" class="btn-retro btn-small">BROWSE BUILDS →</a>
   </footer>
 </article>
 {{ end }}

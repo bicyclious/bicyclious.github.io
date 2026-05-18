@@ -9,11 +9,12 @@
 
 {{ partial "carousel.html" . }}
 
-<!-- ── SHOP ── -->
-{{ $shopPages := where site.RegularPages "Section" "shop" }}
-{{ $available := where $shopPages ".Params.status" "available" }}
-{{ $sold      := where $shopPages ".Params.status" "sold" }}
-{{ if $shopPages }}
+<!-- ── BUILDS ── -->
+{{ $buildPages := where site.RegularPages "Section" "builds" }}
+{{ $available := where $buildPages ".Params.status" "available" }}
+{{ $sold      := where $buildPages ".Params.status" "sold" }}
+{{ if $buildPages }}
+
 <section class="builds-grid">
   <div class="section-header-row">
     <h2 class="section-label">// AVAILABLE NOW</h2>
@@ -46,7 +47,7 @@
     <a href="{{ "/posts/" | relURL }}" class="section-more">ALL POSTS →</a>
   </div>
   <div class="post-list">
-    {{ range first 3 $posts }}
+    {{ range first 5 $posts }}
     <article class="post-row">
       <a href="{{ .RelPermalink }}" class="post-row-link">
         <span class="post-row-date">{{ .Date | time.Format "2006.01.02" }}</span>

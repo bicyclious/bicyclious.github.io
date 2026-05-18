@@ -1,151 +1,177 @@
 ---
-name: Technical Impressionism
+name: Bicyclious Expressive
 colors:
-  surface: '#fbf9f5'
-  surface-dim: '#dbdad6'
-  surface-bright: '#fbf9f5'
+  surface: '#fbf9f7'
+  surface-dim: '#dbdad8'
+  surface-bright: '#fbf9f7'
   surface-container-lowest: '#ffffff'
-  surface-container-low: '#f5f3ef'
-  surface-container: '#efeeea'
-  surface-container-high: '#eae8e4'
-  surface-container-highest: '#e4e2de'
-  on-surface: '#1b1c1a'
-  on-surface-variant: '#46474a'
-  inverse-surface: '#30312e'
-  inverse-on-surface: '#f2f0ed'
-  outline: '#76777b'
-  outline-variant: '#c7c6ca'
-  surface-tint: '#5f5e5f'
-  primary: '#000000'
+  surface-container-low: '#f5f3f1'
+  surface-container: '#efedec'
+  surface-container-high: '#eae8e6'
+  surface-container-highest: '#e4e2e0'
+  on-surface: '#1b1c1b'
+  on-surface-variant: '#5a4044'
+  inverse-surface: '#30302f'
+  inverse-on-surface: '#f2f0ee'
+  outline: '#8e6f74'
+  outline-variant: '#e3bdc3'
+  surface-tint: '#bc004f'
+  primary: '#b0004a'
   on-primary: '#ffffff'
-  primary-container: '#1b1b1c'
-  on-primary-container: '#858384'
-  inverse-primary: '#c8c6c7'
-  secondary: '#326193'
+  primary-container: '#d81b60'
+  on-primary-container: '#fff2f3'
+  inverse-primary: '#ffb2bf'
+  secondary: '#456556'
   on-secondary: '#ffffff'
-  secondary-container: '#9bc7ff'
-  on-secondary-container: '#225384'
-  tertiary: '#000000'
+  secondary-container: '#c7ebd7'
+  on-secondary-container: '#4b6b5c'
+  tertiary: '#854639'
   on-tertiary: '#ffffff'
-  tertiary-container: '#1c1b19'
-  on-tertiary-container: '#868380'
+  tertiary-container: '#a35d4f'
+  on-tertiary-container: '#fff2f0'
   error: '#ba1a1a'
   on-error: '#ffffff'
   error-container: '#ffdad6'
   on-error-container: '#93000a'
-  primary-fixed: '#e5e2e3'
-  primary-fixed-dim: '#c8c6c7'
-  on-primary-fixed: '#1b1b1c'
-  on-primary-fixed-variant: '#474647'
-  secondary-fixed: '#d2e4ff'
-  secondary-fixed-dim: '#a1c9ff'
-  on-secondary-fixed: '#001c37'
-  on-secondary-fixed-variant: '#14487a'
-  tertiary-fixed: '#e6e2de'
-  tertiary-fixed-dim: '#cac6c2'
-  on-tertiary-fixed: '#1c1b19'
-  on-tertiary-fixed-variant: '#484644'
-  background: '#fbf9f5'
-  on-background: '#1b1c1a'
-  surface-variant: '#e4e2de'
+  primary-fixed: '#ffd9de'
+  primary-fixed-dim: '#ffb2bf'
+  on-primary-fixed: '#3f0016'
+  on-primary-fixed-variant: '#90003b'
+  secondary-fixed: '#c7ebd7'
+  secondary-fixed-dim: '#accebc'
+  on-secondary-fixed: '#012115'
+  on-secondary-fixed-variant: '#2e4d3f'
+  tertiary-fixed: '#ffdad3'
+  tertiary-fixed-dim: '#ffb4a5'
+  on-tertiary-fixed: '#390b04'
+  on-tertiary-fixed-variant: '#71352a'
+  background: '#fbf9f7'
+  on-background: '#1b1c1b'
+  surface-variant: '#e4e2e0'
+  steel-gray: '#4A4A4A'
+  rust-patina: '#A65D50'
+  forest-depth: '#1B2E26'
+  bicyclious-pink: '#D81B60'
 typography:
   display-lg:
-    fontFamily: Space Grotesk
-    fontSize: 48px
-    fontWeight: '700'
-    lineHeight: '1.1'
+    fontFamily: literata
+    fontSize: 57px
+    fontWeight: '900'
+    lineHeight: 64px
     letterSpacing: -0.02em
-  headline-md:
-    fontFamily: Space Grotesk
+  display-md:
+    fontFamily: literata
+    fontSize: 45px
+    fontWeight: '900'
+    lineHeight: 52px
+  headline-lg:
+    fontFamily: literata
     fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+  headline-lg-mobile:
+    fontFamily: literata
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+  title-lg:
+    fontFamily: literata
+    fontSize: 22px
     fontWeight: '600'
-    lineHeight: '1.2'
-  headline-sm:
-    fontFamily: Space Grotesk
-    fontSize: 24px
-    fontWeight: '600'
-    lineHeight: '1.3'
+    lineHeight: 28px
   body-lg:
-    fontFamily: Space Grotesk
-    fontSize: 18px
-    fontWeight: '400'
-    lineHeight: '1.6'
-  body-md:
-    fontFamily: Space Grotesk
+    fontFamily: inter
     fontSize: 16px
     fontWeight: '400'
-    lineHeight: '1.5'
-  label-caps:
-    fontFamily: Space Grotesk
-    fontSize: 12px
+    lineHeight: 24px
+  body-md:
+    fontFamily: inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-lg:
+    fontFamily: inter
+    fontSize: 14px
     fontWeight: '600'
-    lineHeight: '1.4'
-    letterSpacing: 0.1em
-  annotation:
-    fontFamily: Space Grotesk
-    fontSize: 13px
+    lineHeight: 20px
+    letterSpacing: 0.1px
+  label-sm:
+    fontFamily: inter
+    fontSize: 11px
     fontWeight: '500'
-    lineHeight: '1.4'
+    lineHeight: 16px
+    letterSpacing: 0.5px
+rounded:
+  sm: 0.5rem
+  DEFAULT: 1rem
+  md: 1.5rem
+  lg: 2rem
+  xl: 3rem
+  full: 9999px
 spacing:
-  unit: 4px
+  base: 8px
   gutter: 24px
-  margin: 32px
-  hairline: 1px
-  fine-line: 0.5px
+  margin-mobile: 16px
+  margin-desktop: 64px
+  container-max-width: 1280px
 ---
 
 ## Brand & Style
 
-This design system is a digital tribute to the hand-drawn technical illustrations of Daniel Rebours. It evokes the meticulous, soulful precision of mid-century bicycle engineering journals. The brand personality is intellectual, artisanal, and uncompromisingly clear, prioritizing the "Technical Impressionism" of ink on vellum over digital abstraction.
+This design system embodies the "Restomod" philosophy: the soul of vintage steel bicycles upgraded with modern performance. The brand personality is "Delicious"—sensory, vibrant, and soulful, rooted in the rugged beauty of the Pacific Northwest. It targets cycling enthusiasts who value craftsmanship, heritage, and the joy of a playful ride.
 
-The aesthetic leans into a **refined Brutalism**, utilizing high-contrast monochrome palettes and architectural line-work to create a layout that feels like a vintage drafting table. It avoids the softness of modern UI, opting instead for the authoritative clarity of a rapidograph pen and a mechanical straightedge.
+The design style follows the **Material 3 Expressive** framework. It leans into bold, high-contrast aesthetics and vibrant containers while maintaining the structural integrity of professional SaaS. Expect oversized typography, generous roundedness, and a tactile color palette that bridges the gap between rusted workshop steel and neon urban accents.
 
 ## Colors
 
-The palette is strictly limited to mimic the constraints of traditional lithographic and ink-based printing. 
+The palette is a dialogue between "The Workshop" and "The Trail." 
 
-- **Vintage Paper (#FDFBF7):** The primary surface color, providing a warm, organic base that reduces the harshness of pure white while maintaining high legibility.
-- **India Ink (#1A1A1B):** Used for all structural lines, typography, and primary iconography. It should feel dense and permanent.
-- **Technical Blue (#2B5A8C):** A secondary accent used exclusively for annotations, call-to-action highlights, and metadata—mimicking the "non-photo blue" or architectural markup pencils.
+- **Primary:** The signature Bicyclious Pink (#D81B60) is the high-visibility accent, used for key actions and expressive containers.
+- **Secondary:** A deep Forest Green (#2D4C3E) grounds the brand in the Cascadian landscape.
+- **Tertiary:** Rusted Steel (#8C4B3E) provides a warm, earthy tone that references vintage frames.
+- **Neutral:** A warm off-white "Cream Soda" (#FCFAF8) serves as the primary canvas, avoiding the sterile nature of pure white to enhance the vintage feel.
 
-Avoid digital gradients or semi-transparent overlays. Contrast is achieved through line density, not opacity.
+Containers should use the **Expressive Color Mapping** from Material 3: high-chroma tonal palettes where primary containers are vivid and deep, creating a "delicious" visual density.
 
 ## Typography
 
-The system utilizes **Space Grotesk** across all roles to maintain a consistent architectural feel. Its idiosyncratic letterforms suggest the precision of a drafting machine while retaining a human, hand-lettered quality.
+The typography pairs the literary, sturdy character of **Literata** for headlines with the utilitarian precision of **Inter** for UI and body text.
 
-- **Headlines:** Should be bold and impactful, reminiscent of editorial mastheads in *Le Cycle*.
-- **Body Text:** Set with generous line heights to ensure readability against hatched backgrounds or dense technical diagrams.
-- **Labels:** Frequently used in All-Caps with slight tracking to denote component names or mechanical parts.
-- **Annotations:** Use the italic weight in Technical Blue for marginalia and supplementary notes, reinforcing the drafting table metaphor.
+- **Headlines:** Set in Literata with high weights (700-900). Use "Display" roles for heroic messaging, reflecting the craftsmanship of hand-built frames. 
+- **Body:** Inter provides a clean, neutral counter-balance to the expressive serif, ensuring technical specifications and shop details remain highly legible.
+- **Stylistic Note:** For an extra "Expressive" touch, large display headlines should use tighter letter spacing to create a compact, impactful visual block.
 
 ## Layout & Spacing
 
-The layout follows a **Fixed Grid** philosophy, behaving like a printed page. Elements are contained within clear, visible borders that act as a skeleton for the UI.
+This design system utilizes a **fluid 12-column grid** for desktop and a **4-column grid** for mobile. 
 
-- **The Drafting Grid:** All elements align to a 4px baseline.
-- **Borders:** Structural divisions use 1px 'India Ink' lines. Secondary subdivisions or internal component details use 0.5px 'hairlines'.
-- **Margins:** Large, asymmetrical margins (32px+) are encouraged to simulate the white space of an illustration plate. 
-- **Responsive Behavior:** On mobile, the layout collapses into a single column, but the 1px perimeter border remains to maintain the "contained" feel of an index card or manual.
+- **Rhythm:** An 8px linear scale governs all padding and margins. 
+- **Margins:** Large horizontal margins on desktop (64px+) are encouraged to create "breathing room" around high-quality bike photography.
+- **Expressive Breaks:** Allow imagery to occasionally break the grid (full-bleed or offset) to simulate the feeling of movement and outdoor adventure.
 
 ## Elevation & Depth
 
-This system rejects shadows and blurs. Depth is communicated through **Structural Layering** and **Line Density**:
+In line with Material 3 Expressive, depth is conveyed through **Tonal Layers** rather than heavy shadows. 
 
-1.  **Tonal Stacking:** Surfaces do not float; they sit on top of one another like sheets of tracing paper. A higher-elevation element is simply a new boxed container with a 1px border.
-2.  **Cross-Hatching:** To create "depth" or "focus" behind a modal or pop-over, use a 45-degree cross-hatch pattern (fine lines spaced 4px apart) rather than a dimming overlay.
-3.  **Leader Lines:** Use 0.5px lines with 4px dot terminals to connect labels to their respective components. These lines establish a 3D relationship within a 2D space.
+- **Surface Levels:** Use tinted backgrounds (e.g., a subtle Forest Green tint for surfaces) to indicate hierarchy. 
+- **Shadows:** When used, shadows must be extremely soft, low-opacity, and tinted with the Primary or Secondary hue to maintain a "warm" workshop atmosphere. 
+- **Flat Depth:** Cards often rely on thick 1px or 2px borders in a darker tonal variant of the surface color instead of shadows for a cleaner, "engineered" look.
 
 ## Shapes
 
-The shape language is strictly **Sharp (0px roundedness)**. Every container, button, and input field must have 90-degree corners to reflect the precision of mechanical drafting and industrial components. Circles are reserved only for functional indicators (dots on leader lines, radio buttons) or icons representing circular mechanical parts (gears, bearings).
+The shape language is ultra-rounded and friendly, reflecting the curves of bicycle frames and the "Delicious" brand pillar.
+
+- **Components:** Buttons and small chips are fully pill-shaped.
+- **Containers:** Large cards and featured imagery use the **Extra Large (28px - 32px)** corner radius to feel soft and approachable.
+- **Visual Metaphor:** Avoid sharp angles; even the "Hard" edges of the shop UI should feel honed and smooth, like a well-polished lugged steel frame.
 
 ## Components
 
-- **Buttons:** Rectangular with a 1px 'India Ink' border. No background fill by default. On hover, apply a fine 45-degree hatch pattern. Primary buttons may use a solid 'India Ink' fill with 'Vintage Paper' text.
-- **Input Fields:** Bottom-border only (1px) to mimic a signature line on a technical document. Labels should sit above in All-Caps.
-- **Cards:** Defined by 1px perimeter borders. Header sections of cards should be separated by a 0.5px horizontal line.
-- **Leader Labels:** Labels for diagrams or complex data points must use a 0.5px diagonal line ending in a solid 4px circle (dot) at the point of interest.
-- **Chips/Tags:** Simple boxes with 0.5px borders. In active states, use the 'Technical Blue' for the border and text.
-- **Checkboxes:** Square, sharp corners. A "check" is represented by a bold "X" drawn with two diagonal strokes, mimicking a manual mark.
-- **Progress Bars:** Represented as a segmented box where each segment is separated by a 0.5px line, suggesting a physical ruler or gauge.
+- **Buttons:** Use the M3 "Extended FAB" or "Filled" style with primary pink. Label text should be uppercase Inter Bold for a technical, high-performance feel.
+- **Cards:** Featured bikes should be displayed in cards with a subtle secondary-tinted background, 32px corner radius, and no border. 
+- **Input Fields:** Use "Outlined" variants with a thicker 2px border on focus, colored in Primary Pink.
+- **Chips:** Used for bike specs (e.g., "Steel," "Shimano XT," "Vintage"). These should be pill-shaped with a light tonal fill of the Tertiary color.
+- **Spec Lists:** Utilize monospaced-style alignment for technical specifications, but keep the font as Inter to maintain the restomod aesthetic.
+- **The "Bicyclious" Badge:** A unique floating component—a circular pill-shaped badge that houses the brand logo or "restomod" certification, often overlapping container edges.
+
+

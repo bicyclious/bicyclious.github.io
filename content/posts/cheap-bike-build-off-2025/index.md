@@ -1,7 +1,7 @@
 ---
-title: "Cheap Bike Build-Off 2025: The Bad Banana Chronicles"
+title: "The Bad Banana was Bicyclious Cheap Bike Build-Off 2025 submission"
 date: 2025-04-20
-summary: "We entered the Cheap Bike Build-Off 2025 with $125, a banana-yellow frame, and zero shame. Here's the full story."
+summary: "The 2025 Build-Off budget was $150 and we pulled off a sweet derelict commuter"
 tags: ["build", "budget", "bad banana", "build-off"]
 ---
 

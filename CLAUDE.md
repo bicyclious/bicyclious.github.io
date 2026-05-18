@@ -11,28 +11,36 @@ Dev server: `hugo server` → `localhost:1313`.
 
 ---
 
-## Design System — "Technical Impressionism"
+## Design System — "Material 3 Expressive" (Bicyclious Expressive)
 
 Spec lives at `DESIGN.md` in the repo root.
 
 ### Colors
 ```
---vintage-paper:  #fbf9f5   (background)
---india-ink:      #1b1c1a   (text, borders)
---technical-blue: #326193   (annotations, links, metadata)
+--primary:           #b0004a   (Bicyclious Pink — buttons, links, price)
+--primary-container: #d81b60   (masthead background)
+--secondary:         #456556   (Forest Green)
+--secondary-container: #c7ebd7 (card body background — sage green)
+--tertiary:          #854639   (Rust — chips/tags)
+--background:        #fbf9f7   (warm cream)
+--on-surface:        #1b1c1b   (body text)
+--on-surface-variant: #5a4044  (secondary text)
+--outline-variant:   #e3bdc3   (borders — warm pinkish-beige)
 ```
 
 ### Typography
-- **Body:** Space Grotesk (Google Fonts, loaded in `baseof.html`)
-- **Display headings:** Cooper Black (local TTF at `static/fonts/Cooper-Black.ttf`)
-  - Applied via `--font-display` CSS variable to `.hero-title`, `.section-title`, `.post-title`
-- **Label caps:** 11px / 600 / 0.12em tracking / uppercase — used for nav, badges, dates, CTAs
+- **Display/Headlines:** Literata (Google Fonts, loaded in `baseof.html`) — 700–900 weight
+  - Applied via `--font-display` CSS variable to `.hero-title`, `.section-title`, `.post-title`, `.card-title`
+- **Body/UI:** Inter (Google Fonts) — 400–700 weight
+- **Labels:** 11px / 500 / 0.5px tracking / uppercase — used for dates, badges, tagline
 
 ### Key Design Rules
-- 0px border-radius on structural elements (buttons, inputs, cards)
-- 1px India Ink borders for structure; 0.5px fine-lines for subdivisions
-- No shadows, no gradients (except carousel caption overlay)
-- Cross-hatch hover states (SVG data URI pattern)
+- Ultra-rounded: `--radius-full` (9999px) for buttons/chips/badges, `--radius-lg` (32px) for cards
+- Tonal borders: `--outline-variant` (#e3bdc3) not India Ink
+- Soft warm shadows on cards (pink-tinted, very low opacity)
+- No cross-hatch hover states — use tonal surface color shifts
+- Nav links use pill hover states
+- Card body background: `--secondary-container` (sage green)
 
 ---
 
@@ -53,8 +61,8 @@ cp themes/bicyclious-retro/assets/css/main.css themes/bicyclious-retro/static/cs
 | Term | Meaning |
 |------|---------|
 | **Bike card** | Card component in list/grid views (`_partials/bike-card.html`, `.bike-card` CSS) |
-| **Build page** | Individual bike detail page (`shop/single.html`, `.build-page` CSS) |
-| **Builds** | The shop list page (`/shop/`) |
+| **Build page** | Individual bike detail page (`builds/single.html`, `.build-page` CSS) |
+| **Builds** | The builds list page (`/builds/`) |
 | **Blog** | The posts section (`/posts/`) — renamed from "Journal" |
 
 ---
@@ -66,7 +74,7 @@ Two-row header in `baseof.html`:
 2. **`.site-nav-bar`** — Contains tagline + nav links
 
 Wordmark: `static/images/bicyclious_wordmark.png` (cropped 973×239px, no whitespace).
-Nav: SHOP, BLOG (HOME was removed).
+Nav: BUILDS, BLOG (HOME was removed).
 Header scrolls with page (not sticky).
 
 ---
@@ -83,7 +91,7 @@ Order from top to bottom:
 
 ---
 
-## Shop List Page (`layouts/shop/list.html`)
+## Builds List Page (`layouts/builds/list.html`)
 
 Title: "Builds" (was "// SHOP").
 Order: Carousel → available bike cards → sold divider → sold bike cards.
@@ -135,8 +143,8 @@ Data file: `data/carousel.yaml`
   price: 485
 ```
 
-URL construction: `/shop/{slug}/{image}` for image, `/shop/{slug}/` for link.
-Images live in Hugo page bundles: `content/shop/{slug}/`.
+URL construction: `/builds/{slug}/{image}` for image, `/builds/{slug}/` for link.
+Images live in Hugo page bundles: `content/builds/{slug}/`.
 
 **Swiper config** (in `baseof.html`):
 ```js
@@ -186,11 +194,7 @@ status: "available"
 
 ## Cooper Black Font
 
-Downloaded locally from `indestructible-type/Cooper` GitHub repo (no woff2 available — TTF only).
-
-```
-static/fonts/Cooper-Black.ttf
-```
+Loaded via jsDelivr CDN (woff2 format) from `indestructible-type/Cooper` repo.
 
 `@font-face` declared at top of `main.css`. Applied via `--font-display` variable to:
 - `.hero-title`

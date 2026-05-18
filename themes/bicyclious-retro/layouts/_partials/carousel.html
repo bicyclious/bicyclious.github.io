@@ -3,9 +3,9 @@
 <div class="swiper bike-carousel">
   <div class="swiper-wrapper">
     {{ range $slides }}
-    <div class="swiper-slide" data-href="{{ printf "/shop/%s/" .slug | relURL }}">
+    <div class="swiper-slide" data-href="{{ printf "/builds/%s/" .slug | relURL }}">
       <img
-        src="{{ printf "/shop/%s/%s" .slug .image | relURL }}"
+        src="{{ printf "/builds/%s/%s" .slug .image | relURL }}"
         alt="{{ .title }}"
         loading="lazy"
         class="carousel-slide-img"
@@ -14,5 +14,7 @@
     {{ end }}
   </div>
   <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
 {{ end }}

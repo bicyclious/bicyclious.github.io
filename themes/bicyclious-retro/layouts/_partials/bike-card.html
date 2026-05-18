@@ -1,4 +1,4 @@
-{{/* Shared bike card partial — used on home page and shop list */}}
+{{/* Shared bike card partial — used on home page and builds list */}}
 {{ $status := .Params.status | default "available" }}
 <article class="bike-card {{ if eq $status "sold" }}bike-card--sold{{ end }}">
   <a href="{{ .RelPermalink }}" class="card-link">

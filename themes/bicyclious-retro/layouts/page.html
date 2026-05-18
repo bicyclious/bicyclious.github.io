@@ -2,7 +2,7 @@
 <article class="build-page">
   <header class="post-header">
     <div class="post-header-inner">
-      <a href="{{ "/bikes/" | relURL }}" class="back-link">← ALL BUILDS</a>
+      <a href="{{ "/builds/" | relURL }}" class="back-link">← ALL BUILDS</a>
       <h1 class="post-title">{{ .Title }}</h1>
       {{ with .Params.specs }}<p class="post-specs">{{ . }}</p>{{ end }}
       {{ with .Params.year }}<p class="post-year">BUILD YEAR: {{ . }}</p>{{ end }}
@@ -11,21 +11,23 @@
 
   {{ $imgs := .Resources.ByType "image" }}
   {{ if $imgs }}
-  <section class="gallery">
-    <div class="gallery-hero">
-      {{ $first := index $imgs 0 }}
-      <img src="{{ $first.RelPermalink }}" alt="{{ $.Title }}" class="gallery-hero-img">
-    </div>
-    {{ if gt (len $imgs) 1 }}
-    <div class="gallery-thumbs">
-      {{ range $imgs }}
-      <div class="thumb-wrap">
-        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy" class="gallery-thumb" onclick="openLightbox(this.src)">
+    {{ if not .Params.hide_hero_image }}
+    <section class="gallery">
+      <div class="gallery-hero">
+        {{ $first := index $imgs 0 }}
+        <img src="{{ $first.RelPermalink }}" alt="{{ $.Title }}" class="gallery-hero-img">
+      </div>
+      {{ if gt (len $imgs) 1 }}
+      <div class="gallery-thumbs">
+        {{ range $imgs }}
+        <div class="thumb-wrap">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy" class="gallery-thumb" onclick="openLightbox(this.src)">
+        </div>
+        {{ end }}
       </div>
       {{ end }}
-    </div>
+    </section>
     {{ end }}
-  </section>
   {{ end }}
 
   <div class="post-body">
