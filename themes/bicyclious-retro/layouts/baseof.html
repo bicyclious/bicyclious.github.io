@@ -54,7 +54,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <span class="footer-logo">BICYCLIOUS</span>
-      <span class="footer-copy">© {{ now.Year }} — delicious bicycles since the beginning</span>
+      <span class="footer-copy">© {{ now.Year }}</span>
     </div>
   </footer>
   <script src="{{ "js/swiper.min.js" | relURL }}"></script>
@@ -71,6 +71,10 @@
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
         },
         breakpoints: {
           640:  { slidesPerView: 1.2, spaceBetween: 20 },

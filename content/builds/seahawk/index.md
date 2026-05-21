@@ -3,8 +3,8 @@ title: "Seahawk"
 weight: 5
 date: 2026-04-05
 year: "2026"
-price: 485
-specs: "26\" wheels · No oil, only wax"
+price: 600
+specs: "Like the bird, this build was designed to dive into the water. Go Hawks!"
 status: "available"
 summary: "A cromo steel 26\" rigid '80s MTB classic. "
 ---

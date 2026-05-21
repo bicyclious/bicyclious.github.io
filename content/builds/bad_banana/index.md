@@ -3,13 +3,16 @@ title: "Bad Banana"
 date: 2025-04-15
 specs: "1970s Japan road bike · Bullmoose handlebar · Friction thumbies"
 year: "2025"
-price: 400
+weight: 9
+price: 450
 status: "available"
-summary: "Cheap Bike Build-Off 2025 entry. Total cost documented. Yellow arrived with the frame."
+summary: "Cheap Bike Build-Off 2025 entry."
 ---
 
 The Bad Banana was Bicyclious's entry in the Cheap Bike Build-Off 2025
 — the annual challenge to build the most rideable bike for a budget of $150.
+We rode it for a while, it is a very nice asphault roller. So, we added
+on the normal $300 for a basic restoration and it is for sale at $450.
 
 This is a derelict style build i.e. fully restromodded mechanically but keep the
 patina. Makes for a wolf in dirty old sheeps clothing. The bike is

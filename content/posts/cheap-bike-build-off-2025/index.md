@@ -1,6 +1,6 @@
 ---
-title: "The Bad Banana was Bicyclious Cheap Bike Build-Off 2025 submission"
-date: 2025-04-20
+title: "The Bad Banana is our submission for Cheap Bike Build-Off 2025"
+date: 2025-02-20
 summary: "The 2025 Build-Off budget was $150 and we pulled off a sweet derelict commuter"
 tags: ["build", "budget", "bad banana", "build-off"]
 ---

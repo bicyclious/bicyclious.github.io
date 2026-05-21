@@ -2,19 +2,53 @@
 title: "Mountain Fresh Rainier"
 weight: 3
 date: 2024-07-04
-specs: "Steel mountain frame · 26\" wheels · Rigid fork"
+specs: "Allegedly a prop from the famous 1980s Rainier commercials"
 year: "2024"
 price: 1500
 status: "available"
 summary: "Mountain Frame Ride. Rigid steel, stripped to essentials. A bike that teaches technique."
 ---
 
-MFR — Mountain Frame Ride. A no-nonsense rigid steel build that strips out everything unnecessary and leaves only what matters: a quality frame, solid components, and two wheels that turn.
+Supposedly, ("allegedly"?) this bike was in one of the 1980s MFR
+Rainier commercials, the ones with the wild herds of Rainier bottles
+with legs. 
 
-## The Case for Rigid
+<a href="https://www.youtube.com/watch?v=daZdK1fRZYk" target="_blank" title="Click to watch on YouTube">
+  <img src="https://img.youtube.com/vi/daZdK1fRZYk/maxresdefault.jpg" alt="Watch the video" style="width:100%; max-width:640px; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+</a>
 
-Fork suspension adds weight, complexity, and eventual failure points. A rigid fork forces technique. You learn to read trail, pick lines, unweight the front at the right moment. The MFR is a teacher.
+The one picture above with the bike on the green lawn with bricks is
+from the Craiglist ad we got the bike from. That's how the bike looked
+before restoration started at all, and supposedly how it looked in the
+Rainier commerical shoot decades ago.
 
-## Documentation
+Same guy owned it all these year, and from the looks of
+it did some serious riding with it. (We kept the patina and custom Rainier
+stickers through the restoration process.) He listed it on
+Craigslist for $185. I just wanted the bullmoose handlebar and that awesome
+biplace fork crown. A nice supposed Rainier backstory as a bonus? Sold.
 
-Six images across one session. Every angle covered. The build speaks clearly in every frame.
+Notice the stickers that were (allegedly via hearsay only) put on
+the bike for the commercial shoot. All the original as-purchased
+stickers are still on the bike post restoration.
+- the big red "R" Rainier logo on the head badge
+- "MFR" on the seatpost
+- "Rainier" on the top tube stickers 
+
+
+Backstory: One of the guys working on the shoot in the woods was given
+the bike to keep at the end of the commercial production.  Supposedly
+there were two couples out on a ride on four of these bikes and then
+suddenly a herd of MFRs rumbled across the landscape. Or at least
+that's what the guy I purchased this bike from on Craigslist told
+me.
+
+Who knows maybe the Rainier commerical footage still exists.
+They made a movie about those commericals. The movie folks had
+access (ownership?) to all the archival footage. They
+restored (some?) and made a movie about it. Maybe there's
+one with two couples riding mountain bikes...
+
+<a href="https://www.youtube.com/watch?v=Ky5aLwrosiA" target="_blank" title="Click to watch on YouTube">
+  <img src="https://img.youtube.com/vi/Ky5aLwrosiA/maxresdefault.jpg" alt="Watch the video" style="width:100%; max-width:640px; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+</a>

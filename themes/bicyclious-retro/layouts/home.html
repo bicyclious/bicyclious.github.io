@@ -1,13 +1,16 @@
 {{ define "main" }}
-<section class="hero">
-  <div class="hero-text">
-    <h1 class="hero-title">Bicyclious: builders of delicious bicycles</h1>
-    <p class="hero-sub">restomodded vintage steel · built for comfort not for speed</p>
-  </div>
-  <div class="hero-grid-lines"></div>
-</section>
+
 
 {{ partial "carousel.html" . }}
+
+<section class="hero">
+    <div class="hero-text">
+        <h1 class="hero-title">Bicyclious</h1>
+        <h2 class="hero-sub">Builders of Delicious Bicycles</h2>
+        <p class="hero-tagline">restomodded vintage steel &nbsp;&nbsp;·&nbsp;&nbsp; simple machines for rolling on and off road &nbsp;&nbsp;·&nbsp;&nbsp; built for comfort not for speed</p>
+    </div>
+    <div class="hero-grid-lines"></div>
+</section>
 
 <!-- ── BUILDS ── -->
 {{ $buildPages := where site.RegularPages "Section" "builds" }}
@@ -17,7 +20,7 @@
 
 <section class="builds-grid">
   <div class="section-header-row">
-    <h2 class="section-label">// AVAILABLE NOW</h2>
+    <h2 class="section-label">FOR SALE</h2>
     <p class="section-count">{{ len $available }} available · {{ len $sold }} sold</p>
   </div>
   {{ if $available }}
@@ -28,7 +31,7 @@
   </div>
   {{ end }}
   {{ if $sold }}
-  <div class="sold-divider">// SOLD BUILDS</div>
+  <div class="section-label" style="padding-top:6rem">SOLD</div>
   <div class="card-grid card-grid--sold">
     {{ range $sold }}
     {{ partial "bike-card.html" . }}
@@ -43,7 +46,7 @@
 {{ if $posts }}
 <section class="posts-preview">
   <div class="section-header-row">
-    <h2 class="section-label">// FROM THE BLOG</h2>
+    <h2 class="section-label">BLOG</h2>
     <a href="{{ "/posts/" | relURL }}" class="section-more">ALL POSTS →</a>
   </div>
   <div class="post-list">

@@ -1,7 +1,7 @@
 ---
 title: "Univega Alpina"
 date: 2025-04-15
-specs: " · Full rebuild · Mostly stock"
+specs: "Very early MTB · Full rebuild · Mostly stock"
 year: "2025"
 price: 700
 status: "sold"

@@ -1,7 +1,7 @@
 ---
 title: "Bubblicious"
 date: 2024-09-20
-specs: "Full suspension · 27.5\" wheels · Pink accents"
+specs: "An homage to the best bubblegum of the 1980"
 year: "2024"
 price: 1200
 status: "available"

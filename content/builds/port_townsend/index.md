@@ -1,19 +1,26 @@
 ---
 title: "Port Townsend"
 date: 2024-08-05
-specs: "Touring setup · Panniers · 700c wheels"
+specs: "Rare Rockhopper with the low rear brake  · Restored with minimal mods"
 year: "2024"
-price: 450
+price: 500
 status: "sold"
 summary: "A touring-capable 700c that made the ferry crossing to Port Townsend and came back with stories."
 ---
 
-The Port Townsend bike made the trip across Puget Sound on the ferry, rolled through the Victorian streets of one of Washington's strangest and most beautiful towns, and came back with stories.
+On the Specialized Rockhopper line, the chainstay-mounted rear U-brake
+was only used in the 1987 to 1989 period. That makes for a clear looking
+rearline. They stopped once they realized the brakes get too dirty that
+low.
 
-## The Ride
+This one was built up while vacationing in Port Townsend hence the name.
 
-Port Townsend is a town built for slow travel — Victorian architecture, art galleries, a strong coffee scene, and roads that wind down to the water. The right bike makes all of that better.
+## Build
 
-## Documentation
+This was a minimalist restomod. Lot of cleaning.
 
-Two shots, both capturing the mood of the trip — late summer light, Northwest coastal atmosphere.
+- New Schwalbe Big Apple balloontires
+- Nicer saddle
+- Nicer nylon pedals
+- Paddle grips
+- Handlebars with enough rise to correctly over low cockpit

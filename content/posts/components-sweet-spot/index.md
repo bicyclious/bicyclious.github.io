@@ -1,7 +1,7 @@
 ---
 title: "Component sweet spot"
 date: 2026-05-02
-summary: "The 2025 Build-Off budget was $150 and we pulled off a sweet derelict commuter"
+summary: "There is tons of value to be found in standard components at reasonable prices"
 tags: ["build", "budget", "bad banana", "build-off"]
 draft: false
 ---

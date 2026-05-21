@@ -1,7 +1,7 @@
 ---
 title: "Thumbies"
 date: 2026-05-17
-summary: "Thumbies are delicious"
+summary: "Thumbies are sweet and simple"
 tags: ["drivetrain", "shifters"]
 show_hero: false
 ---

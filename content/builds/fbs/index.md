@@ -4,7 +4,7 @@ weight: 5
 date: 2024-05-01
 specs: "26\" 1980s MTB · Restomodded into urban bouncer"
 year: "2024"
-price: 550
+price: 600
 status: "sold"
 summary: "RockHopper in safety yellow restomodded into a fair weather street cruiser."
 ---

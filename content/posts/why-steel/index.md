@@ -1,7 +1,7 @@
 ---
 title: "Why Steel Still Makes Sense in 2025"
 date: 2025-11-01
-summary: "Carbon is fast and aluminum is light. Steel is alive. Here's why every restomod in the Bicyclious stable starts with a cromoly frame."
+summary: "Steel is real at a cost of about two pounds on the frame. That is not a problem for Bicyclious."
 tags: ["steel", "frames", "philosophy"]
 ---
 

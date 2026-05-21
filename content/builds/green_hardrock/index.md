@@ -1,24 +1,28 @@
 ---
-title: "Green Hardrock"
+title: "Curban Minimalist"
 date: 2025-06-15
-specs: "Specialized Hardrock · Jade green · 26\" wheels"
+specs: "A city bike not afraid to get wet · designed to maximize simplicity while maintaining ride tastiness"
 year: "2025"
+weight: 12
 price: 450
 status: "available"
 summary: "A Specialized Hardrock pulled from obscurity, sanded down, and painted jade green. Rides honest."
 ---
 
-This Hardrock frame is made of Specialized butted CroMo. Sizee is medium/large, optimal fit for someone 5'2" to 5'10". Looks like someone once touched up the paint.
+This Hardrock frame is made of Specialized butted CroMo. Size is
+medium, optimal fit for someone 5'2" to 5'10". This thing
+is a tasty ride. It's a very sporty handling quick curb popper. The
+tires on are the low end of what we like to use for crappy PNW roads.
 
 The goals were:
 - Killer commuter (read: fenders) in terms of performance
 - Look cute (nice color scheme and shiney parts)
-- Be of no value to serious bike thieves (of course, cannot guarantee some methy tweaker will not do something stupid)
+- Be of no value to serious bike thieves (of course, we cannot guarantee some methy tweaker will not do something stupid)
 
-The jade green paint catches light differently depending on the angle
-— sometimes matte, sometimes almost iridescent. That was the
-goal. Looks like someone came along and touched up the paint with a
-pretty good color match but not the best handiwork.
+Looks like someone came along and touched up the paint with a
+pretty good color match but not the best handiwork. Shiny
+high quality fenders match well in size with the plump but
+althetic tires.
 
 
 ## Build

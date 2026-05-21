@@ -9,11 +9,12 @@ summary: "A simple street commuter built for solid service and low theft worries
 ---
 
 We built this U-District up by swapping out the silly two speed
-internally geared hub for a Shimano 7-speed hub, and a primo shifter.
+internally geared hub for a Shimano 7-speed hub, and a primo trigger shifter
+rather than the stock meh gripshifter. The customer already had those
+parts, ergo the low price on this build.
 
-The U-District bike is a commuter built for the cracked pavement and steep
-hills of Seattle. Light enough to carry
-up stairs. 
+This U-District was built to be a fair weather joy rider built for the cracked
+pavement and steep hills of Seattle. Light enough to carry up stairs.
 
 ## Build
 
@@ -23,6 +24,3 @@ up stairs.
 - Bigger flat pedals for comfort and style
 - Old Man Mountain rack with Ortlieb panniers (not included)
 
-## Background Removal Experiments
-
-Several sessions spent getting a clean product-style shot — removing backgrounds, isolating the frame, finding the right white balance. The result speaks for itself.
