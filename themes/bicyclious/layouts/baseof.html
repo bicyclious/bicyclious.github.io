@@ -16,9 +16,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;0,7..72,900;1,7..72,400&display=swap" rel="stylesheet">
   <!-- Swiper -->
-  <link rel="stylesheet" href="{{ "css/swiper.min.css" | relURL }}">
+  <link rel="stylesheet" href="/css/swiper.min.css">
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" href="/favicon.ico">
 </head>
 <body>
@@ -54,42 +54,73 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <span class="footer-logo">BICYCLIOUS</span>
-      <span class="footer-copy">© {{ now.Year }}</span>
+      <span class="footer-copy">© {{ now.Year }} — delicious bicycles since the beginning</span>
     </div>
   </footer>
-  <script src="{{ "js/swiper.min.js" | relURL }}"></script>
+  <script src="/js/swiper.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var swiper = new Swiper('.bike-carousel', {
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        spaceBetween: 16,
-        loop: true,
-        grabCursor: true,
-        autoplay: { delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true },
-        pagination: { el: '.swiper-pagination', clickable: true },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        keyboard: {
-          enabled: true,
-          onlyInViewport: true,
-        },
-        breakpoints: {
-          640:  { slidesPerView: 1.2, spaceBetween: 20 },
-          1024: { slidesPerView: 1.2, spaceBetween: 24 }
-        }
-      });
+    (function() {
+      function initCarousels() {
+        const carouselElements = document.querySelectorAll('.bike-carousel');
+        
+        carouselElements.forEach(el => {
+          // Avoid double initialization
+          if (el.swiper) return;
 
-      swiper.on('click', function () {
-        var slide = swiper.slides[swiper.clickedIndex];
-        if (slide) {
-          var href = slide.getAttribute('data-href');
-          if (href) window.location.href = href;
-        }
-      });
-    });
+          const slideCount = el.querySelectorAll('.swiper-slide').length;
+          const hasMany = slideCount > 1;
+
+          const swiper = new Swiper(el, {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            spaceBetween: 16,
+            loop: hasMany,
+            grabCursor: hasMany,
+            observer: true,
+            observeParents: true,
+            autoplay: hasMany ? { delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true } : false,
+            pagination: hasMany ? { 
+              el: el.querySelector('.swiper-pagination'), 
+              clickable: true 
+            } : false,
+            navigation: hasMany ? {
+              nextEl: el.querySelector('.swiper-button-next'),
+              prevEl: el.querySelector('.swiper-button-prev'),
+            } : false,
+            keyboard: {
+              enabled: true,
+              onlyInViewport: true,
+              preserveFocus: true,
+            },
+            breakpoints: {
+              640:  { slidesPerView: 1.2, spaceBetween: 20 },
+              1024: { slidesPerView: 1.2, spaceBetween: 24 }
+            }
+          });
+
+          // Click to link (only for slides with data-href)
+          swiper.on('click', function () {
+            const slide = swiper.slides[swiper.clickedIndex];
+            if (slide) {
+              const href = slide.getAttribute('data-href');
+              if (href) window.location.href = href;
+            }
+          });
+
+          // Hide navigation if only one slide
+          if (!hasMany) {
+            const nav = el.querySelectorAll('.swiper-button-next, .swiper-button-prev, .swiper-pagination');
+            nav.forEach(n => n.style.display = 'none');
+          }
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCarousels);
+      } else {
+        initCarousels();
+      }
+    })();
   </script>
 </body>
 </html>

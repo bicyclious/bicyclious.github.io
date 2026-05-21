@@ -1,7 +1,7 @@
 ---
-title: "U-District"
+title: "U Dist"
 date: 2025-03-10
-specs: "Urban commuter · 7-speed Shimano IGH · 700c wheels"
+specs: "Urban fair weather commuter · 7-speed Shimano IGH · 700c wheels"
 year: "2025"
 price: 400
 status: "sold"

@@ -22,7 +22,7 @@ The goals were:
 Looks like someone came along and touched up the paint with a
 pretty good color match but not the best handiwork. Shiny
 high quality fenders match well in size with the plump but
-althetic tires.
+athletic tires.
 
 
 ## Build

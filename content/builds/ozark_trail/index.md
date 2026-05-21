@@ -4,11 +4,32 @@ date: 2026-05-19
 weight: 15
 price: 258
 status: "available"
-specs: "Bicyclious prices too much? Whelp, turns out Walmart does have one phenomenal deal on a certain solid bicycle."
+specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. Seriously, cheapest acceptable steed for bike fun on and off road."
 tags: ["Walmart", "philosophy"]
 hide_hero_image: false
 draft: false
 ---
+
+
+the cheapest bang-for-buck fun bike capable of rolling on road and on trails. 
+easiest on-ramp to
+That completely capable balloonbike is the industry pace car in that price range. 
+a stunning demo of their supply chain power. In that price range, the G.1 is the highest value available simple balloonbike. 
+
+
+TL;dr: at $258, the G.1 Explorer is a stunning demonstration of
+Walmart's supply chain power as well as proof that there are two
+members of the "Walmark family" who genuinely love bicycles. You
+could read the G.1 as their little love note to the bicycle world.
+
+Note: On your first ride, keep in mind you have no idea who the fuck
+assembled that bike you're flying on, naked at 25mph. First thing?  Is
+that front wheel attached correctly? Then check the
+brakes. Etc. Walmart outsources bike assembly to local service
+companies, which are not bike shops with any bike safety
+knowledge. That's the rub. Smoking deal though. Bon Appetit!
+
+## This is bike we tell friends to buy
 
 If you browse this site you'll notice we're giving away all our
 secrets with prices and links. We buy parts retail and we show you how

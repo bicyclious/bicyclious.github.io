@@ -20,8 +20,7 @@
   {{ if .Resources.ByType "image" }}
     {{ if not .Params.hide_hero_image }}
     <div class="post-hero-img">
-      {{ $hero := index (.Resources.ByType "image") 0 }}
-      <img src="{{ $hero.RelPermalink }}" alt="{{ .Title }}">
+      {{ partial "carousel.html" (.Resources.ByType "image") }}
     </div>
     {{ end }}
   {{ end }}
