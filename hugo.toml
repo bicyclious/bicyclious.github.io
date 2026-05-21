@@ -1,11 +1,11 @@
 baseURL = "https://bicyclious.com/"
 languageCode = "en-us"
 title = "Bicyclious"
-theme = "bicyclious-retro"
+theme = "bicyclious"
 
 # Suppress theme scaffold sample content
 ignoreFiles = [
-  "themes/bicyclious-retro/content/.*"
+  "themes/bicyclious/content/.*"
 ]
 
 [params]

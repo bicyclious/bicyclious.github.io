@@ -3,7 +3,7 @@
 ## Project
 
 Hugo static site at `/Users/jft/at/subduction/repos/bicyclious/`.
-Theme: `bicyclious-retro` at `themes/bicyclious-retro/`.
+Theme: `bicyclious` at `themes/bicyclious/`.
 Deployed to S3: `s3://bicyclious.com` with CloudFront.
 Dev server: `hugo server` → `localhost:1313`.
 
@@ -46,12 +46,12 @@ Spec lives at `DESIGN.md` in the repo root.
 
 ## CSS
 
-**Source:** `themes/bicyclious-retro/assets/css/main.css`
-**Served from:** `themes/bicyclious-retro/static/css/main.css`
+**Source:** `themes/bicyclious/assets/css/main.css`
+**Served from:** `themes/bicyclious/static/css/main.css`
 
 **After every CSS edit, sync with:**
 ```bash
-cp themes/bicyclious-retro/assets/css/main.css themes/bicyclious-retro/static/css/main.css
+cp themes/bicyclious/assets/css/main.css themes/bicyclious/static/css/main.css
 ```
 
 ---
