@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+<div class="NOThero-text">
+    <p class="hero-tagline" style="text-align: center; display: block; width: 100%;"
+    >restomodded vintage steel &nbsp;&nbsp;·&nbsp;&nbsp; simple machines for rolling on and off road &nbsp;&nbsp;·&nbsp;&nbsp; built for comfort not for speed</p>
+</div>
 
 {{ partial "carousel.html" . }}
 
@@ -7,7 +11,6 @@
     <div class="hero-text">
         <h1 class="hero-title">Bicyclious</h1>
         <h2 class="hero-sub">Builders of Delicious Bicycles</h2>
-        <p class="hero-tagline">restomodded vintage steel &nbsp;&nbsp;·&nbsp;&nbsp; simple machines for rolling on and off road &nbsp;&nbsp;·&nbsp;&nbsp; built for comfort not for speed</p>
     </div>
     <div class="hero-grid-lines"></div>
 </section>
@@ -19,9 +22,9 @@
 {{ if $buildPages }}
 
 <section class="builds-grid">
-  <div class="section-header-row">
-    <h2 class="section-label">FOR SALE</h2>
-    <p class="section-count">{{ len $available }} available · {{ len $sold }} sold</p>
+    <div class="section-header-row">
+        <h2 class="section-label" style="text-align: center; display: block; width: 100%;">FOR SALE</h2>
+        <!--     <p class="section-count">{{ len $available }} available · {{ len $sold }} sold</p> -->
   </div>
   {{ if $available }}
   <div class="card-grid">
@@ -31,7 +34,7 @@
   </div>
   {{ end }}
   {{ if $sold }}
-  <div class="section-label" style="padding-top:6rem">SOLD</div>
+  <div class="section-label" style="padding-top:6rem;text-align: center; display: block; width: 100%;" >SOLD</div>
   <div class="card-grid card-grid--sold">
     {{ range $sold }}
     {{ partial "bike-card.html" . }}

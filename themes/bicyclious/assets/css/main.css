@@ -5,8 +5,8 @@
 
 /* ── Fonts ──────────────────────────────────────────────────── */
 @font-face {
-  font-family: 'Cooper';
-  src: url('https://cdn.jsdelivr.net/gh/indestructible-type/Cooper@main/fonts/webfonts/Cooper-Black.woff2') format('woff2');
+  font-family: Cooper;
+  src: url('/fonts/Cooper-Black.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -31,35 +31,58 @@
   --outline-variant:           #e3bdc3;
   --surface-tint:              #bc004f;
 
+  /* Brand */
+  /* Extracted, applied below:
+      - #CC0F2C
+      - #DE6DA2
+      - #4D6B4F
+      - #73BC19
+      - #FAD8E6
+   */
+  --bicyclious-pink:           #D70969; 
+  --bicyclious-pink-mellow:    #FAD8E6;
+  --bicyclious-pink-hot:       #DE6DA2;
+  --bicyclious-green-light:    #73BC19;
+  --bicyclious-green-dark:     #4D6B4F;
+  --bicyclious-red:            #CC0F2C;
+  --bicyclious-offwhite: color-mix(in srgb, var(--bicyclious-pink) 2%, white 98%);
+  --bicyclious-skyblue         #d4e0ee;
+
+
+
+
+                                   
   /* Primary — Bicyclious Pink */
-  --primary:                   #b0004a;
+  --primary:                   var(--bicyclious-pink);
   --on-primary:                #ffffff;
   --primary-container:         #d81b60;
   --on-primary-container:      #fff2f3;
   --inverse-primary:           #ffb2bf;
 
+
+
   /* Secondary — Forest Green */
-  --secondary:                 #456556;
+  --secondary:                 var(--bicyclious-green-light);
   --on-secondary:              #ffffff;
   --secondary-container:       #c7ebd7;
   --on-secondary-container:    #4b6b5c;
 
   /* Tertiary — Rust */
-  --tertiary:                  #854639;
+  --tertiary:                  var(bicyclious-skyblue);
+  /*
   --on-tertiary:               #ffffff;
   --tertiary-container:        #a35d4f;
   --on-tertiary-container:     #fff2f0;
-
+ */
+  
   /* Background */
-  --background:                silver;
+  --background:                var(--bicyclious-offwhite);
   --on-background:             #1b1c1b;
 
-  /* Brand */
-  --bicyclious-pink:           #D70969;
-
   /* Typography */
+  --font-bicyclious: Cooper, Georgia, serif;
   --font:         'Inter', system-ui, sans-serif;
-  --font-display: 'Cooper', Georgia, serif;
+  --font-display: Cooper, Georgia, serif;
 
   /* Spacing */
   --unit:   8px;
@@ -131,7 +154,7 @@ a { color: inherit; }
 /* Masthead — large wordmark row */
 .site-masthead {
   background: var(--bicyclious-pink);
-  padding: var(--margin) 0 0 0;
+  padding: var(--margin) 0 var(--margin) 0;
   text-align: center;
   line-height: 0;
 }
@@ -160,14 +183,14 @@ a { color: inherit; }
 
 /* Nav bar — tagline + links row */
 .site-nav-bar {
-  background: linear-gradient(to bottom, var(--bicyclious-pink), silver);
+  background: linear-gradient(to bottom, var(--bicyclious-pink), var(--bicyclious-offwhite));
   border-top: none;
 }
 
 .nav-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 12px var(--margin) 18px var(--margin);
+  padding: 0.75rem var(--margin) 1.5rem var(--margin);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -175,12 +198,12 @@ a { color: inherit; }
 }
 
 .site-tagline {
-  font-family: var(--font);
-  font-size: 14px;
+  font-family: var(--font-bicyclious);
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.1px;
   text-transform: uppercase;
-  color: var(--on-surface-variant);
+  color: var(--bicyclious-offwhite);
 }
 
 .site-nav {
@@ -190,12 +213,12 @@ a { color: inherit; }
 }
 
 .site-nav a {
-  font-family: var(--font);
-  font-size: 14px;
+  font-family: var(--font-bicyclious);
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.1px;
   text-decoration: none;
-  color: var(--on-surface);
+  color: var(--bicyclious-offwhite);
   padding: 6px 16px;
   border-radius: var(--radius-full);
   transition: background-color 0.15s, color 0.15s;
@@ -224,30 +247,32 @@ a { color: inherit; }
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: 57px;
+  text-transform: uppercase;
+  font-size: 4.25rem;
   font-weight: bold;
   line-height: 1.12;
   letter-spacing: -0.02em;
-  color: var(--on-background);
+  color: var(--primary);
 }
 
 .hero-sub {
-  font-family: var(--font);
-  font-size: 16px;
+  font-family: var(--font-bicyclious);
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--on-surface-variant);
+  color: var(--primary);
   margin-top: 16px;
 }
 
 .hero-tagline {
-  font-family: var(--font);
-  font-size: 14px;
+  font-family: var(--font-bicyclious);
+  font-size: 20px;
   font-weight: 400;
+  padding: 2rem 0 1rem 0;
   line-height: 1.5;
-  color: var(--on-surface-variant);
-  margin-top: 8px;
+  color: var(--primary);
 }
+
 
 .hero-ctas {
   display: flex;
@@ -322,15 +347,14 @@ a { color: inherit; }
   gap: var(--gutter);
   padding-bottom: 12px;
   margin-bottom: var(--gutter);
-  border-bottom: var(--hairline);
 }
 
 .section-label {
-  font-family: var(--font);
-  font-size: 14px;
+  font-family: var(--font-bicyclious);
+  font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 0.1px;
-  color: var(--on-surface);
+  color: var(--primary);
 }
 
 .section-count {
@@ -387,7 +411,6 @@ a { color: inherit; }
   width: 100%;
   max-width: none;
   padding: calc(var(--margin) * 1.5) var(--gutter);
-  border-bottom: var(--hairline);
 }
 
 /* ── Card Grid ───────────────────────────────────────────────── */
@@ -476,8 +499,9 @@ a { color: inherit; }
 }
 
 .bike-card--sold .card-body {
-  background: #808080;
+    background:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), var(--bicyclious-green-dark);
 }
+
 
 .card-body {
   padding: 20px var(--gutter);
@@ -485,7 +509,7 @@ a { color: inherit; }
   display: flex;
   flex-direction: column;
   gap: 6px;
-  background: #036264;
+  background: var(--bicyclious-green-dark);
   color: #f5f5f5; /* Light gray text */
 }
 
@@ -494,7 +518,7 @@ a { color: inherit; }
   font-size: 22px;
   font-weight: 600;
   line-height: 1.27;
-  color: #D70969; /* Brand pink */
+  color: var(--primary); /* Brand pink */
 }
 
 .card-spec {
@@ -508,7 +532,6 @@ a { color: inherit; }
 .card-footer {
   margin-top: auto;
   padding-top: 12px;
-  border-top: 1px solid rgba(69, 101, 86, 0.2);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -534,7 +557,6 @@ a { color: inherit; }
 /* ── Sold Divider ───────────────────────────────────────────── */
 .sold-divider {
   padding: var(--margin) 0 var(--gutter);
-  border-top: var(--hairline);
   margin-top: var(--margin);
   font-family: var(--font);
   font-size: 14px;
@@ -549,7 +571,7 @@ a { color: inherit; }
 .post-list { display: flex; flex-direction: column; }
 
 .post-row {
-  border-bottom: var(--fine-line);
+    border-bottom: none; /* var(--fine-line); */
 }
 
 .post-row:first-child { border-top: var(--fine-line); }
@@ -580,31 +602,31 @@ a { color: inherit; }
 }
 
 .post-row-date {
-  font-family: var(--font);
+  font-family: var(--font-bicyclious);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: var(--on-surface-variant);
+  color: var(--primary);
   padding-top: 5px;
   grid-row: 1;
 }
 
 .post-row-title {
-  font-family: var(--font-display);
+  font-family: var(--font-bicyclious);
   font-size: 22px;
   font-weight: 600;
   line-height: 1.27;
-  color: var(--on-background);
+  color: var(--primary);
   grid-column: 2;
   grid-row: 1;
 }
 
 .post-row-summary {
-  font-family: var(--font);
+  font-family: var(--font-bicyclious);
   font-size: 16px;
   line-height: 1.5;
-  color: var(--on-surface-variant);
+  color: var(--primary);
   grid-column: 2;
   grid-row: 2;
   margin-top: 4px;
@@ -1001,7 +1023,7 @@ a { color: inherit; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background: var(--background);
-  gap: 8px;
+  gap: 0.5em;
   margin-top: 8px;
 }
 

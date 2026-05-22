@@ -4,7 +4,7 @@ date: 2026-05-19
 weight: 15
 price: 258
 status: "available"
-specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. Seriously, cheapest acceptable steed for bike fun on and off road."
+specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. Seriously, it is the cheapest acceptable steed for bike fun on and off road."
 tags: ["Walmart", "philosophy"]
 hide_hero_image: false
 draft: false

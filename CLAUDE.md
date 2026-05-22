@@ -1,19 +1,189 @@
-# Bicyclious Dev Session Notes
+# Bicyclious
 
 ## Project
 
-Hugo static site at `/Users/jft/at/subduction/repos/bicyclious/`.
-Theme: `bicyclious` at `themes/bicyclious/`.
-Deployed to S3: `s3://bicyclious.com` with CloudFront.
-Dev server: `hugo server` → `localhost:1313`.
+**Site:** A bicycle restomod shop in the Pacific Northwest. Builds
+vintage steel bikes for comfort. Maintains a list of built bicycle,
+some sold and some still for sale. There is also a blog.
 
-**Site:** A bicycle restomod shop (Pacific Northwest). Builds vintage steel bikes for comfort.
+- Hugo static site at `/Users/jft/at/subduction/repos/bicyclious/`
+- Theme: `bicyclious` at `themes/bicyclious/`
+- Deployed to S3: `s3://bicyclious.com` with CloudFront which needs to be invalidated after deploy
+- Dev server: `hugo server` → `localhost:1313`
 
+
+
+### Key Design Rules
+
+- rounded corners, small radius
+- Soft warm shadows on cards (pink-tinted, very low opacity)
+- No cross-hatch hover states — use tonal surface color shifts
+- Nav links use pill hover states
+
+
+
+## Terminology
+
+| Term | Meaning |
+|------|---------|
+| **Bike card** | Card component in list/grid views (`_partials/bike-card.html`, `.bike-card` CSS) |
+| **Build page** | Individual bike detail page (`builds/single.html`, `.build-page` CSS) |
+| **Builds** | The builds list page (`/builds/`) |
+| **Blog** | The posts section (`/posts/`) — renamed from "Journal" |
+
+
+
+## Header Structure
+
+Two-row header in `baseof.html`:
+1. **`.site-masthead`** — Brands Pink background (#D70969), contains the wordmark image
+2. **`.site-nav-bar`** — Contains tagline + nav links
+
+Wordmark: `static/images/bicyclious_wordmark.png` (cropped 973×239px, no whitespace).
+Nav: BUILDS, BLOG, ABOUT
+Header scrolls with page (not sticky).
+
+
+
+## Home Page (`layouts/home.html`)
+
+Order from top to bottom:
+1. **Masthead**
+2. **Carousel** — `{{ partial "carousel.html" . }}`
+3. **Hero section** — "Bicyclious: builders of delicious bicycles" (Cooper Black) + subtitle
+4. **Available bikes grid** — all available builds
+5. **Sold bikes grid**
+6. **Sold bikes grid**
+7. **Blog preview** — first 9
+8. **Footer**
+
+
+
+## Builds List Page (`layouts/builds/list.html`)
+
+Title: "Builds"
+Order: Carousel → available bike cards → sold bike cards.
+
+
+
+## Bike Cards (`.bike-card`)
+
+- `overflow: hidden`
+- Radius related to display size
+  - --radius-sm:   0.5rem;   /* 8px  */
+  - --radius:      1rem;     /* 16px */
+  - --radius-md:   1.5rem;   /* 24px */
+  - --radius-lg:   2rem;     /* 32px */
+  - --radius-xl:   3rem;     /* 48px */
+  - --radius-full: 9999px;
+- No borders
+- `.card-body` background: 
+  - for sale: --bicyclious-green-light
+  - sold: --bicyclious-green-dark
+- Badges
+  - No "AVAILABLE" badge on available bikes
+  - "SOLD" badge shown on sold bikes
+- No grayscale filter on sold bike images
+- No "INSPECT BUILD →" CTA text
+- Clicking a card goes to the build page
+
+
+
+## Bike Card Grid (`.card-grid`)
+
+- `gap:   gap: 0.5em;`
+- `background:   --bicyclious-offwhite`
+— empty cells in incomplete rows show  --bicyclious-offwhite
+
+
+## Builds (bike gallery)
+
+- thumbnail grid is max 4-column but responsive to viewport width, down to 1-column on smaller mobile devices
+- `.gallery-thumbs` background: `var(--background)` 
+— empty cells show the slightly pink offwhite
+- No bottom border on the thumbnail grid
+- Lightbox triggered by JS (`openLightbox()` / `closeLightbox()`)
+
+
+## Carousel (`_partials/carousel.html`)
+
+Powered by **Swiper.js v11**, served locally (not CDN):
+- JS: `static/js/swiper.min.js`
+- CSS: `static/css/swiper.min.css`
+
+Data file: `data/carousel.yaml`
+
+```yaml
+- slug: bubblicious
+  image: bubs_at_crescent.jpeg
+  title: Bubblicious
+  price: 1200
+```
+
+URL construction: `/builds/{slug}/{image}` for image, `/builds/{slug}/` for link.
+Images live in Hugo page bundles: `content/builds/{slug}/`.
+
+
+**Swiper config** (in `baseof.html`):
+```js
+new Swiper('.bike-carousel', {
+  slidesPerView: 1.2,
+  centeredSlides: true,
+  spaceBetween: 16,
+  loop: true,
+  grabCursor: true,
+  autoplay: { delay: 2250, disableOnInteraction: true, pauseOnMouseEnter: true },
+  pagination: { el: '.swiper-pagination', clickable: true },
+  breakpoints: {
+    640:  { slidesPerView: 1.2, spaceBetween: 20 },
+    1024: { slidesPerView: 1.2, spaceBetween: 24 }
+  }
+});
+```
+
+Navigation: slides use `data-href` attribute; Swiper `click` event calls `window.location.href`.
+
+
+### Carousel Image Specs
+
+- `aspect-ratio: 4 / 3`
+- `border-radius: 10px`
+- No caption text (removed)
+- `.carousel-slide-img` handles the rounding directly (no `overflow: hidden` on slide)
+
+
+
+## Bike Order in Lists
+
+Controlled by `weight` front matter in each build's `index.md`. Lower
+weight = earlier in list. Available and sold bikes sort independently
+within their groups.
+
+```yaml
 ---
+title: "Build Name"
+weight: 1
+status: "available"
+---
+```
 
-## Design System — "Material 3 Expressive" (Bicyclious Expressive)
 
-Spec lives at `DESIGN.md` in the repo root.
+
+
+## Styling
+
+The site Hugo theme is called bicyclious and lives in themes/bicyclious.
+
+## Design System — "Material 3 Expressive" 
+
+Spec lives at `DESIGN.md` in the `specs/` folder.
+
+
+## CSS
+
+**Source:** `themes/bicyclious/assets/css/main.css`
+**Processed via:** Hugo Pipes (automatically minified and fingerprinted in `baseof.html`).
+
 
 ### Colors
 ```
@@ -29,174 +199,18 @@ Spec lives at `DESIGN.md` in the repo root.
 ```
 
 ### Typography
+
+The main brand font is Cooper in 
+
 - **Display/Headlines:** Literata (Google Fonts, loaded in `baseof.html`) — 700–900 weight
   - Applied via `--font-display` CSS variable to `.hero-title`, `.section-title`, `.post-title`, `.card-title`
 - **Body/UI:** Inter (Google Fonts) — 400–700 weight
 - **Labels:** 11px / 500 / 0.5px tracking / uppercase — used for dates, badges, tagline
 
-### Key Design Rules
-- Ultra-rounded: `--radius-full` (9999px) for buttons/chips/badges, `--radius-lg` (32px) for cards
-- Tonal borders: `--outline-variant` (#e3bdc3) not India Ink
-- Soft warm shadows on cards (pink-tinted, very low opacity)
-- No cross-hatch hover states — use tonal surface color shifts
-- Nav links use pill hover states
-- Card body background: `--secondary-container` (sage green)
-
----
-
-## CSS
-
-**Source:** `themes/bicyclious/assets/css/main.css`
-**Served from:** `themes/bicyclious/static/css/main.css`
-
-**After every CSS edit, sync with:**
-```bash
-cp themes/bicyclious/assets/css/main.css themes/bicyclious/static/css/main.css
-```
-
----
-
-## Terminology
-
-| Term | Meaning |
-|------|---------|
-| **Bike card** | Card component in list/grid views (`_partials/bike-card.html`, `.bike-card` CSS) |
-| **Build page** | Individual bike detail page (`builds/single.html`, `.build-page` CSS) |
-| **Builds** | The builds list page (`/builds/`) |
-| **Blog** | The posts section (`/posts/`) — renamed from "Journal" |
-
----
-
-## Header Structure
-
-Two-row header in `baseof.html`:
-1. **`.site-masthead`** — Pink background (`#D20A6A`), contains the wordmark image
-2. **`.site-nav-bar`** — Contains tagline + nav links
-
-Wordmark: `static/images/bicyclious_wordmark.png` (cropped 973×239px, no whitespace).
-Nav: BUILDS, BLOG (HOME was removed).
-Header scrolls with page (not sticky).
-
----
-
-## Home Page (`layouts/home.html`)
-
-Order from top to bottom:
-1. **Hero section** — "Bicyclious: builders of delicious bicycles" (Cooper Black) + subtitle
-2. **Carousel** — `{{ partial "carousel.html" . }}`
-3. **Available bikes grid** — all available builds
-4. **Sold divider** — "// SOLD BUILDS"
-5. **Sold bikes grid**
-6. **Blog preview** — first 3 posts
-
----
-
-## Builds List Page (`layouts/builds/list.html`)
-
-Title: "Builds" (was "// SHOP").
-Order: Carousel → available bike cards → sold divider → sold bike cards.
-
----
-
-## Bike Cards (`.bike-card`)
-
-- `border-radius: 10px`, `overflow: hidden`
-- No borders
-- `.card-body` background: `#c9a8b0` (saturated dusty rose)
-- No "AVAILABLE" badge on available bikes
-- "SOLD" badge shown on sold bikes
-- No grayscale filter on sold bike images
-- No "INSPECT BUILD →" CTA text
-- Clicking a card goes to the build page
-
----
-
-## Bike Card Grid (`.card-grid`)
-
-- `gap: var(--gutter)` (24px) between cards
-- `background: var(--surface)` — empty cells in incomplete rows show off-white
-- Individual cards have `border-right` + `border-bottom` for structural lines
-
----
-
-## Gallery (Build Pages)
-
-- 4-column thumbnail grid
-- `.gallery-thumbs` background: `var(--background)` — empty cells show off-white
-- No bottom border on the thumbnail grid
-- Lightbox triggered by JS (`openLightbox()` / `closeLightbox()`)
-
----
-
-## Carousel (`_partials/carousel.html`)
-
-Powered by **Swiper.js v11**, served locally (not CDN):
-- JS: `static/js/swiper.min.js`
-- CSS: `static/css/swiper.min.css`
-
-Data file: `data/carousel.yaml`
-
-```yaml
-- slug: seahawk
-  image: 1_drive_cover.png
-  title: Seahawk
-  price: 485
-```
-
-URL construction: `/builds/{slug}/{image}` for image, `/builds/{slug}/` for link.
-Images live in Hugo page bundles: `content/builds/{slug}/`.
-
-**Swiper config** (in `baseof.html`):
-```js
-new Swiper('.bike-carousel', {
-  slidesPerView: 1.2,
-  centeredSlides: true,
-  spaceBetween: 16,
-  loop: true,
-  grabCursor: true,
-  autoplay: { delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true },
-  pagination: { el: '.swiper-pagination', clickable: true },
-  breakpoints: {
-    640:  { slidesPerView: 1.2, spaceBetween: 20 },
-    1024: { slidesPerView: 1.2, spaceBetween: 24 }
-  }
-});
-```
-
-Navigation: slides use `data-href` attribute; Swiper `click` event calls `window.location.href`.
-
-**⚠️ Outstanding issue:** Swipe gestures (left/right) not working on mobile. No JS console errors. Swiper initializes correctly. Autoplay status unconfirmed. Root cause not yet identified — likely a touch event conflict. Next session should investigate:
-- Whether autoplay advances slides on its own
-- Whether `overflow: hidden` from Swiper's default CSS is blocking touch events on neighboring slides
-- Trying `cssMode: true` as an alternative
-
-### Carousel Image Specs
-- `aspect-ratio: 4 / 3`
-- `border-radius: 10px`
-- No caption text (removed)
-- `.carousel-slide-img` handles the rounding directly (no `overflow: hidden` on slide)
-
----
-
-## Bike Order in Lists
-
-Controlled by `weight` front matter in each build's `index.md`. Lower weight = earlier in list. Available and sold bikes sort independently within their groups.
-
-```yaml
----
-title: "Seahawk"
-weight: 1
-status: "available"
----
-```
-
----
-
 ## Cooper Black Font
 
-Loaded via jsDelivr CDN (woff2 format) from `indestructible-type/Cooper` repo.
+The main font is Cooper, loaded from the project file:
+themes/bicyclious/static/fonts/Cooper-Black.ttf. 
 
-`@font-face` declared at top of `main.css`. Applied via `--font-display` variable to:
-- `.hero-title`
-- `.section-title`
-- `.post-title`
+`@font-face` declared at top of `main.css`. 
+
