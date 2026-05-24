@@ -24,7 +24,7 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="site-masthead">
+    <div class="header-inner">
       <a href="{{ "/" | relURL }}" class="site-logo">
         {{ if .Site.Params.logo }}
           <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" class="logo-img">
@@ -32,19 +32,14 @@
           <span class="logo-bracket">[</span><span class="logo-text">BICYCLIOUS</span><span class="logo-bracket">]</span>
         {{ end }}
       </a>
-    </div>
-    <div class="site-nav-bar">
-      <div class="nav-inner">
-        <p class="site-tagline">{{ .Site.Params.subtitle }}</p>
-        <nav class="site-nav" aria-label="Main navigation">
-          {{ range .Site.Menus.main }}
-          <a href="{{ .URL | relURL }}"
-             class="{{ if eq $.RelPermalink .URL }}nav-active{{ end }}">
-            {{ .Name }}
-          </a>
-          {{ end }}
-        </nav>
-      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}"
+           class="{{ if eq $.RelPermalink .URL }}nav-active{{ end }}">
+          {{ .Name }}
+        </a>
+        {{ end }}
+      </nav>
     </div>
   </header>
 
@@ -53,9 +48,12 @@
   </main>
 
   <footer class="site-footer">
+    <div class="footer-bg">
+      <img src="/images/bubblicious_at_crescent_footer.jpg" alt="Bubblicious at Crescent" class="footer-bg-img">
+    </div>
     <div class="footer-inner">
-      <span class="footer-logo">BICYCLIOUS</span>
-      <span class="footer-copy">© {{ now.Year }} — delicious bicycles since the beginning</span>
+      <span class="footer-logo">BICYCLIOUS: {{ .Site.Params.subtitle }}</span>
+      <span class="footer-copy">© {{ now.Year }}</span>
     </div>
   </footer>
   <script src="/js/swiper.min.js"></script>
@@ -72,9 +70,9 @@
           const hasMany = slideCount > 1;
 
           const swiper = new Swiper(el, {
-            slidesPerView: 1.2,
+            slidesPerView: 'auto',
             centeredSlides: true,
-            spaceBetween: 16,
+            spaceBetween: 0,
             loop: hasMany,
             grabCursor: hasMany,
             observer: true,
@@ -94,8 +92,8 @@
               preserveFocus: true,
             },
             breakpoints: {
-              640:  { slidesPerView: 1.2, spaceBetween: 20 },
-              1024: { slidesPerView: 1.2, spaceBetween: 24 }
+              640:  { spaceBetween: 0 },
+              1024: { spaceBetween: 0 }
             }
           });
 

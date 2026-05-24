@@ -6,12 +6,15 @@
     <div class="swiper bike-carousel">
       <div class="swiper-wrapper">
         {{ range $slides }}
+        {{ $x := .focal.x | default 0.5 }}
+        {{ $y := .focal.y | default 0.5 }}
         <div class="swiper-slide" data-href="{{ printf "/builds/%s/" .slug | relURL }}">
           <img
             src="{{ printf "/builds/%s/%s" .slug .image | relURL }}"
             alt="{{ .title }}"
             loading="lazy"
             class="carousel-slide-img"
+            style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
           >
         </div>
         {{ end }}
@@ -26,12 +29,15 @@
   <div class="swiper bike-carousel">
     <div class="swiper-wrapper">
       {{ range $input }}
+      {{ $x := .Params.focal.x | default 0.5 }}
+      {{ $y := .Params.focal.y | default 0.5 }}
       <div class="swiper-slide">
         <img
           src="{{ .RelPermalink }}"
           alt=""
           loading="lazy"
           class="carousel-slide-img"
+          style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
         >
       </div>
       {{ end }}

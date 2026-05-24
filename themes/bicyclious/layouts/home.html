@@ -1,19 +1,25 @@
 {{ define "main" }}
 
-<div class="NOThero-text">
-    <p class="hero-tagline" style="text-align: center; display: block; width: 100%;"
-    >restomodded vintage steel &nbsp;&nbsp;·&nbsp;&nbsp; simple machines for rolling on and off road &nbsp;&nbsp;·&nbsp;&nbsp; built for comfort not for speed</p>
-</div>
-
 {{ partial "carousel.html" . }}
 
 <section class="hero">
     <div class="hero-text">
         <h1 class="hero-title">Bicyclious</h1>
         <h2 class="hero-sub">Builders of Delicious Bicycles</h2>
+        <p class="hero-tagline" style="text-align: center; display: block; width: 100%;"
+        >restomodded vintage steel &nbsp;&nbsp;·&nbsp;&nbsp; simple machines for rolling on and off road &nbsp;&nbsp;·&nbsp;&nbsp; built for comfort not for speed</p>
+
     </div>
     <div class="hero-grid-lines"></div>
 </section>
+
+<!-- 
+<div class="NOThero-text">
+    <p class="hero-tagline" style="text-align: center; display: block; width: 100%;"
+    >restomodded vintage steel &nbsp;&nbsp;·&nbsp;&nbsp; simple machines for rolling on and off road &nbsp;&nbsp;·&nbsp;&nbsp; built for comfort not for speed</p>
+
+</div>
+-->
 
 <!-- ── BUILDS ── -->
 {{ $buildPages := where site.RegularPages "Section" "builds" }}
@@ -66,7 +72,5 @@
   </div>
 </section>
 {{ end }}
-
-{{ partial "footer-hero.html" . }}
 
 {{ end }}

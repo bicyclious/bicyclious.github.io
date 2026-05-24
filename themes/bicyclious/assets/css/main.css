@@ -104,6 +104,7 @@
 
   /* Layout */
   --max-width: 1280px;
+  --header-height: 120px;
 }
 
 /* ── Reset ──────────────────────────────────────────────────── */
@@ -147,22 +148,22 @@ a { color: inherit; }
 
 /* ── Site Header ────────────────────────────────────────────── */
 .site-header {
-  background: var(--surface-container-lowest);
+  background: var(--bicyclious-pink);
   border-bottom: none;
 }
 
-/* Masthead — large wordmark row */
-.site-masthead {
-  background: var(--bicyclious-pink);
-  padding: var(--margin) 0 var(--margin) 0;
-  text-align: center;
-  line-height: 0;
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.site-logo { display: inline-block; text-decoration: none; }
+.site-logo { display: flex; align-items: center; text-decoration: none; }
 
 .logo-img {
-  width: 350px;
+  width: 280px;
   max-width: 100%;
   height: auto;
   display: block;
@@ -179,31 +180,6 @@ a { color: inherit; }
   font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--on-primary);
-}
-
-/* Nav bar — tagline + links row */
-.site-nav-bar {
-  background: linear-gradient(to bottom, var(--bicyclious-pink), var(--bicyclious-offwhite));
-  border-top: none;
-}
-
-.nav-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0.75rem var(--margin) 1.5rem var(--margin);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--gutter);
-}
-
-.site-tagline {
-  font-family: var(--font-bicyclious);
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: 0.1px;
-  text-transform: uppercase;
-  color: var(--bicyclious-offwhite);
 }
 
 .site-nav {
@@ -266,7 +242,7 @@ a { color: inherit; }
 
 .hero-tagline {
   font-family: var(--font-bicyclious);
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 400;
   padding: 2rem 0 1rem 0;
   line-height: 1.5;
@@ -810,7 +786,7 @@ a { color: inherit; }
 }
 
 .post-hero-img .carousel-slide-img {
-  aspect-ratio: 16 / 9;
+  /* width and height inherited from base class for variable width */
 }
 
 .post-hero-img img {
@@ -1001,7 +977,7 @@ a { color: inherit; }
 }
 
 .gallery .carousel-slide-img {
-  aspect-ratio: 4 / 3;
+  /* width and height inherited from base class for variable width */
 }
 
 .gallery-hero {
@@ -1088,9 +1064,8 @@ a { color: inherit; }
 /* ── Carousel ───────────────────────────────────────────────── */
 .bike-carousel {
   width: 100%;
-  max-height: 90vh;
-  padding-top: var(--gutter);
-  padding-bottom: 80px;
+  padding-top: 0; /* var(--gutter); */
+  padding-bottom: 0;
   touch-action: pan-y;
   position: relative;
   border: none !important;
@@ -1148,18 +1123,24 @@ a { color: inherit; }
 }
 
 .bike-carousel .swiper-slide {
-  border-radius: var(--radius-lg);
+  width: auto;
+  border-radius: 0; /* var(--radius-lg); */
   position: relative;
   cursor: pointer;
 }
 
 .carousel-slide-img {
-  width: 100%;
-  max-height: calc(90vh - 40px); /* Subtracting pagination padding */
-  aspect-ratio: 4 / 3;
+  width: auto;
+  height: calc(100vh - var(--header-height));
   object-fit: cover;
   display: block;
-  border-radius: var(--radius-lg);
+  border-radius: 0; /* var(--radius-lg); */
+}
+
+@media (max-width: 640px) {
+  .carousel-slide-img {
+    height: calc(100vh - 100px); /* Adjusted header height for mobile */
+  }
 }
 
 .carousel-caption {
@@ -1193,7 +1174,8 @@ a { color: inherit; }
 }
 
 .swiper-pagination {
-  bottom: 20px !important;
+  bottom: 2rem !important;
+  z-index: 20;
 }
 
 .swiper-pagination-bullet {
@@ -1233,30 +1215,50 @@ a { color: inherit; }
 
 /* ── Site Footer ────────────────────────────────────────────── */
 .site-footer {
-  padding: var(--margin) 0;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
   background: var(--surface-container-low);
+  color: var(--bicyclious-offwhite);
+}
+
+.footer-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.footer-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .footer-inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: var(--gutter);
+  padding-bottom: 2rem;
 }
 
 .footer-logo {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 0.75rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--bicyclious-offwhite);
 }
 
 .footer-copy {
-  font-family: var(--font);
-  font-size: 11px;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: var(--on-surface-variant);
+  color: var(--bicyclious-offwhite);
 }
 
 /* ── Responsive ─────────────────────────────────────────────── */
