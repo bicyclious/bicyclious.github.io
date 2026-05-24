@@ -1209,9 +1209,30 @@ a { color: inherit; }
   background: var(--primary) !important;
 }
 
+/* ── Home Footer Hero ───────────────────────────────────────── */
+.home-footer-hero {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  line-height: 0;
+  overflow: hidden;
+}
+
+.footer-hero-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .footer-hero-img {
+    height: 300px;
+  }
+}
+
 /* ── Site Footer ────────────────────────────────────────────── */
 .site-footer {
-  border-top: var(--hairline);
   padding: var(--margin) 0;
   background: var(--surface-container-low);
 }

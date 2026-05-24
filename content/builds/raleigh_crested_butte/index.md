@@ -2,7 +2,7 @@
 title: "Raleigh Crested Butte"
 weight: 5
 date: 2024-05-01
-specs: "OG 26\" MTB · Restored but kept mostly original"
+specs: "OG 26\" MTB · Restored but kept mostly period original"
 year: "2024"
 price: 700
 status: "available"

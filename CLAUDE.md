@@ -1,5 +1,16 @@
 # Bicyclious
 
+## Other markdown spec files to read
+
+Most specs live in `specs/` folder:
+- 
+
+- DESIGN.md: Stitch Design Spec lives at `DESIGN.md` in the `specs/` folder
+- md3e.md: describes the Material 3 Expressive design styling guidelines
+- image_focal_point_prd.md: describes how photo Region of Interest (ROI) is implemented in image carousels and such.
+
+
+
 ## Project
 
 **Site:** A bicycle restomod shop in the Pacific Northwest. Builds
@@ -176,7 +187,7 @@ The site Hugo theme is called bicyclious and lives in themes/bicyclious.
 
 ## Design System — "Material 3 Expressive" 
 
-Spec lives at `DESIGN.md` in the `specs/` folder.
+Design Spec lives at `DESIGN.md` in the `specs/` folder.
 
 
 ## CSS

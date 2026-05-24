@@ -1,5 +1,8 @@
 # Navigation Arrows (Expressive Style)
 
+## Not to site guidelines
+- thin horizontal borders dividing page sections is not to site's style.
+ 
 ## Implementation Guidance
 For expressive components (e.g., Carousels, Paginated Lists, Date Pickers), navigation arrows leverage high-visibility containers, intentional optical weighting, and micro-interactions to reinforce brand identity and directional affordance.
 

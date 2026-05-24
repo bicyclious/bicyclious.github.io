@@ -11,23 +11,43 @@ draft: false
 ---
 
 
-the cheapest bang-for-buck fun bike capable of rolling on road and on trails. 
-easiest on-ramp to
-That completely capable balloonbike is the industry pace car in that price range. 
-a stunning demo of their supply chain power. In that price range, the G.1 is the highest value available simple balloonbike. 
-
-
 TL;dr: at $258, the G.1 Explorer is a stunning demonstration of
 Walmart's supply chain power as well as proof that there are two
 members of the "Walmark family" who genuinely love bicycles. You
 could read the G.1 as their little love note to the bicycle world.
 
+## Walmart's love letter to the bike world
+
+The G.1 Explorer is the easiest on-ramp, cheapest bang-for-buck fun
+bike capable of rolling on road and on trails. For $258. Just give it
+a whirl, if not easy loss or a great gift for someone else to give a
+whirl. 
+
+That completely capable balloonbike is the industry pace car in that
+price range. It's a stunning demo of their supply chain power. In that
+price range, the G.1 is the highest value available simple
+balloonbike.
+
+## Safety check advised
+
 Note: On your first ride, keep in mind you have no idea who the fuck
 assembled that bike you're flying on, naked at 25mph. First thing?  Is
 that front wheel attached correctly? Then check the
-brakes. Etc. Walmart outsources bike assembly to local service
+brakes. Etc. [The shoddy wheel assembly is a perfect example](https://www.youtube.com/watch?v=f6VFc_2ZAkw).
+
+Walmart outsources bike assembly to local service
 companies, which are not bike shops with any bike safety
 knowledge. That's the rub. Smoking deal though. Bon Appetit!
+
+An knowledgeable used bike shop owner gave [his honest take on
+YouTube](https://youtu.be/aRR-8HEXuvk?t=307) and comes
+to the same comclusion: impressive product offer at such a price,
+but if you are not going to DIY the safety check then price in $100-$150 to have a bike
+mechinic go through the assembly process correctly.
+
+At that point you're in a different price range and might want to consider
+a low end bike shop bike? Or used. Or DTC where everthing was done correctly and you
+only need to turn 3 bolts or so and install the wheels.
 
 ## This is bike we tell friends to buy
 
@@ -124,6 +144,7 @@ video](https://www.youtube.com/watch?v=io38ioCxHj4&t=42s) the covers
 the topic.
 
 Also, look for 45mm tires not 40mm, [seemingly](https://www.youtube.com/shorts/GjwIS8_9_qI).
+
 
 ## Bonus
 
