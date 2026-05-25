@@ -52,8 +52,13 @@
       <img src="/images/bubblicious_at_crescent_footer.jpg" alt="Bubblicious at Crescent" class="footer-bg-img">
     </div>
     <div class="footer-inner">
-      <span class="footer-logo">BICYCLIOUS: {{ .Site.Params.subtitle }}</span>
-      <span class="footer-copy">© {{ now.Year }}</span>
+      <span class="footer-logo">BICYCLIOUS<span class="footer-subtitle">: {{ .Site.Params.subtitle }}</span></span>
+      <span class="footer-copy" 
+            style="cursor: pointer;" 
+            {{ with .Site.Data.version.version }}data-version="{{ . }}"{{ end }}
+            onclick="if(this.dataset.version) alert('Bicyclious Version: ' + this.dataset.version)">
+        © {{ now.Year }}
+      </span>
     </div>
   </footer>
   <script src="/js/swiper.min.js"></script>

@@ -99,7 +99,7 @@ spacing:
   margin-mobile: 1rem
   margin-desktop: 3rem
   container-max-width: 1280px
-  breakpoints:
+    breakpoints:
     sm: 850px   # Mobile
     md: 1200px  # Tablet
 ---
@@ -117,6 +117,11 @@ oversized typography centered on Cooper Black and and a tactile color
 palette
 
 The details of the `Material 3 Expressive` are in `md3e.md.`
+
+## CSS
+
+The main CSS file is: themes/bicyclious/assets/css/main.css
+
 
 ## Colors
 
@@ -141,6 +146,16 @@ Secondar font is Inter, system-ui, sans-serif
 - **Headlines:** Cooper Black
 - **Body:** Inter provides a clean, neutral counter-balance to the expressive serif, ensuring technical specifications and shop details remain highly legible.
 - **Stylistic Note:** Cooper Black, For an extra "Expressive" touch, large display headlines should use tighter letter spacing to create a compact, impactful visual block.
+
+
+## Breakpoints
+
+- 320px — still the baseline “smallest real device” target iPhone SE (older and current SE generations in CSS pixels) Many compact Android devices This is the classic “small mobile” breakpoint
+- 360px — very common today Most modern Android phones (Pixel, Samsung Galaxy, etc.) This is actually the most important “default mobile” width now
+- 375px — common iPhones iPhone 12/13/14/15/16 standard sizes (CSS viewport ≈ 390px or 375px depending model)
+- 850px - below this image grid rows are limited to single bike cards
+- 1200px - Above the threshold imaga grid rows are limited to 3 bike cards per row
+
 
 ## Layout & Spacing
 
