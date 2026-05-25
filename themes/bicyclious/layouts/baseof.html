@@ -74,6 +74,7 @@
             centeredSlides: true,
             spaceBetween: 0,
             loop: hasMany,
+            loopAdditionalSlides: 3,
             grabCursor: hasMany,
             observer: true,
             observeParents: true,
@@ -94,6 +95,23 @@
             breakpoints: {
               850:  { spaceBetween: 0 },
               1200: { spaceBetween: 0 }
+            },
+            on: {
+              init: function(swiper) {
+                // After LQIP full images load, update Swiper so it measures correct widths
+                const imgs = el.querySelectorAll('img.lqip[data-src]');
+                let loaded = 0;
+                if (!imgs.length) return;
+                imgs.forEach(img => {
+                  const full = new Image();
+                  full.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.add('lqip-loaded');
+                    if (++loaded === imgs.length) swiper.update();
+                  };
+                  full.src = img.dataset.src;
+                });
+              }
             }
           });
 

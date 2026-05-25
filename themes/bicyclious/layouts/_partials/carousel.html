@@ -8,13 +8,19 @@
         {{ range $slides }}
         {{ $x := .focal.x | default 0.5 }}
         {{ $y := .focal.y | default 0.5 }}
+        {{ $page := site.GetPage (printf "/builds/%s" .slug) }}
+        {{ $img  := $page.Resources.GetMatch .image }}
+        {{ $lqip := $img.Resize "20x webp q20" }}
+        {{ $full := $img.Resize "1200x webp q80" }}
         <div class="swiper-slide" data-href="{{ printf "/builds/%s/" .slug | relURL }}">
           <img
-            src="{{ printf "/builds/%s/%s" .slug .image | relURL }}"
+            src="{{ $lqip.Content | base64Encode | printf "data:image/webp;base64,%s" }}"
+            data-src="{{ $full.RelPermalink }}"
             alt="{{ .title }}"
-            loading="lazy"
-            class="carousel-slide-img"
+            class="carousel-slide-img lqip"
             style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
+            width="{{ $full.Width }}"
+            height="{{ $full.Height }}"
           >
         </div>
         {{ end }}

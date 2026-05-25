@@ -156,6 +156,8 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -211,12 +213,24 @@ a { color: inherit; }
 }
 
 /* ── Hero ───────────────────────────────────────────────────── */
-.hero {}
+.hero {
+  border-top: 3rem solid var(--bicyclious-pink);
+  border-bottom: 3rem solid var(--bicyclious-pink);
+  background-image: url('/images/fj55_streetbeater.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 3316 / 2626;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 .hero-text {
-  padding-top: calc(var(--margin) * 2);
-  padding-bottom: calc(var(--margin) * 2);
+  padding-bottom: var(--margin);
   text-align: center;
+  width: 100%;
 }
 
 .hero-grid-lines { display: none; }
@@ -1278,7 +1292,7 @@ a { color: inherit; }
   .post-title,
   .section-title { font-size: 32px; }
 
-  .logo-img { width: 100%; }
+  .logo-img { width: clamp(200px, 30vw, 240px); }
 
   .site-tagline { display: none; }
 
