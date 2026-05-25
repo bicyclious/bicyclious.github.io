@@ -1,11 +1,11 @@
 ---
 title: "Port Townsend"
 date: 2024-08-05
-specs: "Rare Rockhopper with the low rear brake  · Restored with minimal mods"
+specs: "Rare 1980s Rockhopper with the low rear brake  · Restored with minimal mods"
 year: "2024"
 price: 500
 status: "sold"
-summary: "A touring-capable 700c that made the ferry crossing to Port Townsend and came back with stories."
+summary: ""
 ---
 
 On the Specialized Rockhopper line, the chainstay-mounted rear U-brake

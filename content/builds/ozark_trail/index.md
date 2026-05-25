@@ -4,7 +4,7 @@ date: 2026-05-19
 weight: 15
 price: 258
 status: "available"
-specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. Seriously, it is the cheapest acceptable steed for bike fun on and off road."
+specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. Seriously, it is the cheapest more than acceptable steed for bike fun on and off road."
 tags: ["Walmart", "philosophy"]
 hide_hero_image: false
 draft: false
@@ -82,6 +82,7 @@ Lots of folks have opinions on YouTube:
 - [Entry Level Bikes Just Got Redefined](https://www.youtube.com/watch?v=u87OWbaTbI0)
 - [KevCentral: Ozark Trail 700C G.1 Explorer Gravel bike from Walmart](https://www.youtube.com/watch?v=bYMFKzA9E8M)
 - [I Sent the Cheap Ozark Trail G 1 Flying Here's What Happened!](https://www.youtube.com/watch?v=Bs9IRrk7Tbk)
+- [Entering A Road Cycling Race With A Walmart Bike? (Ozark Trail G1 Explorer)](https://www.youtube.com/watch?v=2ao63UTUe-Y)
 
 ## Build
 
@@ -99,6 +100,12 @@ If that works for ya and you keep riding, then later when things wear out:
 
 
 ## Limitations
+
+First of all, make sure you're not buying a first generation G.1
+(probably no longer in supply chain in 2026). [How to determine if first or second gen
+G.1](https://youtu.be/aAVyPLveiIc?t=149). Flat and Drop bar variants
+both got the same upgrades from first to second generation. Second
+generation is a keeper. Pass on the first.
 
 OK, this sounds too good so what's the rub? Whelp, it comes down to
 the labor. You pull one of these off the rack and part of the savings
@@ -122,16 +129,34 @@ any Ozark Trails except the rigid one.
 
 If you really want suspension, decent stuff costs more than what the
 Ozark Trails suspension bikes offer. But if you simply must have to go
-that route, consider the M.2 Ridge Pro for an extra Benji. That too is
-a smoking deal, in a performance zone we are not interested in
+that route, consider the M.2 Ridge Pro for an extra Benji ~$600. That
+too is a smoking deal, in a performance zone we are not interested in
 exploring. Just start rigid; it will make you a better rider and you
 can save up for a serious sus bike later which should cost at least
 $1,000 if not $1,500 just to get started with a respectable
-hardtail. But that just not what we do at Bicyclious. But we're happy
-to roll on the G.1 Explorer flat bar, the simpliest bike in the Ozark
-Trail line-up.
+hardtail. Then the rigid bike can be repurposed as more urbanized
+prowler. But hardtail and full sus are just not what we do at
+Bicyclious (other parts of our life, sure, but Bicyclious is all about
+rigid bikes. But we're happy to roll on the G.1 Explorer flat bar, the
+simpliest bike in the Ozark Trail line-up.
 
 - [$600 Ozark Trail Ridge Pro – Real Trail Test (Not What I Expected)](https://www.youtube.com/watch?v=r2SXTRDhIhs)
+
+## Alternatives
+
+On the other hand, if you're thinking $600, then for just a few coins
+more you might want to start thinking about [REI and their in-house
+bike shops](https://youtu.be/wtDFCLFwmpQ?t=223). Now the folks who
+sold you the bike (that is, the REI bike mechanics themselves
+assembled the bike) are the ones who will deal with any warentee
+issues, and you've got yourself a bike mechanic who knows this bike
+real well and has a direct line to service parts. That's worth more
+than the $80 over the price of the Ridge Pro. Nice e-bikes, too.
+
+But we're starting to talk about three times the G.1 so not really
+in the same price range as the original topic.
+
+# Revision 1 versus Revision 2
 
 Note: somewhere in 2025 the rear hub changes from a freewheel type to
 a freehub type. You definitely want the freehub as freewheel is

@@ -99,6 +99,9 @@ spacing:
   margin-mobile: 1rem
   margin-desktop: 3rem
   container-max-width: 1280px
+  breakpoints:
+    sm: 850px   # Mobile
+    md: 1200px  # Tablet
 ---
 
 ## Brand & Style
@@ -146,6 +149,9 @@ This design system utilizes a **fluid 12-column grid** for desktop and a **4-col
 - **Rhythm:** An 8px linear scale governs all padding and margins. 
 - **Margins:** Large horizontal margins on desktop (64px+) are encouraged to create "breathing room" around high-quality bike photography.
 - **Expressive Breaks:** Allow imagery to occasionally break the grid (full-bleed or offset) to simulate the feeling of movement and outdoor adventure.
+
+
+
 
 ## Elevation & Depth
 

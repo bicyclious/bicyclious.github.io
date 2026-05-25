@@ -138,16 +138,16 @@ Images live in Hugo page bundles: `content/builds/{slug}/`.
 **Swiper config** (in `baseof.html`):
 ```js
 new Swiper('.bike-carousel', {
-  slidesPerView: 1.2,
+  slidesPerView: 'auto',
   centeredSlides: true,
-  spaceBetween: 16,
+  spaceBetween: 0,
   loop: true,
   grabCursor: true,
-  autoplay: { delay: 2250, disableOnInteraction: true, pauseOnMouseEnter: true },
+  autoplay: { delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true },
   pagination: { el: '.swiper-pagination', clickable: true },
   breakpoints: {
-    640:  { slidesPerView: 1.2, spaceBetween: 20 },
-    1024: { slidesPerView: 1.2, spaceBetween: 24 }
+    850:  { spaceBetween: 0 },
+    1200: { spaceBetween: 0 }
   }
 });
 ```

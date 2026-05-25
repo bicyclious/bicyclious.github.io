@@ -20,7 +20,9 @@ with minimal updates, or restomod them with modern
 components that prioritize comfort, reliability, and a "delicious" ride
 quality. 
 
-Aesthetically we go for two styles: derelicts or pretty works of art.
+## Two build aesthetics
+
+Aesthetically we go for two styles: derelicts or pretty works of bike mechanical art.
 Either way the machine has to be mechanically dialed in.
 
 For the derelict look (a term from the automotive restomodders) we
