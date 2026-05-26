@@ -118,9 +118,33 @@ palette
 
 The details of the `Material 3 Expressive` are in `md3e.md.`
 
+## Other files that should be considered part of this design:
+
+- md3e.md: descibes the Material Design 3 Expressive styling of the whole site
+- build_gallery_hugo_swiper.md: describes the image gallery on the build single hugo pages
+- image_focal_point_prd.md: Describes how focal points are defined for high-quality image cropping
+
 ## CSS
 
-The main CSS file is: themes/bicyclious/assets/css/main.css
+The main CSS file is: themes/bicyclious/assets/css/main.css. That should be checked for manual handcoded changes.
+
+## Breakpoints
+
+- 320px — still the baseline “smallest real device” target iPhone SE (older and current SE generations in CSS pixels) Many compact Android devices This is the classic “small mobile” breakpoint
+- 360px — very common today Most modern Android phones (Pixel, Samsung Galaxy, etc.) This is actually the most important “default mobile” width now
+- 375px — common iPhones iPhone 12/13/14/15/16 standard sizes (CSS viewport ≈ 390px or 375px depending model)
+- 850px - below this image grid rows are limited to single bike cards
+- 1200px - Above the threshold imaga grid rows are limited to 3 bike cards per row
+
+
+## Layout & Spacing
+
+This design system utilizes a **fluid 12-column grid** for desktop and a **4-column grid** for mobile. 
+
+- **Rhythm:** An 8px linear scale governs all padding and margins. 
+- **Margins:** Large horizontal margins on desktop (64px+) are encouraged to create "breathing room" around high-quality bike photography.
+- **Expressive Breaks:** Allow imagery to occasionally break the grid (full-bleed or offset) to simulate the feeling of movement and outdoor adventure.
+
 
 
 ## Colors
@@ -147,23 +171,6 @@ Secondar font is Inter, system-ui, sans-serif
 - **Body:** Inter provides a clean, neutral counter-balance to the expressive serif, ensuring technical specifications and shop details remain highly legible.
 - **Stylistic Note:** Cooper Black, For an extra "Expressive" touch, large display headlines should use tighter letter spacing to create a compact, impactful visual block.
 
-
-## Breakpoints
-
-- 320px — still the baseline “smallest real device” target iPhone SE (older and current SE generations in CSS pixels) Many compact Android devices This is the classic “small mobile” breakpoint
-- 360px — very common today Most modern Android phones (Pixel, Samsung Galaxy, etc.) This is actually the most important “default mobile” width now
-- 375px — common iPhones iPhone 12/13/14/15/16 standard sizes (CSS viewport ≈ 390px or 375px depending model)
-- 850px - below this image grid rows are limited to single bike cards
-- 1200px - Above the threshold imaga grid rows are limited to 3 bike cards per row
-
-
-## Layout & Spacing
-
-This design system utilizes a **fluid 12-column grid** for desktop and a **4-column grid** for mobile. 
-
-- **Rhythm:** An 8px linear scale governs all padding and margins. 
-- **Margins:** Large horizontal margins on desktop (64px+) are encouraged to create "breathing room" around high-quality bike photography.
-- **Expressive Breaks:** Allow imagery to occasionally break the grid (full-bleed or offset) to simulate the feeling of movement and outdoor adventure.
 
 
 

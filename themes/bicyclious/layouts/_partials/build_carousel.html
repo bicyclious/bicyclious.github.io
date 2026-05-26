@@ -1,0 +1,103 @@
+{{/*
+  build_carousel.html
+  Called from layouts/builds/single.html as:
+    {{ partial "build_carousel.html" . }}
+  where . is the Page object.
+
+  Images come from the page bundle (.Resources.ByType "image").
+  Per-image focal points come from front matter:
+
+    images:
+      - file: photo.jpg
+        focal:
+          x: 0.5
+          y: 0.3
+
+  Bundle images not listed in `images` fall back to 50% 50%.
+*/}}
+
+{{ $page   := . }}
+{{ $images := $page.Resources.ByType "image" }}
+
+{{ if $images }}
+
+{{/* Build a filename → focal map from front matter */}}
+{{ $focalMap := dict }}
+{{ range $page.Params.images }}
+  {{ $focalMap = merge $focalMap (dict .file .focal) }}
+{{ end }}
+
+<div class="build-gallery-wrap">
+
+  {{/* ── Hero Swiper ────────────────────────────────────────── */}}
+  <div class="swiper build-gallery-main">
+    <div class="swiper-wrapper">
+      {{ range $images }}
+        {{ $focal := index $focalMap .Name }}
+        {{ $x := 0.5 }}
+        {{ $y := 0.5 }}
+        {{ with $focal }}
+          {{ $x = .x }}
+          {{ $y = .y }}
+        {{ end }}
+        <div class="swiper-slide">
+          <img
+            src="{{ .RelPermalink }}"
+            alt=""
+            loading="lazy"
+            class="build-gallery-img"
+            style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
+          >
+        </div>
+      {{ end }}
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  {{/* ── Thumbnail Strip Swiper ──────────────────────────────── */}}
+  <div class="swiper build-gallery-thumbs">
+    <div class="swiper-wrapper">
+      {{ range $images }}
+        {{ $focal := index $focalMap .Name }}
+        {{ $x := 0.5 }}
+        {{ $y := 0.5 }}
+        {{ with $focal }}
+          {{ $x = .x }}
+          {{ $y = .y }}
+        {{ end }}
+        <div class="swiper-slide">
+          <img
+            src="{{ .RelPermalink }}"
+            alt=""
+            loading="lazy"
+            style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
+          >
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* ── Lightbox ─────────────────────────────────────────────── */}}
+  <div class="build-lightbox" id="build-lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="build-lightbox-close" id="build-lightbox-close" aria-label="Close lightbox">CLOSE ✕</button>
+    <div class="swiper build-lightbox-swiper">
+      <div class="swiper-wrapper">
+        {{ range $images }}
+          <div class="swiper-slide">
+            <img
+              src="{{ .RelPermalink }}"
+              alt=""
+              class="build-lightbox-img"
+            >
+          </div>
+        {{ end }}
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+</div>{{/* end .build-gallery-wrap */}}
+
+{{ end }}
