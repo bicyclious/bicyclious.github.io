@@ -3,8 +3,6 @@
 ## Other markdown spec files to read
 
 Most specs live in `specs/` folder:
-- 
-
 - DESIGN.md: Stitch Design Spec lives at `DESIGN.md` in the `specs/` folder
 - md3e.md: describes the Material 3 Expressive design styling guidelines
 - image_focal_point_prd.md: describes how photo Region of Interest (ROI) is implemented in image carousels and such.
@@ -38,9 +36,9 @@ some sold and some still for sale. There is also a blog.
 | Term | Meaning |
 |------|---------|
 | **Bike card** | Card component in list/grid views (`_partials/bike-card.html`, `.bike-card` CSS) |
-| **Build page** | Individual bike detail page (`builds/single.html`, `.build-page` CSS) |
+| **Build page** | Individual bike single detail page (`builds/single.html`, `.build-page` CSS) |
 | **Builds** | The builds list page (`/builds/`) |
-| **Blog** | The posts section (`/posts/`) — renamed from "Journal" |
+| **Blog** | The posts section (`/posts/`)  |
 
 
 
@@ -64,9 +62,8 @@ Order from top to bottom:
 3. **Hero section** — "Bicyclious: builders of delicious bicycles" (Cooper Black) + subtitle
 4. **Available bikes grid** — all available builds
 5. **Sold bikes grid**
-6. **Sold bikes grid**
-7. **Blog preview** — first 9
-8. **Footer**
+6. **Blog preview** — first 9
+7. **Footer**
 
 
 
@@ -111,12 +108,14 @@ Order: Carousel → available bike cards → sold bike cards.
 
 - thumbnail grid is max 4-column but responsive to viewport width, down to 1-column on smaller mobile devices
 - `.gallery-thumbs` background: `var(--background)` 
-— empty cells show the slightly pink offwhite
+— empty cells show the background: slightly pink offwhite
 - No bottom border on the thumbnail grid
 - Lightbox triggered by JS (`openLightbox()` / `closeLightbox()`)
 
 
 ## Carousel (`_partials/carousel.html`)
+
+This is used on the top of the home page.
 
 Powered by **Swiper.js v11**, served locally (not CDN):
 - JS: `static/js/swiper.min.js`
@@ -135,32 +134,8 @@ URL construction: `/builds/{slug}/{image}` for image, `/builds/{slug}/` for link
 Images live in Hugo page bundles: `content/builds/{slug}/`.
 
 
-**Swiper config** (in `baseof.html`):
-```js
-new Swiper('.bike-carousel', {
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  spaceBetween: 0,
-  loop: true,
-  grabCursor: true,
-  autoplay: { delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true },
-  pagination: { el: '.swiper-pagination', clickable: true },
-  breakpoints: {
-    850:  { spaceBetween: 0 },
-    1200: { spaceBetween: 0 }
-  }
-});
-```
-
 Navigation: slides use `data-href` attribute; Swiper `click` event calls `window.location.href`.
 
-
-### Carousel Image Specs
-
-- `aspect-ratio: 4 / 3`
-- `border-radius: 10px`
-- No caption text (removed)
-- `.carousel-slide-img` handles the rounding directly (no `overflow: hidden` on slide)
 
 
 
@@ -195,33 +170,4 @@ Design Spec lives at `DESIGN.md` in the `specs/` folder.
 **Source:** `themes/bicyclious/assets/css/main.css`
 **Processed via:** Hugo Pipes (automatically minified and fingerprinted in `baseof.html`).
 
-
-### Colors
-```
---primary:           #b0004a   (Bicyclious Pink — buttons, links, price)
---primary-container: #d81b60   (masthead background)
---secondary:         #456556   (Forest Green)
---secondary-container: #c7ebd7 (card body background — sage green)
---tertiary:          #854639   (Rust — chips/tags)
---background:        #fbf9f7   (warm cream)
---on-surface:        #1b1c1b   (body text)
---on-surface-variant: #5a4044  (secondary text)
---outline-variant:   #e3bdc3   (borders — warm pinkish-beige)
-```
-
-### Typography
-
-The main brand font is Cooper in 
-
-- **Display/Headlines:** Literata (Google Fonts, loaded in `baseof.html`) — 700–900 weight
-  - Applied via `--font-display` CSS variable to `.hero-title`, `.section-title`, `.post-title`, `.card-title`
-- **Body/UI:** Inter (Google Fonts) — 400–700 weight
-- **Labels:** 11px / 500 / 0.5px tracking / uppercase — used for dates, badges, tagline
-
-## Cooper Black Font
-
-The main font is Cooper, loaded from the project file:
-themes/bicyclious/static/fonts/Cooper-Black.ttf. 
-
-`@font-face` declared at top of `main.css`. 
 

@@ -142,6 +142,75 @@
       } else {
         initCarousels();
       }
+
+      // ── Build Gallery: Hero + Thumbs + Lightbox ──────────────
+      function initBuildGallery() {
+        const mainEl     = document.querySelector('.build-gallery-main');
+        const thumbsEl   = document.querySelector('.build-gallery-thumbs');
+        const lightboxEl = document.getElementById('build-lightbox');
+
+        if (!mainEl || !thumbsEl || !lightboxEl) return;
+
+        // 1. Thumbs Swiper — must init first (passed as reference to main)
+        const thumbsSwiper = new Swiper(thumbsEl, {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+
+        // 2. Main Hero Swiper
+        const mainSwiper = new Swiper(mainEl, {
+          slidesPerView: 1,
+          loop: true,
+          keyboard: { enabled: true, onlyInViewport: true },
+          navigation: {
+            nextEl: mainEl.querySelector('.swiper-button-next'),
+            prevEl: mainEl.querySelector('.swiper-button-prev'),
+          },
+          thumbs: { swiper: thumbsSwiper },
+        });
+
+        // 3. Lightbox Swiper
+        const lightboxSwiperEl = lightboxEl.querySelector('.build-lightbox-swiper');
+        const lightboxSwiper = new Swiper(lightboxSwiperEl, {
+          slidesPerView: 1,
+          loop: true,
+          keyboard: { enabled: true },
+          navigation: {
+            nextEl: lightboxSwiperEl.querySelector('.swiper-button-next'),
+            prevEl: lightboxSwiperEl.querySelector('.swiper-button-prev'),
+          },
+        });
+
+        // Open lightbox at current slide index when hero is clicked
+        mainSwiper.on('click', function () {
+          lightboxEl.classList.add('open');
+          lightboxSwiper.slideToLoop(mainSwiper.realIndex, 0);
+        });
+
+        // Close: backdrop click
+        lightboxEl.addEventListener('click', function (e) {
+          if (e.target === lightboxEl) lightboxEl.classList.remove('open');
+        });
+
+        // Close: button
+        document.getElementById('build-lightbox-close')
+          .addEventListener('click', function () {
+            lightboxEl.classList.remove('open');
+          });
+
+        // Close: ESC key
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') lightboxEl.classList.remove('open');
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initBuildGallery);
+      } else {
+        initBuildGallery();
+      }
     })();
   </script>
 </body>

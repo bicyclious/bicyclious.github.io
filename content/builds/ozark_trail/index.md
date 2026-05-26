@@ -4,12 +4,14 @@ date: 2026-05-19
 weight: 15
 price: 258
 status: "available"
-specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. Seriously, it is the cheapest more than acceptable steed for bike fun on and off road."
+specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. The green machine is no joke."
 tags: ["Walmart", "philosophy"]
 hide_hero_image: false
 draft: false
 ---
 
+
+Seriously, this beast of a good deal is the cheapest respectable steed for bike fun on and off road.
 
 TL;dr: at $258, the G.1 Explorer is a stunning demonstration of
 Walmart's supply chain power as well as proof that there are two

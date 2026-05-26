@@ -165,14 +165,13 @@ deep, creating a "delicious" visual density.
 The typography uses the main font of Cooper Black.
 The Cooper Black font is loaded locally from: themes/bicyclious/static/fonts/Cooper-Black.ttf
 
+`@font-face` declared at top of `main.css`. 
+
 Secondar font is Inter, system-ui, sans-serif
 
 - **Headlines:** Cooper Black
 - **Body:** Inter provides a clean, neutral counter-balance to the expressive serif, ensuring technical specifications and shop details remain highly legible.
 - **Stylistic Note:** Cooper Black, For an extra "Expressive" touch, large display headlines should use tighter letter spacing to create a compact, impactful visual block.
-
-
-
 
 
 ## Elevation & Depth

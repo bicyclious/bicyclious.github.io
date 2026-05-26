@@ -1,38 +1,29 @@
 {{ define "main" }}
+<!-- USED: single.html -->
 {{ $status := .Params.status | default "available" }}
 {{ $sold   := eq $status "sold" }}
 
 <article class="build-page">
   <header class="post-header">
     <div class="post-header-inner">
-      <a href="{{ "/builds/" | relURL }}" class="back-link">← ALL BUILDS</a>
       <div class="post-title-row">
-        <h1 class="post-title">{{ .Title }}</h1>
-        {{ if $sold }}
-        <span class="status-badge status-badge--sold">SOLD</span>
-        {{ else }}
-        <span class="status-badge status-badge--available">AVAILABLE</span>
+        <div class="post-title">{{ .Title }}</div>
+        {{ with .Params.price }}
+        <div class="post-price">${{ . }}</div>
         {{ end }}
       </div>
       {{ with .Params.specs }}<p class="post-specs">{{ . }}</p>{{ end }}
-      <div class="post-meta-row">
-        {{ with .Params.year }}<span class="post-year">BUILD: {{ . }}</span>{{ end }}
-        {{ with .Params.price }}
-        <span class="post-price">${{ . }}</span>
-        {{ end }}
-      </div>
       {{ if not $sold }}
       <a href="mailto:john@bicyclious.com?subject=Inquiry: {{ .Title }}" class="btn-retro btn-buy">
-        INQUIRE ABOUT THIS BIKE →
+        INQUIRE ABOUT THIS BIKE
       </a>
       {{ end }}
     </div>
   </header>
 
-  {{ $imgs := .Resources.ByType "image" }}
-  {{ if $imgs }}
+  {{ if .Resources.ByType "image" }}
   <section class="gallery">
-    {{ partial "carousel.html" $imgs }}
+    {{ partial "build_carousel.html" . }}
   </section>
   {{ end }}
 

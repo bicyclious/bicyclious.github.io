@@ -6,6 +6,9 @@
     x: 0.65
     y: 0.35
 
+-
+http://localhost:1313/builds/legnano/
+
 - slug: legnano
   image: legnano_on_deck_faceless.png
   title: Legnano on deck
@@ -33,6 +36,11 @@
 - slug: port_townsend
   image: signal-2024-08-05-174942.jpeg
   title: Blue Rockhopper
+  price: 450
+
+- slug: ratgrrrl
+  image: ratgrrrl_front.cropped.jpg
+  title: Rat Grrrl
   price: 450
 
 - slug: bad_banana
