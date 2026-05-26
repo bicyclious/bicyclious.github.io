@@ -12,16 +12,16 @@
         {{ $img  := $page.Resources.GetMatch .image }}
         {{ $lqip := $img.Resize "20x webp q20" }}
         {{ $full := $img.Resize "1200x webp q80" }}
-        <div class="swiper-slide" data-href="{{ printf "/builds/%s/" .slug | relURL }}">
-          <img
-            src="{{ $lqip.Content | base64Encode | printf "data:image/webp;base64,%s" }}"
-            data-src="{{ $full.RelPermalink }}"
-            alt="{{ .title }}"
-            class="carousel-slide-img lqip"
-            style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
-            width="{{ $full.Width }}"
-            height="{{ $full.Height }}"
-          >
+          <div class="swiper-slide" data-href="{{ printf "/builds/%s/" .slug | relURL }}">
+              <img
+                  src="{{ $lqip.Content | base64Encode | printf "data:image/webp;base64,%s" | safeURL }}"
+                  data-src="{{ $full.RelPermalink }}"
+                  alt="{{ .title }}"
+                  class="carousel-slide-img lqip"
+                  style="{{ printf "object-position: %.0f%% %.0f%%" (mul $x 100.0) (mul $y 100.0) | safeCSS }}"
+                  width="{{ $full.Width }}"
+                  height="{{ $full.Height }}"
+              >
         </div>
         {{ end }}
       </div>
@@ -37,14 +37,14 @@
       {{ range $input }}
       {{ $x := .Params.focal.x | default 0.5 }}
       {{ $y := .Params.focal.y | default 0.5 }}
-      <div class="swiper-slide">
-        <img
-          src="{{ .RelPermalink }}"
-          alt=""
-          loading="lazy"
-          class="carousel-slide-img"
-          style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
-        >
+        <div class="swiper-slide">
+            <img
+                src="{{ .RelPermalink }}"
+                alt=""
+                loading="lazy"
+                class="carousel-slide-img"
+                style="{{ printf "object-position: %.0f%% %.0f%%" (mul $x 100.0) (mul $y 100.0) | safeCSS }}"
+            >
       </div>
       {{ end }}
     </div>

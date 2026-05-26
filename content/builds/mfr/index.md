@@ -7,6 +7,11 @@ year: "2024"
 price: 1500
 status: "available"
 summary: "Mountain Frame Ride. Rigid steel, stripped to essentials. A bike that teaches technique."
+images:
+  - file: "taco_run_on_a_snowy_night.jpg"
+    focal:
+      py: 0.2
+      px: 0.5
 ---
 
 Supposedly, ("allegedly"?) this bike was in one of the 1980s MFR

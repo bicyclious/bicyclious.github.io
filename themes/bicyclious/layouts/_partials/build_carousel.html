@@ -27,26 +27,35 @@
   {{ $focalMap = merge $focalMap (dict .file .focal) }}
 {{ end }}
 
-<div class="build-gallery-wrap">
+<div class="build-gallery-wrap" data-debug-partial="build_carousel">
 
   {{/* ── Hero Swiper ────────────────────────────────────────── */}}
   <div class="swiper build-gallery-main">
-    <div class="swiper-wrapper">
-      {{ range $images }}
-        {{ $focal := index $focalMap .Name }}
-        {{ $x := 0.5 }}
-        {{ $y := 0.5 }}
-        {{ with $focal }}
-          {{ $x = .x }}
-          {{ $y = .y }}
-        {{ end }}
+      <div class="swiper-wrapper">
+
+
+
+          {{ range $images }}
+          <!-- DEBUG: {{ .Name }} -->
+          {{ $focal := index $focalMap .Name }}
+          <!-- DEBUG FOCAL: {{ $focal }} -->
+          <!-- DEBUG PX: {{ $focal.px }} -->
+          <!-- DEBUG PY: {{ $focal.py }} -->
+          {{ $px := 0.5 }}
+          {{ $py := 0.5 }}
+          {{ if $focal }}
+          {{ $px = float $focal.px }}
+          {{ $py = float $focal.py }}
+          {{ end }}
+          <!-- FINAL X: {{ mul $px 100 }}% Y: {{ mul $py 100 }}% -->
+          
         <div class="swiper-slide">
           <img
             src="{{ .RelPermalink }}"
             alt=""
             loading="lazy"
             class="build-gallery-img"
-            style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
+            style="object-position: {{ mul $px 100 }}% {{ mul $py 100 }}%;"
           >
         </div>
       {{ end }}
@@ -60,19 +69,22 @@
     <div class="swiper-wrapper">
       {{ range $images }}
         {{ $focal := index $focalMap .Name }}
-        {{ $x := 0.5 }}
-        {{ $y := 0.5 }}
-        {{ with $focal }}
-          {{ $x = .x }}
-          {{ $y = .y }}
+        {{ $px := 0.5 }}
+        {{ $py := 0.5 }}
+        {{ if $focal }}
+          {{ $px = float $focal.px }}
+          {{ $py = float $focal.py }}
         {{ end }}
         <div class="swiper-slide">
-          <img
-            src="{{ .RelPermalink }}"
-            alt=""
-            loading="lazy"
-            style="object-position: {{ mul $x 100 }}% {{ mul $y 100 }}%;"
-          >
+            <img
+                src="{{ .RelPermalink }}"
+                alt=""
+                loading="lazy"
+                class="build-gallery-img"
+                data-debug-x="{{ $focal.x }}"
+                data-debug-y="{{ $focal.y }}"
+                style="object-position: {{ mul $px 100 }}% {{ mul $py 100 }}%;"
+            >
         </div>
       {{ end }}
     </div>
@@ -82,16 +94,32 @@
   <div class="build-lightbox" id="build-lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
     <button class="build-lightbox-close" id="build-lightbox-close" aria-label="Close lightbox">CLOSE ✕</button>
     <div class="swiper build-lightbox-swiper">
-      <div class="swiper-wrapper">
-        {{ range $images }}
-          <div class="swiper-slide">
-            <img
-              src="{{ .RelPermalink }}"
-              alt=""
-              class="build-lightbox-img"
-            >
-          </div>
-        {{ end }}
+        <div class="swiper-wrapper">
+
+
+
+            {{ range $images }}
+            {{ $focal := index $focalMap .Name }}
+            {{ $px := 0.5 }}
+            {{ $py := 0.5 }}
+            {{ if $focal }}
+            {{ $px = float $focal.px }}
+            {{ $py = float $focal.py }}
+            {{ end }}
+            <div class="swiper-slide">
+                <img
+                    src="{{ .RelPermalink }}"
+                    alt=""
+                    loading="lazy"
+                    data-debug-x="{{ $focal.x }}"
+                    data-debug-y="{{ $focal.y }}"
+                    style="object-position: {{ mul $px 100 }}% {{ mul $py 100 }}%;"
+                >
+            </div>
+            {{ end }}
+
+
+                        
       </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
