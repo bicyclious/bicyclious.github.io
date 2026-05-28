@@ -1,7 +1,7 @@
 ---
 title: "Walmart Special"
 date: 2026-05-19
-weight: 15
+weight: 99
 price: 258
 status: "available"
 specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. The green machine is no joke."

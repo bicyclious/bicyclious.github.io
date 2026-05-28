@@ -7,24 +7,26 @@
       {{ $cover := index $imgs 0 }}
       <div class="card-img-wrap">
         <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
-        <div class="card-img-overlay"></div>
-        {{ if eq $status "sold" }}
-        <span class="card-badge card-badge--sold">SOLD</span>
-        {{ end }}
+        <div class="card-overlay" style="top: auto; bottom: 0; padding: 0.8rem 1.25rem; border-bottom: none; border-top: 1px solid rgba(255, 255, 255, 0.1); align-items: baseline;">
+          <h3 class="card-overlay-title" style="font-size: 1.48rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0; margin-right: 1rem;">{{ .Title }}</h3>
+          <div class="card-status-pill" style="height: auto; min-width: 0; display: block;">
+            {{ if eq $status "sold" }}
+              <span class="sold">SOLD <span style="text-decoration: line-through; margin-left: 0.4rem; opacity: 0.8;">${{ .Params.price }}</span></span>
+            {{ else }}
+              <span class="price">${{ .Params.price }}</span>
+            {{ end }}
+          </div>
+        </div>
       </div>
     {{ else }}
       <div class="card-img-wrap card-no-img">
         <span>NO SIGNAL</span>
+        <div class="card-overlay" style="top: auto; bottom: 0; padding: 0.8rem 1.25rem; border-bottom: none; border-top: 1px solid rgba(255, 255, 255, 0.1); align-items: baseline;">
+          <h3 class="card-overlay-title" style="font-size: 1.48rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0; margin-right: 1rem;">{{ .Title }}</h3>
+        </div>
       </div>
     {{ end }}
-    <div class="card-body">
-      <h3 class="card-title">{{ .Title }}</h3>
-      {{ with .Params.specs }}<p class="card-spec">{{ . }}</p>{{ end }}
-      <div class="card-footer">
-        {{ with .Params.price }}
-        <span class="card-price">${{ . }}</span>
-        {{ end }}
-      </div>
-    </div>
   </a>
 </article>
+
+

@@ -4,6 +4,7 @@ date: 2024-03-01
 specs: "Mild mannered hybrid turned snow crusher"
 year: "2024"
 price: 450
+status: "sold"
 weight: 10
 status: "available"
 summary: "A do-everything 700c hybrid with drop bars. Commuter on weekdays, gravel explorer on weekends."

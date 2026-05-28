@@ -8,10 +8,36 @@ price: 1500
 status: "available"
 summary: "Mountain Frame Ride. Rigid steel, stripped to essentials. A bike that teaches technique."
 images:
-  - file: "taco_run_on_a_snowy_night.jpg"
+  - file: "1_mfr_on_sidewalk.cropped.jpg"
+    focal:
+      py: 0.85
+      px: 0.5
+  - file: "2_taco_run_on_a_snowy_night.jpg"
+    focal:
+      py: 0.1
+      px: 0.5
+  - file: "3_drive_from_top.jpeg"
+    focal:
+      py: 0.5
+      px: 0.9
+  - file: "4_mfr_2.jpeg"
+    focal:
+      py: 0.7
+      px: 0.5
+  - file: "5_mfr_3.jpeg"
+    focal:
+      py: 0.25
+      px: 0.5
+  - file: "6_mfr_6.jpeg"
     focal:
       py: 0.2
       px: 0.5
+  - file: "7_mfr_5.jpeg"
+    focal:
+      py: 0.3
+      px: 0.25
+      
+      
 ---
 
 Supposedly, ("allegedly"?) this bike was in one of the 1980s MFR

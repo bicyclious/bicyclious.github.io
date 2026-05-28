@@ -5,6 +5,7 @@ specs: "Urban fair weather commuter · 7-speed Shimano IGH · 700c wheels"
 year: "2025"
 price: 400
 status: "sold"
+weight: 12
 summary: "A simple street commuter built for solid service and low theft worries"
 ---
 

@@ -5,6 +5,7 @@ specs: "Very early MTB · Full rebuild · Mostly stock"
 year: "2025"
 price: 700
 status: "sold"
+weight: 13
 summary: "Extremely early production MTB."
 ---
 

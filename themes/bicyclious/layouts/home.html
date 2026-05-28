@@ -5,58 +5,26 @@
 <section class="hero">
     <div class="hero-text">
         <h1 class="hero-title">Bicyclious</h1>
-        <h2 class="hero-sub" style="padding-top:1rem">Builders of Delicious Bicycles</h2>
-        <h2 class="hero-sub">Restomodded simple bikes</h2>
-        <h2 class="hero-sub">Built for comfort not just speed</h2>
-        
-        
-
-
-<!-- 
-        <p class="hero-tagline" style="text-align: center; display: block; width: 100%;">
-            Restomodded simple bikes.
-            Built for comfort not just speed.
-        </p>
--->
-        
+        <h2 class="hero-sub" style="padding-top:0rem">Builders of Delicious Bicycles</h2>
     </div>
     <div class="hero-grid-lines"></div>
 </section>
 
-<!-- 
-<div class="NOThero-text">
-    <p class="hero-tagline" style="text-align: center; display: block; width: 100%;"
-    >restomodded vintage steel &nbsp;&nbsp;·&nbsp;&nbsp; simple machines for rolling on and off road &nbsp;&nbsp;·&nbsp;&nbsp; built for comfort not for speed</p>
-
-</div>
--->
-
 <!-- ── BUILDS ── -->
 {{ $buildPages := where site.RegularPages "Section" "builds" }}
-{{ $available := where $buildPages ".Params.status" "available" }}
-{{ $sold      := where $buildPages ".Params.status" "sold" }}
 {{ if $buildPages }}
+<div class="section-header">
+    <h2 class="section-label" style="text-align: center; display: block; width: 100%;">BUILDS</h2>
+    <h2 class="hero-sub" style="text-align: center; display: block; width: 100%;">Restomodded simple bikes</h2>
+    <h2 class="hero-sub" style="text-align: center; display: block; width: 100%;">Built for comfort and style not just for speed</h2>
+</div>
 
 <section class="builds-grid">
-    <div class="section-header-row">
-        <h2 class="section-label" style="text-align: center; display: block; width: 100%;">BUILDS</h2>
-        <!--     <p class="section-count">{{ len $available }} available · {{ len $sold }} sold</p> -->
-  </div>
-  {{ if $available }}
   <div class="card-grid">
-    {{ range $available }}
-    {{ partial "bike-card.html" . }}
+    {{ range $buildPages.ByWeight }}
+      {{ partial "bike-card.html" . }}
     {{ end }}
   </div>
-  {{ end }}
-  {{ if $sold }}
-  <div class="section-label" style="padding-top:6rem;text-align: center; display: block; width: 100%;" >SOLD</div>
-  <div class="card-grid card-grid--sold">
-    {{ range $sold }}
-    {{ partial "bike-card.html" . }}
-    {{ end }}
-  </div>
-  {{ end }}
 </section>
 {{ end }}
 
@@ -65,8 +33,7 @@
 {{ if $posts }}
 <section class="posts-preview">
   <div class="section-header-row">
-    <h2 class="section-label">BLOG</h2>
-    <a href="{{ "/posts/" | relURL }}" class="section-more">ALL POSTS →</a>
+      <h2 class="section-label" style="text-align: center; display: block; width: 100%;"><a href="{{ "/posts/" | relURL }}" style="text-decoration:none">BLOG</a></h2>
   </div>
   <div class="post-list">
     {{ range first 5 $posts }}
@@ -75,7 +42,6 @@
         <span class="post-row-date">{{ .Date | time.Format "2006.01.02" }}</span>
         <span class="post-row-title">{{ .Title }}</span>
         <span class="post-row-summary">{{ .Summary }}</span>
-        <span class="post-row-cta">READ →</span>
       </a>
     </article>
     {{ end }}

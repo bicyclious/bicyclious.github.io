@@ -4,26 +4,38 @@
   {{ $slides := site.Data.carousel }}
   {{ if $slides }}
     <div class="swiper bike-carousel">
-      <div class="swiper-wrapper">
-        {{ range $slides }}
-        {{ $x := .focal.x | default 0.5 }}
-        {{ $y := .focal.y | default 0.5 }}
-        {{ $page := site.GetPage (printf "/builds/%s" .slug) }}
-        {{ $img  := $page.Resources.GetMatch .image }}
-        {{ $lqip := $img.Resize "20x webp q20" }}
-        {{ $full := $img.Resize "1200x webp q80" }}
-          <div class="swiper-slide" data-href="{{ printf "/builds/%s/" .slug | relURL }}">
-              <img
-                  src="{{ $lqip.Content | base64Encode | printf "data:image/webp;base64,%s" | safeURL }}"
-                  data-src="{{ $full.RelPermalink }}"
-                  alt="{{ .title }}"
-                  class="carousel-slide-img lqip"
-                  style="{{ printf "object-position: %.0f%% %.0f%%" (mul $x 100.0) (mul $y 100.0) | safeCSS }}"
-                  width="{{ $full.Width }}"
-                  height="{{ $full.Height }}"
-              >
-        </div>
-        {{ end }}
+        <div class="swiper-wrapper">
+            {{ range $slides }}
+            {{ $x := .focal.x | default 0.5 }}
+            {{ $y := .focal.y | default 0.5 }}
+            {{ $page := site.GetPage (printf "/builds/%s" .slug) }}
+
+
+
+            {{ $page := site.GetPage (printf "/builds/%s" .slug) }}
+            {{ if not $page }}
+            {{ warnf "carousel.html: no page found for slug %q — check data/carousel.yaml matches content/builds/" .slug }}
+            {{ else }}
+            {{ $img := $page.Resources.GetMatch .image }}
+            {{ if not $img }}
+            {{ warnf "carousel.html: image %q not found in builds/%s — check filename in data/carousel.yaml" .image .slug }}
+            {{ else }}
+            {{ $lqip := $img.Resize "20x webp q20" }}
+            {{ $full := $img.Resize "1200x webp q80" }}
+            <div class="swiper-slide" data-href="{{ printf "/builds/%s/" .slug | relURL }}">
+                <img
+                    src="{{ $lqip.Content | base64Encode | printf "data:image/webp;base64,%s" | safeURL }}"
+                    data-src="{{ $full.RelPermalink }}"
+                    alt="{{ .title }}"
+                    class="carousel-slide-img lqip"
+                    style="{{ printf "object-position: %.0f%% %.0f%%" (mul $x 100.0) (mul $y 100.0) | safeCSS }}"
+                    width="{{ $full.Width }}"
+                    height="{{ $full.Height }}"
+                >
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>

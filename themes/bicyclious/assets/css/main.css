@@ -14,7 +14,9 @@
 
 /* ── Custom Properties ─────────────────────────────────────── */
 :root {
-  /* M3 Surface tokens */
+  
+
+    /* M3 Surface tokens */
   --surface:                   #fbf9f7;
   --surface-dim:               #dbdad8;
   --surface-bright:            #fbf9f7;
@@ -45,11 +47,13 @@
   --bicyclious-green-light:    #73BC19;
   --bicyclious-green-dark:     #4D6B4F;
   --bicyclious-red:            #CC0F2C;
-  --bicyclious-offwhite: color-mix(in srgb, var(--bicyclious-pink) 2%, white 98%);
-  --bicyclious-skyblue:        #d4e0ee;
+  --bicyclious-offwhite:       #F5F8FC; /* color-mix(in srgb, var(--bicyclious-pink) 2%, white 98%); */
+  --bicyclious-blue-med:       #d4e0ee;
+  --bicyclious-water-blue:     #F0F7FA; /* #3768B5;  /* darkslategray;  #1c6fae; #83b6d6; */
 
-
-
+  --bicyclious-blue-light:       #82b0b2;
+  --bicyclious-blue-med:         #346b84;
+  --bicyclious-blue-dark:         #1a3657;
 
                                    
   /* Primary — Bicyclious Pink */
@@ -62,13 +66,13 @@
 
 
   /* Secondary — Forest Green */
-  --secondary:                 var(--bicyclious-green-light);
+  --secondary:                 var(--bicyclious-blue-med); /* -green-light); */
   --on-secondary:              #ffffff;
   --secondary-container:       #c7ebd7;
   --on-secondary-container:    #4b6b5c;
 
   /* Tertiary — Rust */
-  --tertiary:                  var(--bicyclious-skyblue);
+  --tertiary:                  var(--bicyclious-blue-dark);
   /*
   --on-tertiary:               #ffffff;
   --tertiary-container:        #a35d4f;
@@ -97,10 +101,6 @@
   --radius-lg:   2rem;     /* 32px */
   --radius-xl:   3rem;     /* 48px */
   --radius-full: 9999px;
-
-  /* Borders — tonal, warm */
-  --hairline:  1px solid var(--outline-variant);
-  --fine-line: 0.5px solid var(--outline-variant);
 
   /* Layout */
   --max-width: 1280px;
@@ -150,14 +150,17 @@ a { color: inherit; }
 .site-header {
   background: var(--bicyclious-pink);
   border-bottom: none;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  height: 100%;
+  width: 100%;
 }
 
 .site-logo { display: flex; align-items: center; text-decoration: none; }
@@ -359,9 +362,8 @@ a { color: inherit; }
 
 /* ── Section Header (list pages) ───────────────────────────── */
 .section-header {
-  border-bottom: var(--hairline);
-  padding-bottom: 16px;
-  margin-bottom: var(--margin);
+  padding-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .section-title {
@@ -370,7 +372,7 @@ a { color: inherit; }
   font-weight: 900;
   line-height: 1.16;
   letter-spacing: -0.02em;
-  color: var(--on-background);
+  color: var(--primary);
 }
 
 .section-sub {
@@ -386,12 +388,12 @@ a { color: inherit; }
 .posts-preview {
   width: 100%;
   max-width: none;
-  padding: calc(var(--margin) * 1.5) var(--gutter);
+  padding: 3rem var(--gutter) 0 var(--gutter); /* calc(var(--margin) * 1.5) var(--gutter); */
 }
 
 /* ── Card Grid ───────────────────────────────────────────────── */
 .card-grid {
-  margin-top: var(--gutter);
+  margin-top: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gutter);
@@ -406,7 +408,7 @@ a { color: inherit; }
   background: var(--surface-container-lowest);
   display: flex;
   flex-direction: column;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(176, 0, 74, 0.08), 0 1px 2px rgba(176, 0, 74, 0.04);
   transition: box-shadow 0.2s, transform 0.2s;
@@ -454,28 +456,63 @@ a { color: inherit; }
 
 .card-img-overlay { display: none; }
 
-.card-badge {
+.card-overlay {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  font-family: var(--font);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  background: var(--surface-container-lowest);
-  color: var(--on-surface-variant);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.card-badge--sold {
-  background: var(--surface-container-highest);
-  color: var(--on-surface-variant);
+.card-overlay-title {
+  font-family: var(--font-display);
+  color: var(--bicyclious-pink);
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1;
 }
+
+.card-status-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 34px;
+  box-sizing: border-box;
+  font-family: var(--font-display);
+}
+
+.card-status-pill .price {
+  color: var(--bicyclious-pink);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.card-status-pill .sold {
+  color: var(--bicyclious-offwhite);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.card-badge { display: none; }
+
+.card-badge--sold { display: none; }
 
 .bike-card--sold .card-body {
-    background:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), var(--bicyclious-green-dark);
+    background: silver;
+    display: none;
 }
 
 
@@ -485,8 +522,9 @@ a { color: inherit; }
   display: flex;
   flex-direction: column;
   gap: 6px;
-  background: var(--bicyclious-green-dark);
-  color: #f5f5f5; /* Light gray text */
+  background: var(--secondary);
+  color: var(--bicyclious-blue-light);
+  display: none;
 }
 
 .card-title {
@@ -547,10 +585,9 @@ a { color: inherit; }
 .post-list { display: flex; flex-direction: column; }
 
 .post-row {
-    border-bottom: none; /* var(--fine-line); */
-}
+    border-bottom: none; }
 
-.post-row:first-child { border-top: var(--fine-line); }
+.post-row:first-child { border-top: none; }
 
 .post-row-link {
   display: grid;
@@ -835,7 +872,6 @@ a { color: inherit; }
   margin-top: 48px;
   margin-bottom: 16px;
   padding-bottom: 8px;
-  border-bottom: var(--hairline);
   color: var(--on-background);
 }
 
@@ -953,7 +989,6 @@ a { color: inherit; }
 
 .post-body pre {
   background: var(--surface-container);
-  border: var(--hairline);
   border-radius: var(--radius);
   padding: var(--gutter);
   overflow-x: auto;
@@ -964,7 +999,6 @@ a { color: inherit; }
 
 .post-body hr {
   border: none;
-  border-top: var(--hairline);
   margin: 32px 0;
 }
 
@@ -980,7 +1014,6 @@ a { color: inherit; }
   gap: var(--gutter);
   margin-top: var(--margin);
   padding-top: var(--gutter);
-  border-top: var(--hairline);
   flex-wrap: wrap;
 }
 
@@ -1339,6 +1372,8 @@ a { color: inherit; }
 /* ── Carousel ───────────────────────────────────────────────── */
 .bike-carousel {
   width: 100%;
+  height: calc(100vh - var(--header-height));
+  height: calc(100dvh - var(--header-height));
   padding-top: 0; /* var(--gutter); */
   padding-bottom: 0;
   touch-action: pan-y;
@@ -1395,6 +1430,7 @@ a { color: inherit; }
 .bike-carousel .swiper-wrapper,
 .bike-carousel .swiper-slide {
   border: none !important;
+  height: 100%;
 }
 
 .bike-carousel .swiper-slide {
@@ -1406,16 +1442,10 @@ a { color: inherit; }
 
 .carousel-slide-img {
   width: auto;
-  height: calc(100vh - var(--header-height));
+  height: 100%;
   object-fit: cover;
   display: block;
   border-radius: 0; /* var(--radius-lg); */
-}
-
-@media (max-width: 850px) {
-  .carousel-slide-img {
-    height: calc(100vh - 100px); /* Adjusted header height for mobile */
-  }
 }
 
 .carousel-caption {
@@ -1546,6 +1576,7 @@ a { color: inherit; }
   :root {
     --margin: 16px;
     --gutter: 16px;
+    --header-height: 100px;
   }
 
   .hero-title { font-size: 36px; }

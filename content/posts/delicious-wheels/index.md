@@ -8,6 +8,9 @@ hide_hero_image: true
 
 ## Schwalbe balloonbike tires
 
+
+![](why_tires_turn.png)
+
 Schwalbe is one of the best bicycle tire companies. It is a German company with global manufacturing (and [German pronunciation](https://www.youtube.com/watch?v=gypd1fLDCCM)).
 They are one of the best manufactures of 26" tires. 26" wheels are what comes on the '90s MTB style
 frames that Bicyclious focuses on.

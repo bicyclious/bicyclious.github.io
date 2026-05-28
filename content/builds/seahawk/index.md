@@ -4,7 +4,7 @@ weight: 5
 date: 2026-04-05
 year: "2026"
 price: 600
-specs: "The seahawk bird was designed to dive into the water. The same is true of this bike."
+specs: "Both the seahawk bird and this seahawk bike were designed to dive into the water."
 status: "available"
 summary: "A cromo steel 26\" rigid '80s MTB classic. "
 ---

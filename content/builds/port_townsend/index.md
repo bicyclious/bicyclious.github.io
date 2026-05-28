@@ -5,6 +5,7 @@ specs: "Rare 1980s Rockhopper with the low rear brake  · Restored with minimal 
 year: "2024"
 price: 500
 status: "sold"
+weight: 11
 summary: ""
 ---
 
