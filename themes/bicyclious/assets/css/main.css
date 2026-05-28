@@ -1096,8 +1096,9 @@ a { color: inherit; }
 /* ── Hero Swiper ──────────────────────────────────────────────── */
 .build-gallery-main {
   width: 100%;
-  height: 65vh;
-  min-height: 320px;
+  height: calc(100vh - var(--margin));
+  min-height: 500px;
+  position: relative;
 }
 
 .build-gallery-main .swiper-slide {
@@ -1124,7 +1125,7 @@ a { color: inherit; }
   border: none !important;
   box-shadow: none !important;
   transition: transform 0.2s, background-color 0.2s;
-  z-index: 10;
+  z-index: 20;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -1159,10 +1160,60 @@ a { color: inherit; }
 }
 
 
+/* ── Dock (meta + thumbs row) ─────────────────────────────────── */
+.build-gallery {
+  width: 100%;
+  position: relative;
+}
+
+.build-gallery-dock {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px var(--margin);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.build-gallery-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.build-gallery-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+  flex: 1;
+}
+
+.build-gallery-price {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--primary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* ── Thumbnail Strip ──────────────────────────────────────────── */
 .build-gallery-thumbs {
+  width: 100%;
   height: 90px;
-  margin-top: 4px;
   padding: 0 2px;
   box-sizing: border-box;
 }
@@ -1194,7 +1245,8 @@ a { color: inherit; }
   opacity: 0.85;
 }
 
-.build-gallery-thumbs img {
+.build-gallery-thumbs img,
+.build-gallery-thumb-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1309,8 +1361,8 @@ a { color: inherit; }
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 850px) {
   .build-gallery-main {
-    height: 56vw;
-    min-height: 220px;
+    height: calc(100vh - var(--margin));
+    min-height: 320px;
   }
 
   .build-gallery-thumbs {
@@ -1319,6 +1371,23 @@ a { color: inherit; }
 
   .build-gallery-thumbs .swiper-slide {
     height: 58px;
+  }
+
+  .build-gallery-dock {
+    gap: 4px;
+    padding: 0 var(--margin);
+  }
+
+  .build-gallery-meta {
+    padding: 2px 0;
+  }
+
+  .build-gallery-title {
+    font-size: 14px;
+  }
+
+  .build-gallery-price {
+    font-size: 14px;
   }
 
   .build-lightbox-img {

@@ -1,131 +1,100 @@
 {{/*
-  build_carousel.html
-  Called from layouts/builds/single.html as:
-    {{ partial "build_carousel.html" . }}
-  where . is the Page object.
-
-  Images come from the page bundle (.Resources.ByType "image").
-  Per-image focal points come from front matter:
-
-    images:
-      - file: photo.jpg
-        focal:
-          x: 0.5
-          y: 0.3
-
-  Bundle images not listed in `images` fall back to 50% 50%.
+build_carousel.html — CLEAN SYSTEM
 */}}
-
-{{ $page   := . }}
+{{ $page := .page | default . }}
+{{ $meta := .meta | default dict }}
 {{ $images := $page.Resources.ByType "image" }}
-
 {{ if $images }}
-
-{{/* Build a filename → focal map from front matter */}}
 {{ $focalMap := dict }}
 {{ range $page.Params.images }}
-  {{ $focalMap = merge $focalMap (dict .file .focal) }}
+{{ $focalMap = merge $focalMap (dict .file .focal) }}
 {{ end }}
+<div class="build-gallery">
 
-<div class="build-gallery-wrap" data-debug-partial="build_carousel">
-
-  {{/* ── Hero Swiper ────────────────────────────────────────── */}}
-  <div class="swiper build-gallery-main">
-      <div class="swiper-wrapper">
-
-
-
-          {{ range $images }}
-          <!-- DEBUG: {{ .Name }} -->
-          {{ $focal := index $focalMap .Name }}
-          <!-- DEBUG FOCAL: {{ $focal }} -->
-          <!-- DEBUG PX: {{ $focal.px }} -->
-          <!-- DEBUG PY: {{ $focal.py }} -->
-          {{ $px := 0.5 }}
-          {{ $py := 0.5 }}
-          {{ if $focal }}
-          {{ $px = float $focal.px }}
-          {{ $py = float $focal.py }}
-          {{ end }}
-          <!-- FINAL X: {{ mul $px 100 }}% Y: {{ mul $py 100 }}% -->
-          
-        <div class="swiper-slide">
-          <img
-            src="{{ .RelPermalink }}"
-            alt=""
-            loading="lazy"
-            class="build-gallery-img"
-            style="object-position: {{ mul $px 100 }}% {{ mul $py 100 }}%;"
-          >
-        </div>
-      {{ end }}
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-
-  {{/* ── Thumbnail Strip Swiper ──────────────────────────────── */}}
-  <div class="swiper build-gallery-thumbs">
-    <div class="swiper-wrapper">
-      {{ range $images }}
-        {{ $focal := index $focalMap .Name }}
-        {{ $px := 0.5 }}
-        {{ $py := 0.5 }}
-        {{ if $focal }}
-          {{ $px = float $focal.px }}
-          {{ $py = float $focal.py }}
-        {{ end }}
-        <div class="swiper-slide">
-            <img
-                src="{{ .RelPermalink }}"
-                alt=""
-                loading="lazy"
-                class="build-gallery-img"
-                data-debug-x="{{ $focal.x }}"
-                data-debug-y="{{ $focal.y }}"
-                style="object-position: {{ mul $px 100 }}% {{ mul $py 100 }}%;"
-            >
-        </div>
-      {{ end }}
-    </div>
-  </div>
-
-  {{/* ── Lightbox ─────────────────────────────────────────────── */}}
-  <div class="build-lightbox" id="build-lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
-    <button class="build-lightbox-close" id="build-lightbox-close" aria-label="Close lightbox">CLOSE ✕</button>
-    <div class="swiper build-lightbox-swiper">
+    <!-- HERO (dock lives inside here for absolute overlay) -->
+    <div class="swiper build-gallery-main">
         <div class="swiper-wrapper">
-
-
-
             {{ range $images }}
             {{ $focal := index $focalMap .Name }}
             {{ $px := 0.5 }}
             {{ $py := 0.5 }}
             {{ if $focal }}
-            {{ $px = float $focal.px }}
-            {{ $py = float $focal.py }}
+            {{ $px = float $focal.x }}
+            {{ $py = float $focal.y }}
             {{ end }}
             <div class="swiper-slide">
                 <img
                     src="{{ .RelPermalink }}"
-                    alt=""
                     loading="lazy"
-                    data-debug-x="{{ $focal.x }}"
-                    data-debug-y="{{ $focal.y }}"
+                    class="build-gallery-img"
                     style="object-position: {{ mul $px 100 }}% {{ mul $py 100 }}%;"
                 >
             </div>
             {{ end }}
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
+        <!-- DOCK: frosted glass overlay at bottom of hero -->
+        <div class="build-gallery-dock">
+            <div class="build-gallery-meta">
+                <div class="build-gallery-title">{{ $meta.title }}</div>
+                {{ with $meta.price }}
+                <div class="build-gallery-price">${{ . }}</div>
+                {{ end }}
+            </div>
+            <div class="swiper build-gallery-thumbs">
+                <div class="swiper-wrapper">
+                    {{ range $images }}
+                    {{ $focal := index $focalMap .Name }}
+                    {{ $px := 0.5 }}
+                    {{ $py := 0.5 }}
+                    {{ if $focal }}
+                    {{ $px = float $focal.x }}
+                    {{ $py = float $focal.y }}
+                    {{ end }}
+                    <div class="swiper-slide">
+                        <img
+                            src="{{ .RelPermalink }}"
+                            loading="lazy"
+                            class="build-gallery-thumb-img"
+                            style="object-position: {{ mul $px 100 }}% {{ mul $py 100 }}%;"
+                        >
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
 
-                        
-      </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
-  </div>
 
-</div>{{/* end .build-gallery-wrap */}}
+    <!-- LIGHTBOX -->
+    <div class="build-lightbox" id="build-lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+        <button class="build-lightbox-close" id="build-lightbox-close" aria-label="Close lightbox">CLOSE ✕</button>
+        <div class="swiper build-lightbox-swiper">
+            <div class="swiper-wrapper">
+                {{ range $images }}
+                {{ $focal := index $focalMap .Name }}
+                {{ $px := 0.5 }}
+                {{ $py := 0.5 }}
+                {{ if $focal }}
+                {{ $px = float $focal.x }}
+                {{ $py = float $focal.y }}
+                {{ end }}
+                <div class="swiper-slide">
+                    <img
+                        src="{{ .RelPermalink }}"
+                        loading="lazy"
+                        class="build-lightbox-img"
+                        style="object-position: {{ mul $px 100 }}% {{ mul $py 100 }}%;"
+                    >
+                </div>
+                {{ end }}
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
 
+</div>
 {{ end }}
