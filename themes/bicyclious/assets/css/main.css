@@ -153,6 +153,9 @@ a { color: inherit; }
   height: var(--header-height);
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1000;
+
 }
 
 .header-inner {
@@ -1025,6 +1028,11 @@ a { color: inherit; }
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+}
+
+/* FIX: remove top seam on build pages */
+.build-page .gallery {
+  margin-top: calc(-1 * var(--margin));
 }
 
 .gallery .bike-carousel {

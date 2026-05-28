@@ -1,34 +1,161 @@
 {{ define "main" }}
-<!-- USED: single.html -->
+
 {{ $status := .Params.status | default "available" }}
-{{ $sold   := eq $status "sold" }}
+{{ $sold := eq $status "sold" }}
 
 <article class="build-page">
-  <header class="post-header">
-    <div class="post-header-inner">
-      <div class="post-title-row">
-        <div class="post-title">{{ .Title }}</div>
-        {{ with .Params.price }}
-        <div class="post-price">${{ . }}</div>
-        {{ end }}
-      </div>
-      {{ with .Params.specs }}<p class="post-specs">{{ . }}</p>{{ end }}
-      {{ if not $sold }}
-      <a href="mailto:john@bicyclious.com?subject=Inquiry: {{ .Title }}" class="btn-retro btn-buy">
-        INQUIRE ABOUT THIS BIKE
-      </a>
-      {{ end }}
+
+    <!-- FULL BLEED GALLERY -->
+    {{ if .Resources.ByType "image" }}
+    <section class="gallery">
+        {{ partial "build_carousel.html" . }}
+    </section>
+    {{ end }}
+
+    <!-- HEADER (kept below hero intentionally) -->
+    <header class="post-header">
+        <div class="post-header-inner">
+
+            <div class="post-title-row">
+                <div class="post-title">{{ .Title }}</div>
+                {{ with .Params.price }}
+                <div class="post-price">${{ . }}</div>
+                {{ end }}
+            </div>
+
+            {{ with .Params.specs }}
+            <p class="post-specs">{{ . }}</p>
+            {{ end }}
+
+            {{ if not $sold }}
+            <a href="mailto:john@bicyclious.com?subject=Inquiry: {{ .Title }}"
+               class="btn-retro btn-buy">
+                INQUIRE ABOUT THIS BIKE
+            </a>
+            {{ end }}
+
+        </div>
+    </header>
+
+    <div class="post-body">
+        {{ .Content }}
     </div>
-  </header>
 
-  {{ if .Resources.ByType "image" }}
-  <section class="gallery">
-    {{ partial "build_carousel.html" . }}
-  </section>
-  {{ end }}
-
-  <div class="post-body">
-    {{ .Content }}
-  </div>
 </article>
+
+
+<style>
+
+ /* =========================================================
+    1. FULL BLEED FIX (single source of truth)
+    ========================================================= */
+
+ .build-page {
+     max-width: none !important;
+     padding: 0 !important;
+ }
+
+ .gallery {
+     width: 100vw;
+     margin-left: calc(50% - 50vw);
+     margin-right: calc(50% - 50vw);
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+
+
+ /* =========================================================
+    2. HERO HEIGHT
+    ========================================================= */
+ 
+ .build-gallery-main {
+     height: 100vh;
+     min-height: 70vh !important;
+ }
+
+ .build-gallery-main .swiper-slide,
+ .build-gallery-main img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+
+ /* =========================================================
+    3. SEAGLASS THUMB DOCK (single version)
+    ========================================================= */
+
+ .build-gallery-thumbs {
+     position: absolute !important;
+     bottom: 0;
+     left: 0;
+     right: 0;
+
+     height: 120px;
+
+     display: flex;
+     align-items: center;
+
+
+     padding: 1px 20px 1px;
+     
+     z-index: 50;
+
+     border-top: 1px solid rgba(255,255,255,0.08);
+
+     background: linear-gradient(
+         to top,
+         rgba(18, 22, 28, 0.40),
+         rgba(18, 22, 28, 0.18)
+     );
+
+     backdrop-filter: blur(28px) saturate(1.6) brightness(1.08);
+ }
+
+
+ /* thumbs */
+ .build-gallery-thumbs .swiper-wrapper {
+     align-items: center;
+ }
+
+ .build-gallery-thumbs .swiper-slide {
+     width: 120px !important;
+     height: 90px !important;
+     opacity: 0.65;
+     border-radius: 10px;
+     overflow: hidden;
+     transition: transform 0.2s ease, opacity 0.2s ease;
+ }
+
+ .build-gallery-thumbs .swiper-slide-thumb-active {
+     opacity: 1;
+     transform: scale(1.05);
+     outline: 1px solid rgba(255,255,255,0.4);
+ }
+
+ .build-gallery-thumbs img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+
+ /* =========================================================
+    4. PAGINATION
+    ========================================================= */
+
+ .build-gallery-main .swiper-pagination-bullet {
+     width: 18px !important;
+     height: 4px !important;
+     border-radius: 999px !important;
+     background: rgba(255,255,255,0.3) !important;
+ }
+
+ .build-gallery-main .swiper-pagination-bullet-active {
+     width: 36px !important;
+     background: rgba(255,255,255,0.85) !important;
+ }
+
+</style>
+
 {{ end }}
