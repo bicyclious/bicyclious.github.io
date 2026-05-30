@@ -104,7 +104,7 @@
 
   /* Layout */
   --max-width: 1280px;
-  --header-height: 120px;
+  --header-height: 4rem;
 }
 
 /* ── Reset ──────────────────────────────────────────────────── */
@@ -173,6 +173,7 @@ a { color: inherit; }
   max-width: 100%;
   height: auto;
   display: block;
+  padding-top: 4rem;
 }
 
 .logo-bracket {
@@ -1642,18 +1643,34 @@ a { color: inherit; }
   letter-spacing: 0.5px;
   color: var(--bicyclious-offwhite);
 }
+
+
+
 /* ── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 1200px) {
+  :root {
+    --header-height: 4rem;
+  }
   .hero-title { font-size: 48px; }
-  .logo-img { width: 240px; }
+  .logo-img { width: 240px; padding-top:2.5rem;}
+  
+  .site-nav { 
+    gap: 12px; 
+  }
+  .site-nav a { 
+    padding: 6px 10px; 
+  }
+
   .card-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+
 
 @media (max-width: 850px) {
   :root {
     --margin: 16px;
     --gutter: 16px;
-    --header-height: 100px;
+    --header-height: 3.25rem;
   }
 
   .hero-title { font-size: 36px; }
@@ -1701,8 +1718,13 @@ a { color: inherit; }
 
   .footer-inner { flex-wrap: wrap; }
   .footer-logo { flex: 1 1 auto; min-width: 0; }
-  .footer-copy { flex-shrink: 0; }
-}
+  .footer-copy { flex-shrink: 0; }}
+
+
+
+
+
+
 
 /* ── LQIP Blur-up Transition ────────────────────────────────── */
 .carousel-slide-img.lqip {
