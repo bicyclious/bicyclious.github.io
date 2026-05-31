@@ -25,9 +25,11 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="{{ "/" | relURL }}" class="site-logo">
-        {{ if .Site.Params.logo }}
-          <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" class="logo-img">
+        <a href="{{ "/" | relURL }}" class="site-logo">
+            {{ if .Site.Params.logo }}
+            <div class="logo-lockup">
+                <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" class="logo-img">
+            </div>
         {{ else }}
           <span class="logo-bracket">[</span><span class="logo-text">BICYCLIOUS</span><span class="logo-bracket">]</span>
         {{ end }}
