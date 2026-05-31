@@ -28,7 +28,9 @@
         <a href="{{ "/" | relURL }}" class="site-logo">
             {{ if .Site.Params.logo }}
             <div class="logo-lockup">
-                <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" class="logo-img">
+                {{ $logo := (resources.Get .Site.Params.logo).Resize "360x" }}
+                {{ $logo = $logo | fingerprint }}
+                <img src="{{ $logo.RelPermalink }}" alt="{{ .Site.Title }}" class="logo-img">
             </div>
         {{ else }}
           <span class="logo-bracket">[</span><span class="logo-text">BICYCLIOUS</span><span class="logo-bracket">]</span>
@@ -50,8 +52,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-bg">
-      <img src="/images/bubblicious_at_crescent_footer.jpg" alt="Bubblicious at Crescent" class="footer-bg-img">
+      <div class="footer-bg">
+          {{ $footerBg := (resources.Get "images/bubblicious_at_crescent_footer.jpg").Resize "1600x" | fingerprint }}
+          <img src="{{ $footerBg.RelPermalink }}" alt="Bubblicious at Crescent" class="footer-bg-img">
     </div>
     <div class="footer-inner">
       <span class="footer-logo">BICYCLIOUS<span class="footer-subtitle">: {{ .Site.Params.subtitle }}</span></span>
