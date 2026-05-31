@@ -10,8 +10,8 @@ summary: "Mountain Frame Ride. Rigid steel, stripped to essentials. A bike that 
 images:
   - file: "1_mfr_on_sidewalk.cropped.jpg"
     focal:
-      py: 0.85
       px: 0.5
+      py: 0.99
   - file: "2_taco_run_on_a_snowy_night.jpg"
     focal:
       py: 0.1

@@ -42,3 +42,7 @@ For graffiti shines, the e light source is placed in the top-left corner.
 * **Structural Excess:** Do not include multiple chains, more than two cogs, or extra unrelated bicycle components (such as pedals, spokes, or hubs).
 * **Decorative Fluffs:** Avoid stickers, background clutter, external splatters, or long flourishing script tails on the final "s".
 * **Composition Rules:** Do not allow the top and bottom exterior straight runs of the chain to warp, sag, or contour tightly into individual letters; the loop must remain a clean, simple, un-warped enclosure spanning the two cogs.
+
+
+
+    * **The Chain Path:** A highly stylized bicycle chain forms the definitive, un-warped outer border of the entire composition. It wraps securely around the outer perimeter of both gears in a single continuous loop. The top and bottom lengths of the chain run perfectly straight and horizontal between the cogs, creating a clean clearance gap that never physically touches or contours into the letters.

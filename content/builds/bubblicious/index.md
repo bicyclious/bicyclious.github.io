@@ -7,6 +7,7 @@ price: 1200
 status: "available"
 summary: "Full-suspension trail bike in bubblegum pink. Trail-tested at Lake Crescent. Rides as fun as it looks."
 weight: 1
+social_image: "0_bubs_at_crescent.jpeg"
 ---
 
 Bubblicious was first released 1977. In the 1980s, it was on top of the
