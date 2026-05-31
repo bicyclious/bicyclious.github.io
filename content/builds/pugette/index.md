@@ -10,20 +10,20 @@ social_image: "0_mb3_hero.jpg"
 images:
   - file: "0_mb3_hero.jpg"
     focal:
-      py: 0.5
-      px: 0.99
+      y: 0.1
+      x: 0.9
   - file: "mb3_cockpit.jpg"
     focal:
-      py: 0.5
-      px: 0.5
+      y: 0.9
+      x: 0.9
   - file: "mb3_front.jpg"
     focal:
-      py: 0.5
-      px: 0.5
+      y: 0.5
+      x: 0.5
   - file: "mb3_saddle.jpg"
     focal:
-      py: 0.
-      px: 0.
+      y: 0.5
+      x: 0.5
 ---
 
 A pugnacious girl with shoes make for walking on the crappy concrete of Puget Sound.
