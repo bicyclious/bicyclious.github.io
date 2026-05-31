@@ -1652,7 +1652,7 @@ a { color: inherit; }
     --header-height: 4rem;
   }
   .hero-title { font-size: 48px; }
-  .logo-img { width: 240px; padding-top:2.5rem;}
+  .logo-img { width: 240px; padding-top:3.25rem;padding-left: 0.1rem; }
   
   .site-nav { 
     gap: 12px; 
@@ -1684,7 +1684,7 @@ a { color: inherit; }
   .build-page .post-title { font-size: 28px; }
   .build-page .post-price { font-size: 28px; }
 
-  .logo-img { width: clamp(100px, 30vw, 160px); }
+  .logo-img { width: clamp(180px, 30vw, 180px); }
 
   .site-tagline { display: none; }
 
