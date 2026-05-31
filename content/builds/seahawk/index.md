@@ -7,6 +7,7 @@ price: 600
 specs: "Both the seahawk bird and this seahawk bike were designed to dive into the water."
 status: "available"
 summary: "A cromo steel 26\" rigid '80s MTB classic. "
+social_image: "1_drive_cover.png"
 ---
 
 This build is named for the seahawk, the bird that hunts by dropping

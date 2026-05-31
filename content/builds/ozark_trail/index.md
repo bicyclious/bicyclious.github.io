@@ -8,6 +8,7 @@ specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. The
 tags: ["Walmart", "philosophy"]
 hide_hero_image: false
 draft: false
+social_image: "0.avif"
 ---
 
 

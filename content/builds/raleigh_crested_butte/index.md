@@ -7,6 +7,7 @@ year: "2024"
 price: 700
 status: "available"
 summary: "Raleigh Crested Butte in a beautiful sparkley maroon. Bullmoose handlebars."
+social_image: "1_drive.jpg"
 ---
 
 This build was kept mostly original because it is just so nice as

@@ -7,6 +7,7 @@ price: 700
 status: "sold"
 weight: 13
 summary: "Extremely early production MTB."
+social_image: "bus_stop_2.jpg"
 ---
 
 Second production MTB after the Stumpjumper was first out of the factories)

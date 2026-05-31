@@ -7,6 +7,7 @@ year: "2024"
 price: 1500
 status: "available"
 summary: "Mountain Frame Ride. Rigid steel, stripped to essentials. A bike that teaches technique."
+social_image: "0_mfr_1.jpeg"
 images:
   - file: "1_mfr_on_sidewalk.cropped.jpg"
     focal:

@@ -6,6 +6,7 @@ specs: "1980s Rockhopper· Rare rear brake on chainstays · 26\" MTB restomodded
 year: "2024"
 price: 600
 status: "sold"
+social_image: "chappel.jpg"
 summary: "RockHopper in safety yellow restomodded into a fair weather street cruiser."
 ---
 

@@ -7,6 +7,7 @@ weight: 9
 price: 450
 status: "available"
 summary: "Cheap Bike Build-Off 2025 entry."
+social_image: "1_sunset.ai.png"
 ---
 
 The name itself comes from azuki (小豆 / あずき), the Japanese red

@@ -7,6 +7,7 @@ weight: 4
 price: 450
 status: "available"
 summary: "A Specialized Hardrock pulled from obscurity, sanded down, and painted jade green. Rides honest."
+social_image: "1_drive.less_shadows.png"
 ---
 
 This thing is built for city ride. It's a very sporty handling quick

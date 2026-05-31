@@ -203,6 +203,10 @@ a { color: inherit; }
   height: var(--header-height);
 }
 
+.site-logo:focus {
+    outline: none;
+}
+
 .site-nav a {
   font-family: var(--font-bicyclious);
   font-size: 1.25rem;

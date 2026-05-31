@@ -6,8 +6,8 @@ weight: 5
 year: "2022"
 price: 1000
 status: "sold"
+social_image: "0_legnano_cover.jpeg"
 ---
-
 
 Vintage Italian that when through a phase as a fixie but restored it
 to its original configuration, but zero fucks were given to finding

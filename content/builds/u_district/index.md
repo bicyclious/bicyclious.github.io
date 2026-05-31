@@ -7,6 +7,7 @@ price: 400
 status: "sold"
 weight: 12
 summary: "A simple street commuter built for solid service and low theft worries"
+social_image: "fir.via_email.jpg"
 ---
 
 We built this U-District up by swapping out the silly two speed

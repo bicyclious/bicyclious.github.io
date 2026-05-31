@@ -8,6 +8,7 @@ specs: "Perfect rigid MTB frame with a fork that is modern tech yet elegantly ra
 tags: ["Walmart", "philosophy"]
 hide_hero_image: true
 draft: false
+social_image: "0_cover.png"
 ---
 
 The Silver Surfer is a 1998 Specialized Rockhopper. It has an

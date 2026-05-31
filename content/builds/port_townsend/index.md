@@ -7,6 +7,7 @@ price: 500
 status: "sold"
 weight: 11
 summary: ""
+social_image: "signal-2024-08-05-174902_002.jpeg"
 ---
 
 On the Specialized Rockhopper line, the chainstay-mounted rear U-brake

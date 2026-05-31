@@ -8,6 +8,7 @@ status: "sold"
 weight: 10
 status: "available"
 summary: "A do-everything 700c hybrid with drop bars. Commuter on weekdays, gravel explorer on weekends."
+social_image: "0_drive.jpg"
 ---
 
 In the 1990s Crossroads were kinda meh products in the hybrid category
