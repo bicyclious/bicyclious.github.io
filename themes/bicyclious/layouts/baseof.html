@@ -110,73 +110,58 @@
 
           // ── Smart Pan ─────────────────────────────────────────────
           (function attachSmartPan(swiper) {
-            var activeTimeout = null;
-
             function panSlide(slideEl) {
               var img = slideEl.querySelector('.carousel-slide-img');
               if (!img) return;
 
-              var focalX = parseFloat(img.dataset.focalX);
-              if (isNaN(focalX)) focalX = 0.5;
+              var focalX = parseFloat(img.dataset.focalX) || 0.5;
+              var focalY = parseFloat(img.dataset.focalY) || 0.5;
 
-              // Mark slide for img styling only — no width change on the slide itself
-              slideEl.classList.add('has-smart-pan');
-
-              // Measure the carousel viewport, not the slide (slide stays width:auto)
-              var containerW = el.offsetWidth;
-              var naturalW   = img.naturalWidth;
-              var naturalH   = img.naturalHeight;
+              var containerW = slideEl.offsetWidth;
               var containerH = slideEl.offsetHeight;
+              
+              if (!img.naturalWidth || !img.naturalHeight) return;
 
-              if (!naturalW || !naturalH || !containerH || !containerW) return;
+              // Calculate rendered image width based on container height
+              var imgW = (img.naturalWidth / img.naturalHeight) * containerH;
 
-              // Rendered width: image scaled to container height, capped at natural width
-              var renderedW = Math.min((naturalW / naturalH) * containerH, naturalW);
-              var overflow  = renderedW - containerW;
-
-              if (overflow <= 1) {
-                slideEl.classList.remove('has-smart-pan');
-                img.style.transition = 'none';
-                img.style.transform  = '';
-                img.style.width      = '';
+              // If image doesn't overflow, just center focal point and stop
+              if (imgW <= containerW + 10) {
+                img.style.objectPosition = (focalX * 100) + '% ' + (focalY * 100) + '%';
                 return;
               }
 
-              // Pin the img to its rendered width so translateX has overflow to work against.
-              // Without this, object-fit:cover + width:auto re-centers the image and
-              // the browser clips translateX movement rather than revealing overflow.
-              img.style.width = renderedW + 'px';
+              slideEl.classList.add('has-smart-pan');
 
-              var focalPx  = focalX * renderedW;
-              var halfView = containerW / 2;
-              var startX   = Math.max(0, Math.min(overflow, focalPx - halfView));
-              var roomLeft  = startX;
-              var roomRight = overflow - startX;
-              var endX      = roomRight >= roomLeft
-                ? Math.min(overflow, startX + roomRight)
-                : Math.max(0,        startX - roomLeft);
+              // Calculate percentage to center focalX
+              // Formula: (focal_px - container_center) / (img_width - container_width)
+              var startP = (focalX * imgW - containerW / 2) / (imgW - containerW);
+              startP = Math.max(0, Math.min(1, startP)) * 100;
 
-              var dist = Math.abs(endX - startX);
-              if (dist < 2) return;
+              // Pan to the edge that is furthest from our start point
+              var endP = (startP > 50) ? 0 : 100;
 
-              var duration = Math.round(10000 + (dist / overflow) * 4000);
+              var duration = 15000;
 
               img.style.transition = 'none';
-              img.style.transform  = 'translateX(' + (-startX) + 'px)';
-              void img.offsetWidth;
-              img.style.transition = 'transform ' + duration + 'ms linear';
-              img.style.transform  = 'translateX(' + (-endX) + 'px)';
+              img.style.objectPosition = startP + '% ' + (focalY * 100) + '%';
+              
+              void img.offsetWidth; // Force reflow
+              
+              img.style.transition = 'object-position ' + duration + 'ms linear';
+              img.style.objectPosition = endP + '% ' + (focalY * 100) + '%';
             }
 
             function stopPan(slideEl) {
-              clearTimeout(activeTimeout);
               if (!slideEl) return;
               slideEl.classList.remove('has-smart-pan');
               var img = slideEl.querySelector('.carousel-slide-img');
               if (img) {
-                img.style.transition = 'none';
-                img.style.transform  = '';
-                img.style.width      = '';
+                img.style.transition = 'object-position 0.5s ease-out';
+                // Reset to focal point center
+                var focalX = parseFloat(img.dataset.focalX) || 0.5;
+                var focalY = parseFloat(img.dataset.focalY) || 0.5;
+                img.style.objectPosition = (focalX * 100) + '% ' + (focalY * 100) + '%';
               }
             }
 

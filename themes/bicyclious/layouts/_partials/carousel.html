@@ -28,6 +28,7 @@
                     height="{{ $full.Height }}"
                     data-focal-x="{{ printf "%.4f" $x }}"
                     data-focal-y="{{ printf "%.4f" $y }}"
+                    data-pan-dir="{{ $slide.focal.direction | default "auto" }}"
                 >
             </div>
             {{ end }}
