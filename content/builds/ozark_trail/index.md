@@ -12,9 +12,10 @@ social_image: "0.avif"
 ---
 
 
-Seriously, this beast of a good deal is the cheapest respectable steed for bike fun on and off road.
+**TL;dr:** Seriously, the G1 is a beast of a good deal ($258) and is also the cheapest respectable steed for bike fun on and off road. Good to go as is, and the optional upgrade paths are sane.
 
-TL;dr: at $258, the G.1 Explorer is a stunning demonstration of
+[Available at walmart.com for $258](https://www.walmart.com/ip/Ozark-Trail-700C-G-1-Explorer-Flat-Bar-Gravel-Bike-Small-Frame-Fits-Riders-5-1-5-5-Green-Adult-Unisex/6156206947), 
+the G.1 Explorer is a stunning demonstration of
 Walmart's supply chain power as well as proof that there are two
 members of the "Walmark family" who genuinely love bicycles. You
 could read the G.1 as their little love note to the bicycle world.
@@ -52,21 +53,35 @@ At that point you're in a different price range and might want to consider
 a low end bike shop bike? Or used. Or DTC where everthing was done correctly and you
 only need to turn 3 bolts or so and install the wheels.
 
-## This is bike we tell friends to buy
+## I happily tell friends to buy this bike
 
 If you browse this site you'll notice we're giving away all our
 secrets with prices and links. We buy parts retail and we show you how
-to do the same. A basic restoration runs at least $300 in labor and
-roughly $300 in parts so $600 minimum. Minimum for a basic restoration.
+to do the same. A basic restoration in the Seattle aread runs at least
+$300 more like $400, easily $600.  That's just for a
+full-but-not-art-blingy restoration tear down and service.  Minimum
+parts (tires, grips, saddle, pedals, cables) is about $300, and then
+we start talking about bling parts on bike art projects.  Or there
+sure are a lot of hustling bike flippers out there that will give
+the bike a minimal once over; you could find a winner.
 
-If that just does not seem worth it to you, then take a chance with a
-cheapo bike flipper who is hustling minimum tuning work for maximus
-profit while keeping prices low enough to move on in the marketplace
-(you may well get lucky), or go buy a new bike. If the latter then
-this one here is a great machine at a great price.
+If that price just does not seem worth it to you, the G.1 is the
+short answer. Or both. A $258 solid bike is a nice thing to have
+and you sure don't have to treat the thing preciously at that price,
+and bike thieves will know it's not resellable for more that $100.
+
+Quick answer, start with a flatbar G1. Then later spend upwards of
+$1000 on nicer bikes. By $2000, extremely nice modern rigid bikes
+can be had. But a $258 "beater" would be nice to have around, if
+you have the storage space.
+
+Basically, $258? Why not. Except storage, which is always a drag with bikes.
 
 ## Walmart's best bike
 
+There are nicer bikes at Walmart, but if we're sticking to rigid (which
+perhaps you should in the sub $750 price range) then the G1 is the best
+bike at Walmart, certainly in the neighborhood of $300 price range!
 We refer to
 [the Ozark Trail G.1 Explorer](https://www.walmart.com/ip/702OZT-GRAVEL-FLAT-L/5822688264) by the
 name, The Walmart Special. Admittedly that is a bit tongue in cheek but
