@@ -5,32 +5,29 @@
   {{ if $slides }}
     <div class="swiper bike-carousel">
         <div class="swiper-wrapper">
-            {{ range $slides }}
-            {{ $x := .focal.x | default 0.5 }}
-            {{ $y := .focal.y | default 0.5 }}
-            {{ $page := site.GetPage (printf "/builds/%s" .slug) }}
-
-
-
-            {{ $page := site.GetPage (printf "/builds/%s" .slug) }}
+            {{ range $i, $slide := $slides }}
+            {{ $x := $slide.focal.x | default 0.5 }}
+            {{ $y := $slide.focal.y | default 0.5 }}
+            {{ $page := site.GetPage (printf "/builds/%s" $slide.slug) }}
             {{ if not $page }}
-            {{ warnf "carousel.html: no page found for slug %q — check data/carousel.yaml matches content/builds/" .slug }}
+            {{ warnf "carousel.html: no page found for slug %q — check data/carousel.yaml matches content/builds/" $slide.slug }}
             {{ else }}
-            {{ $img := $page.Resources.GetMatch .image }}
+            {{ $img := $page.Resources.GetMatch $slide.image }}
             {{ if not $img }}
-            {{ warnf "carousel.html: image %q not found in builds/%s — check filename in data/carousel.yaml" .image .slug }}
+            {{ warnf "carousel.html: image %q not found in builds/%s — check filename in data/carousel.yaml" $slide.image $slide.slug }}
             {{ else }}
-            {{ $lqip := $img.Resize "20x webp q20" }}
             {{ $full := $img.Resize "1200x webp q80" }}
-            <div class="swiper-slide" data-href="{{ printf "/builds/%s/" .slug | relURL }}">
+            <div class="swiper-slide" data-href="{{ printf "/builds/%s/" $slide.slug | relURL }}">
                 <img
-                    src="{{ $lqip.Content | base64Encode | printf "data:image/webp;base64,%s" | safeURL }}"
-                    data-src="{{ $full.RelPermalink }}"
-                    alt="{{ .title }}"
-                    class="carousel-slide-img lqip"
+                    src="{{ $full.RelPermalink }}"
+                    alt="{{ $slide.title }}"
+                    class="carousel-slide-img"
+                    {{ if lt $i 3 }}loading="eager"{{ else }}loading="lazy"{{ end }}
                     style="{{ printf "object-position: %.0f%% %.0f%%" (mul $x 100.0) (mul $y 100.0) | safeCSS }}"
                     width="{{ $full.Width }}"
                     height="{{ $full.Height }}"
+                    data-focal-x="{{ printf "%.4f" $x }}"
+                    data-focal-y="{{ printf "%.4f" $y }}"
                 >
             </div>
             {{ end }}

@@ -230,12 +230,28 @@ a { color: inherit; }
 }
 
 /* ── Hero ───────────────────────────────────────────────────── */
-.hero {}
+.hero {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 3316 / 2626;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
 
 .hero-text {
-  padding-top: calc(var(--margin) * 2);
-  padding-bottom: calc(var(--margin) * 2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   text-align: center;
+  z-index: 1;
 }
 
 .hero-grid-lines { display: none; }
@@ -250,9 +266,17 @@ a { color: inherit; }
   color: var(--primary);
 }
 
+.hero-logo-large {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 90vw;
+  height: auto;
+}
+
 .hero-sub {
   font-family: var(--font-bicyclious);
-  font-size: 1.0rem;
+  font-size: 1.50rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--primary);
@@ -276,6 +300,12 @@ a { color: inherit; }
   margin-top: var(--margin);
   flex-wrap: wrap;
 }
+
+
+.homepage-builds-section-header {
+    padding-top: 5rem;
+}
+
 
 /* ── Buttons ────────────────────────────────────────────────── */
 .btn-retro {
@@ -378,11 +408,13 @@ a { color: inherit; }
 
 /* ── Section Header (list pages) ───────────────────────────── */
 .section-header {
+    padding-top: 5rem;
   padding-bottom: 0px;
   margin-bottom: 0;
 }
 
 .section-title {
+    padding-bottom: 2rem;
   font-family: var(--font-display);
   font-size: 45px;
   font-weight: 900;
@@ -1530,6 +1562,15 @@ a { color: inherit; }
   cursor: pointer;
 }
 
+/* Smart-pan slides: clip the overflowing image to the viewport column */
+.bike-carousel .swiper-slide.has-smart-pan .carousel-slide-img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: left center;
+  will-change: transform;
+}
+
 .carousel-slide-img {
   width: auto;
   height: 100%;
@@ -1738,14 +1779,4 @@ a { color: inherit; }
 
 
 
-/* ── LQIP Blur-up Transition ────────────────────────────────── */
-.carousel-slide-img.lqip {
-  filter: blur(8px);
-  /* transform: scale(1.05); sub optimal: hides blurred edges */
-  transition: filter 0.4s ease, transform 0.4s ease;
-}
-
-.carousel-slide-img.lqip.lqip-loaded {
-  filter: blur(0);
-  transform: scale(1);
-}
+/* LQIP removed — native loading="lazy" used instead */

@@ -10,20 +10,20 @@ social_image: "0_drive.png"
 images:
   - file: "0_drive.png"
     focal:
-      py: 0.15
-      px: 0.5
+      y: 0.15
+      x: 0.5
   - file: "1_ratgrrrl_front.cropped.jpg"
     focal:
-      py: 0.1
-      px: 0.5
+      y: 0.1
+      x: 0.5
   - file: "chain_guard.jpg"
     focal:
-      py: 0.75
-      px: 0.5
+      y: 0.75
+      x: 0.5
   - file: "ratgrrrl_with_passenger.png"
     focal:
-      py: 0.65
-      px: 0.5
+      y: 0.65
+      x: 0.5
 ---
 
 We dialed this derelict punk styled beach cruiser for when you're

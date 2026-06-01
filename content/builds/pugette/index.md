@@ -11,11 +11,11 @@ images:
   - file: "0_mb3_hero.jpg"
     focal:
       y: 0.1
-      x: 0.9
+      x: 0.5
   - file: "mb3_cockpit.jpg"
     focal:
       y: 0.9
-      x: 0.9
+      x: 0.5
   - file: "mb3_front.jpg"
     focal:
       y: 0.5

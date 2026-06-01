@@ -105,24 +105,107 @@
               850:  { spaceBetween: 0 },
               1200: { spaceBetween: 0 }
             },
-            on: {
-              init: function(swiper) {
-                // After LQIP full images load, update Swiper so it measures correct widths
-                const imgs = el.querySelectorAll('img.lqip[data-src]');
-                let loaded = 0;
-                if (!imgs.length) return;
-                imgs.forEach(img => {
-                  const full = new Image();
-                  full.onload = () => {
-                    img.src = img.dataset.src;
-                    img.classList.add('lqip-loaded');
-                    if (++loaded === imgs.length) swiper.update();
-                  };
-                  full.src = img.dataset.src;
-                });
+            on: {}
+          });
+
+          // ── Smart Pan ─────────────────────────────────────────────
+          (function attachSmartPan(swiper) {
+            var activeTimeout = null;
+
+            function panSlide(slideEl) {
+              var img = slideEl.querySelector('.carousel-slide-img');
+              if (!img) return;
+
+              var focalX = parseFloat(img.dataset.focalX);
+              if (isNaN(focalX)) focalX = 0.5;
+
+              // Mark slide for img styling only — no width change on the slide itself
+              slideEl.classList.add('has-smart-pan');
+
+              // Measure the carousel viewport, not the slide (slide stays width:auto)
+              var containerW = el.offsetWidth;
+              var naturalW   = img.naturalWidth;
+              var naturalH   = img.naturalHeight;
+              var containerH = slideEl.offsetHeight;
+
+              if (!naturalW || !naturalH || !containerH || !containerW) return;
+
+              // Rendered width: image scaled to container height, capped at natural width
+              var renderedW = Math.min((naturalW / naturalH) * containerH, naturalW);
+              var overflow  = renderedW - containerW;
+
+              if (overflow <= 1) {
+                slideEl.classList.remove('has-smart-pan');
+                img.style.transition = 'none';
+                img.style.transform  = '';
+                img.style.width      = '';
+                return;
+              }
+
+              // Pin the img to its rendered width so translateX has overflow to work against.
+              // Without this, object-fit:cover + width:auto re-centers the image and
+              // the browser clips translateX movement rather than revealing overflow.
+              img.style.width = renderedW + 'px';
+
+              var focalPx  = focalX * renderedW;
+              var halfView = containerW / 2;
+              var startX   = Math.max(0, Math.min(overflow, focalPx - halfView));
+              var roomLeft  = startX;
+              var roomRight = overflow - startX;
+              var endX      = roomRight >= roomLeft
+                ? Math.min(overflow, startX + roomRight)
+                : Math.max(0,        startX - roomLeft);
+
+              var dist = Math.abs(endX - startX);
+              if (dist < 2) return;
+
+              var duration = Math.round(10000 + (dist / overflow) * 4000);
+
+              img.style.transition = 'none';
+              img.style.transform  = 'translateX(' + (-startX) + 'px)';
+              void img.offsetWidth;
+              img.style.transition = 'transform ' + duration + 'ms linear';
+              img.style.transform  = 'translateX(' + (-endX) + 'px)';
+            }
+
+            function stopPan(slideEl) {
+              clearTimeout(activeTimeout);
+              if (!slideEl) return;
+              slideEl.classList.remove('has-smart-pan');
+              var img = slideEl.querySelector('.carousel-slide-img');
+              if (img) {
+                img.style.transition = 'none';
+                img.style.transform  = '';
+                img.style.width      = '';
               }
             }
-          });
+
+            function onActiveChange() {
+              swiper.slides.forEach(function(s) {
+                if (!s.classList.contains('swiper-slide-active')) stopPan(s);
+              });
+              var active = swiper.slides[swiper.activeIndex];
+              if (active) panSlide(active);
+            }
+
+            swiper.on('slideChangeTransitionEnd', onActiveChange);
+            swiper.on('autoplayPause', function() {
+              var active = swiper.slides[swiper.activeIndex];
+              var img = active && active.querySelector('.carousel-slide-img');
+              if (img) img.style.transition = 'none';
+            });
+            swiper.on('autoplayResume', onActiveChange);
+
+            // Trigger initial pan: if first image already loaded use it,
+            // otherwise wait for its load event
+            var firstSlide = swiper.slides[swiper.activeIndex];
+            var firstImg = firstSlide && firstSlide.querySelector('.carousel-slide-img');
+            if (firstImg && firstImg.naturalWidth) {
+              onActiveChange();
+            } else if (firstImg) {
+              firstImg.addEventListener('load', onActiveChange, { once: true });
+            }
+          })(swiper);
 
           // Click to link (only for slides with data-href)
           swiper.on('click', function () {

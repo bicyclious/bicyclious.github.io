@@ -2,10 +2,12 @@
 
 {{ partial "carousel.html" . }}
 
-<section class="hero">
+{{ $bg := (resources.Get "images/fj55_streetbeater.png").Resize "1600x" }}
+<section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ $bg.RelPermalink }}');">
     <div class="hero-text">
-        <h1 class="hero-title">Bicyclious</h1>
-        <h2 class="hero-sub" style="padding-top:0rem">Builders of Delicious Bicycles</h2>
+        {{ $logo := (resources.Get .Site.Params.logo).Resize "800x" }}
+        <img src="{{ $logo.RelPermalink }}" alt="Bicyclious" class="hero-logo-large">
+        <h2 class="hero-sub" style="padding-top:0rem; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Builders of Delicious Bicycles</h2>
     </div>
     <div class="hero-grid-lines"></div>
 </section>
@@ -13,7 +15,7 @@
 <!-- ── BUILDS ── -->
 {{ $buildPages := where site.RegularPages "Section" "builds" }}
 {{ if $buildPages }}
-<div class="section-header">
+<div class="homepage-builds-section-header">
     <h2 class="section-label" style="text-align: center; display: block; width: 100%;">BUILDS</h2>
     <h2 class="hero-sub" style="text-align: center; display: block; width: 100%;">Restomodded simple bikes</h2>
     <h2 class="hero-sub" style="text-align: center; display: block; width: 100%;">Built for comfort and style not just for speed</h2>
