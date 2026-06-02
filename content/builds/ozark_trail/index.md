@@ -12,15 +12,23 @@ social_image: "0.avif"
 ---
 
 
-**TL;dr:** Seriously, the G1 is a beast of a good deal ($258) and is also the cheapest respectable steed for bike fun on and off road. Good to go as is, and the optional upgrade paths are sane.
+**TL;dr:** At $258 the G1 is best bike in its price range. It's an
+absolutely ridable bike. "G1" is the short answer at a cocktail party
+for when someone asks what is the cheapest entry point bike that I
+wouldn't mind riding nor be seen on.
+
+There are no joker parts on this bike. Nothing special either. Sure
+it's QR wheels but that will do just fine for this kind of bike. This
+is a respectable ride. The rig is good to go as is, and there are sane
+upgrade option.
+
+## Walmart's love letter to the bike world
 
 [Available at walmart.com for $258](https://www.walmart.com/ip/Ozark-Trail-700C-G-1-Explorer-Flat-Bar-Gravel-Bike-Small-Frame-Fits-Riders-5-1-5-5-Green-Adult-Unisex/6156206947), 
 the G.1 Explorer is a stunning demonstration of
 Walmart's supply chain power as well as proof that there are two
 members of the "Walmark family" who genuinely love bicycles. You
 could read the G.1 as their little love note to the bicycle world.
-
-## Walmart's love letter to the bike world
 
 The G.1 Explorer is the easiest on-ramp, cheapest bang-for-buck fun
 bike capable of rolling on road and on trails. For $258. Just give it

@@ -1,5 +1,5 @@
 - slug: bubblicious
-  image: 0_bubs_at_crescent.jpeg
+  image: 0_bubblicious_cover.png
   title: Bubblicious
   price: 1200
   focal:
@@ -39,6 +39,9 @@
   image: 1_ratgrrrl_front.cropped.jpg
   title: Rat Grrrl
   price: 450
+  focal:
+    x: 0.5
+    y: 0.01
 
 - slug: bad_banana
   image: bad_banana_with_yellow_truck.jpeg

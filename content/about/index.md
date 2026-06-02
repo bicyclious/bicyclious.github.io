@@ -9,16 +9,14 @@ draft: false
 
 ![](workshop_1.jpg)
 
-## Who
+## One man workshop
 
-Bicyclious is a one-man, two-dog build build shop.
+Bicyclious is a one-man, two-dog bicycle workshop. We build old school
+cable actuated bikes, usually having rim brakes. Simple bikes. Modern
+or vintage. On road or off. 
 
-I want to work on bikes. You want bikes. 
-
-I want to get paid for my time. You don't
-want to play the local bike shop (LBS) retail mark-up and upsell game.  
-
-Let's talk:
+Email is the quickest way to get in contact. I will reply within hours
+at most.
 
 <a href="mailto:bicyclious@gmail.com?subject=About%20Bicyclious"
   class="btn-retro btn-buy">
@@ -26,31 +24,40 @@ Let's talk:
 </a>
 
 
+## Restomodded bikes
 
-## What
+Bicyclious rebuilds simple bikes meant for casual fun riding. Simple
+bikes, like 1980s MTBs, can be dilicious rides yet still be solid platforms for utitity and
+fun. Bonus: easy and cheaper mantenance. 
 
-I source high-quality rigid cromoly frames from the 80s and 90s — the
-golden era of rigid bikes, both road and mountain — and either restore then to original
-with minimal updates, or restomod them with modern
-components that prioritize comfort, reliability, and a "delicious" ride
-quality. 
+The goals of racing drive innovation in the bicycle industry. But we
+are not racing here. Freed of those constraints, there are mature, out
+of patent bicycle technologies that are cheap and can be quite good,
+especially if retro is of interest.
 
-Prices are firm on pre-builds and custom work is a flat hourly rate
-for my time. Pre-builts are the way to ensure final price up front,
-custom work prices can add up quickly on art bikes.
+### Only simple bikes
 
-## How
+By "simple bikes" I mean cable actuated, rim brakes, rigid framed
+bikes. Nothing wrong with more complex bicycles but that is not what
+Bicyclious is about. Basic attitude around here: two wheels good, four
+wheels bad. I love all the bikes, but Bicyclious is all about the
+simple bikes.
 
-I like to start with email or text. Talking off the clock is not
-profitable.
+The simple bicycles of the 1980s and 1990s were still on the cutting
+edge of innovation. Quality manufactures built beautiful cable
+actuated components out of quality metal beautifully shined. Now that
+area of bike tech is mature and less profitable so design energy is
+put more profitably on electronic groupsets. They will never put that much labor 
+in bikes of that quality in that price range again. So, putting $600++
+into the right old frame is actually a solid engineering solution,
+and nowadays getting into vintage age.
 
-I am happy to drive the bikes to you if you are somewhere in the
-neighborhood of Seattle (I do mobile bike repair as well). Shipping
-beyond my driving distance is $100 packing labor plus whatever
-[BikeFlites](https://www.bikeflights.com/?utm_source=chatgpt.com) is
-going to charge you.
 
-## Two build styles
+## Two build aestetics
+
+We either restore the bikes to original with minimal updates, or restomod
+them with modern components that prioritize comfort, reliability, and
+a "delicious" ride quality.
 
 Machine beauty is the happy marriage of power and simplicity. All
 our bikes strive for machine beauty. That is a big part of what
@@ -58,59 +65,50 @@ makes a bike build delicious. I only build real bikes for riding.
 
 Then there is the question of visual beauty:
 - Sometimes I dial builds into pretty works of mechanical art
-- Sometime I go for the derelict look and keep all the original patina.
+- Sometime I go for the derelict look and keep all the original patina
 
 Derelict look restomods (a term from the automotive restoration crowd)
 can simply look cool with natural patina, or maybe the goal is a wolf-in-sheeps-clothing
-that the bike thieves will not see fit to steal. 
+build that the bike thieves will not see fit to steal. 
+
+- **/builds/bad_banana**
 
 Bizarrely, the derelict restoration style also aligns with the
-collector mentality. Whatever, you buy it you do whatever you want
-with it, but I build bikes that are meant to be ridden, in style and
-comfort.
+collector mentality. Bicyclious doesn't care about original parts,
+usually but willing to accommodate such on a custom build. Whatever,
+you buy it you do whatever you want with it, but I build bikes that
+are meant to be ridden, in style and comfort.
 
-## What not
+This beautiful 1983 Univega is an extreme derelict look, and a great ride
 
-The bike industry is a joke, and the butt of that joke is the bike
-mechanics in a local bike shop (LBS) making somewhere between $20/h
-and $30/h. Fuck that noise. 
+- **/builds/univega**
 
-Good mechanics are not unskilled drivers and
-compensation for time should reflect that. That's right, I said
-it: **fuck that LBS employee nonsense.**
+<hr />
 
-Many mechanics figured this out during the Covid lock-downs and the
-didn't go back to being disrespected, close to minimum wage slaves at
-some LBS.
+## Services
 
-**The LBS business model just does not work anymore.** Rents are
-ridiculous and bike are an extremely seasonal business. Mobile and
-remote is part of the solution.
+Prices are different for each pre-build. Custom work is a flat hourly rate
+for my time. Pre-builts are the way to ensure final price up front.
+Custom work prices can add up quickly on art bikes but if you have
+a vision and a credit card, I'm down to listen to you, on the clock.
 
-Prices of bikes have split with the K-shaped economy: manufactures
-have retreated to luxury prices and bike or they battle it out on commodity pricing, leading
-to junky bikes. 
+I like to start with email or text. Talking to rando calls off the
+internet is not profitable. This is not a retail operation. Texting
+gets to the point fast and I can field messages while wrenching. If
+it seems like things are serious we can move on to voice chatting.
 
-Bicyclious is about simple bikes but quality
-mechanicals. And there's tons of quality used bike just waiting around
-to go to a good loving home. **Simple bike technology is pretty mature
-at this time. The question now is the business model, not the bike tech.**
 
-A major broken aspect of the LBS business model is the retail mark-up
-game. In the internet age, that does not align the interests of the
-small business and the customer. Bicycle part suppliers are also
-playing an outdated wholesale pricing business model. And they
-want loyalty and geo fencing. Shut the fuck up. If I'm buying
-in bulk, discount! Otherwise, order it off Amazon, Ebay, Alibaba, etc.
-I don't mark anyhthing up, except my time.
+### Shipping 
 
-**The only thing Bicyclious is selling is the mechanic's time, not an
-outdated retail mark-up game.** Pre-built is the fixed price option,
-or buy the hour custom builds. I'm either wrenching or talking to the
-customer or acquiring parts to pass on without mark-up (yes, taxes
-still have to be paid). Let's get to the wrenching part as fast as
-possible because if I'm working on solving what you want, I'm on the
-clock.
+I am happy to drive the bikes to you if you are somewhere in the
+neighborhood of Seattle (I do mobile bike repair as well). Shipping
+beyond my driving distance is $100 packing labor plus whatever
+[BikeFlites](https://www.bikeflights.com/?utm_source=chatgpt.com) is
+going to charge you.
 
 
 
+<a href="mailto:bicyclious@gmail.com?subject=About%20Bicyclious"
+  class="btn-retro btn-buy">
+  Email Bicyclious
+</a>
