@@ -60,7 +60,7 @@
       <span class="footer-copy" 
             style="cursor: pointer;" 
             {{ with .Site.Data.version.version }}data-version="{{ . }}"{{ end }}
-            onclick="if(this.dataset.version) alert('Bicyclious Version: ' + this.dataset.version) env={{ hugo.Environment }}">
+            onclick="if(this.dataset.version) alert('Bicyclious Version: ' + this.dataset.version + '\nEnv: {{ hugo.Environment }}');">
         © {{ now.Year }}
       </span>
     </div>

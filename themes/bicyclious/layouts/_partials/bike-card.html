@@ -1,32 +1,27 @@
 {{/* Shared bike card partial — used on home page and builds list */}}
 {{ $status := .Params.status | default "available" }}
+{{ $statusClass := cond (eq $status "sold") "card-header-sold" "card-header-available" }}
+
 <article class="bike-card {{ if eq $status "sold" }}bike-card--sold{{ end }}">
   <a href="{{ .RelPermalink }}" class="card-link">
     {{ $imgs := .Resources.ByType "image" }}
-    {{ if $imgs }}
-      {{ $cover := index $imgs 0 }}
-      <div class="card-img-wrap">
+    
+    <div class="card-img-wrap {{ if not $imgs }}card-no-img{{ end }}">
+      {{ if $imgs }}
+        {{ $cover := index $imgs 0 }}
         <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
-        <div class="card-overlay" style="top: auto; bottom: 0; padding: 0.8rem 1.25rem; border-bottom: none; border-top: 1px solid rgba(255, 255, 255, 0.1); align-items: baseline;">
-          <h3 class="card-overlay-title" style="font-size: 1.48rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0; margin-right: 1rem;">{{ .Title }}</h3>
-          <div class="card-status-pill" style="height: auto; min-width: 0; display: block;">
-            {{ if eq $status "sold" }}
-              <span class="sold">SOLD <span style="text-decoration: line-through; margin-left: 0.4rem; opacity: 0.8;">${{ .Params.price }}</span></span>
-            {{ else }}
-              <span class="price">${{ .Params.price }}</span>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    {{ else }}
-      <div class="card-img-wrap card-no-img">
+      {{ else }}
         <span>NO SIGNAL</span>
-        <div class="card-overlay" style="top: auto; bottom: 0; padding: 0.8rem 1.25rem; border-bottom: none; border-top: 1px solid rgba(255, 255, 255, 0.1); align-items: baseline;">
-          <h3 class="card-overlay-title" style="font-size: 1.48rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0; margin-right: 1rem;">{{ .Title }}</h3>
-        </div>
+      {{ end }}
+
+      <div class="card-overlay">
+        <h3 class="card-header card-overlay-title {{ $statusClass }}">{{ .Title }}</h3>
+        {{ if .Params.price }}
+          <div class="card-header {{ $statusClass }}">
+            {{ if eq $status "sold" }}SOLD {{ end }}${{ .Params.price }}
+          </div>
+        {{ end }}
       </div>
-    {{ end }}
+    </div>
   </a>
 </article>
-
-

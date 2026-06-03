@@ -2,7 +2,7 @@
 title: "Silver Surfer"
 date: 2024-11-19
 weight: 50
-price: 500
+price: 700
 status: "sold"
 specs: "Perfect rigid MTB frame with a fork that is modern tech yet elegantly raked. Snow tires are yummy."
 tags: ["Walmart", "philosophy"]

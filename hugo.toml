@@ -21,12 +21,12 @@ ignoreFiles = [
     url  = "/builds/"
     weight = 2
   [[menus.main]]
-    name = "BLOG"
-    url  = "/posts/"
-    weight = 3
-  [[menus.main]]
     name = "ABOUT"
     url  = "/about/"
+    weight = 3
+  [[menus.main]]
+    name = "BLOG"
+    url  = "/posts/"
     weight = 4
 
 [markup]
