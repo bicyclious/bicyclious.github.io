@@ -1,4 +1,4 @@
-baseURL = "https://bicyclious.com/"
+baseURL = "https://bicyclious.github.io/"
 languageCode = "en-us"
 title = "Bicyclious"
 theme = "bicyclious"
