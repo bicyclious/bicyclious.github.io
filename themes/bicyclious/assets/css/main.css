@@ -281,7 +281,7 @@ a { color: inherit; }
   text-shadow: 0 4px 8px rgba(1,1,1,0.5);
 }
 
-.section_subtitle {
+.section-subtitle {
   font-family: var(--font-display);
   font-weight: 900;
   font-size: 1.5rem;
@@ -311,7 +311,7 @@ a { color: inherit; }
         padding-bottom: 2rem;
     }
 
-.section_subtitle {
+.section-subtitle {
   font-size: 1.5rem;
 }   
 }
@@ -320,7 +320,7 @@ a { color: inherit; }
 .hero-sub {
   font-size: 1rem;
 }
-.section_subtitle {
+.section-subtitle {
   font-size: 1rem;
 }
 }
@@ -470,10 +470,10 @@ a { color: inherit; }
 
 .section-sub {
   font-family: var(--font);
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--on-surface-variant);
-  margin-top: 8px;
+  padding-top: 1rem;
 }
 
 /* ── Homepage Sections ──────────────────────────────────────── */
