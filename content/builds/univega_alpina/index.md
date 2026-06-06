@@ -21,10 +21,9 @@ scars and patina (completely coated in carnauba wax, especially with
 that raw steel at places, no rust after many months). This bike live
 life hard before its big spa day.
 
-- The handlebar grips work well with the bullmoose, makes the anlers
+- The handlebar grips work well with the bullmoose, makes the antlers
   bigger. The wee integrated barends are actually an important part of
   the ride, paddles are nice grips and the curved inner bar end is
   great to ride around corners pushing down and out with the inner
-  hand.
-
+  hand. Good for pulling up on out of the saddle.
 - The one picture in the workstand is the bike as originally found.

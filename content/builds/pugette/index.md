@@ -2,7 +2,7 @@
 title: "Pugette"
 date: 2023-08-05
 weight: 3
-specs: "Bridgestone MB3 restomod in gray"
+specs: "1984 Bridgestone MB3 restomod in gray"
 year: "2023"
 price: 1750
 status: "available"
@@ -26,9 +26,23 @@ images:
       x: 0.5
 ---
 
-A pugnacious girl with shoes make for walking on the crappy concrete of Puget Sound.
-Stylistically, we leaned into the blues and gray of a calm foggy early morning on the water.
+1984 Bridgestone MB3 (serial number: H416982 "H" = August, "4" = 1984)
+with lugged frame and lugged fork. Restomodded with a lot of updates
+while keeping the original core, with a bullmoose handlebar added in
+for period performance with style and comfort.
 
-Bridgestone MB3. Restomodded with a lot of updates while keeping the
-original core, with a bullmoose handlebar added in for period
-performance with style and comfort.
+
+- Brooks Cambium saddle
+- 3x8 drivetrain
+- Shimano derailleurs
+- Avid brake levers
+- SR Sakae Alero cranks
+- Microshift R8 shifter
+- Origin8 2-bolt seatpost
+- Oury grips
+- Front porteur platform rack
+- Axiom front bag
+- Bullmoose handlebar
+- Origin8 Pro-Grip II Pedal Straps
+- Rock Bro pedals
+- Kenda gray tires with black sidewall
