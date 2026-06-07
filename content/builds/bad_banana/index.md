@@ -10,75 +10,89 @@ summary: "Cheap Bike Build-Off 2025 entry."
 social_image: "1_sunset.ai.png"
 ---
 
-The name itself comes from azuki (小豆 / あずき), the Japanese red
-bean used in sweets like anko paste. We built the Bad Banana for Cheap
-Bike Build-Off 2025: "Build a bike for under $150. One month. Go!"  We
-didn't win the sudden death Build-Off, but this build is a sweet
-sporty ride. The first of many such rebuilds (dropbar road bike 27" =>
-flatbar urban 700c).
+We built the Bad Banana for Cheap Bike Build-Off 2025. (The rules are
+simple: "Build a bike for under $150. One month. Go!")  We didn't win the
+sudden death Build-Off, but we do have this sweet sporty ride to show for it.
+
+Obviously, this is a derelict style build i.e. fully restored
+mechanically but all the patina kept. This makes for a wolf in dirty
+old sheep's clothing. The bike is a sweet ride (it gets lots of
+compliments from knowledgeable bike enthusiasts) without any real
+worries about bike thieves.
+
+## The conversion technique
+
+This is an excellent example of one of the classic restomod
+techniques: start with a dropbar road bike with 27" wheels, end with a
+flatbar urban roller with 700C wheel. On this one we were able to fit
+38mm tires, which are an urban goldilocks: big enough to have
+pneumatic suspension to soak up crappy road surface, yet small enough
+to not slow the roll.
+
+A repurposed quill stem designed for dropbars often looks awkward with
+a flatbar; the unified stem-and-bar that is the bullmoose does not
+suffer from that.
+
+38mm gravel tires and the bullmoose bars make for a really nice urban speed
+machine that can handle grass and other urban bits of nature. Fenders
+and a rack make it a Rain City commuter. 
 
 ## 1970s Japanese steel bikes 
 
-In the 1970s and 1980s, on their domestic bikes the Japanese were not
-suffering from the deranged obsession of those days where aerosthetics
-required minimizing tire clearance, where 25mm would have been
-considered a larger tire. Those rigs are not worthy of
-restomodding. This one works well with 38mm AND fenders!
+Azuki was a sister corp of Nishiki. Azuki was a West Coast Cycle (WCC)
+import label used in the 1970s–80s US bike boom, just like Nishiki, 
+American Eagle, etc. Some of the early import kings. Note: American
+Eagle never made a bike in America :) This was all about Japanese
+factories OEMing for American businesses, a.k.a. "badge engineering."
+The Americans were just relabeling and importing, but that was lucky
+because we get the nice tire clearance.
 
-Azuki was a sister corp of Nishiki. And there are some good Nishikis
-out there. Azuki was a West Coast Cycle (WCC) import label used in the
-1970s–80s US bike boom, just like Nishiki, American Eagle, etc. Some
-of the early import kings. American Eagle never made a bike in America.
-This was all OEMing Japanese factories. "Badge engineering." Just
-relabeling and importing.
+In the period of the 1970s and 1980s, Japanese manufactured was being
+looked down upon by Americans similar to how Chinese manufacturing has
+been in recent times. For example, when Schwinn started off-shoring
+framebuilding to Japan, they make damn sure that the Le Tour frames
+were good, and they were. 
 
-This Azuki does not have rack mounts, but does have nice Shimano 600
-derailleurs so it is a lightweight road / sport touring from 1981 +/-
-3 years.  That makes for a great restomod starting point: light enough
-and
+Despite Japanese Keirin bike racing being a national sport since 1948,
+obsessive aero-sthetics had not led to extremely tight tire clearance
+from a time when they thought 23mm was all a bike would ever need to
+clear. Those small tire rigs are not worthy of restomodding (some are
+collectable but not fun ride on real-world roads).
 
-Some of the old road bikes make for great flat bar conversion. For
-this lucky frame we were able to run 700c x 38mm WTF Riddlers with
-fenders. Nice tire clearance frame design, Azuki. Those tires and the bullmoose bars
-make for a really nice urban speed machine that can handle grass and
-other urban bits of nature including camoflague for the bike thieves.
+So, the type of bike that this Azuki is has enough frame-tire clearance
+for sizable tires on 700c wheels, specifically 38mm in this case, with
+enough room left for fenders.
 
 ## Cheap Bike Build-Off
 
 The Bad Banana was Bicyclious's entry in the Cheap Bike Build-Off 2025
-— the annual challenge to build the most rideable bike for a budget of $150.
-We rode it for a while, it is a very nice asphault roller. 
+— the annual challenge to build the most rideable bike for a budget of
+$150.  After the Buil-Off we rode it for a while (main ride for last
+winter actually) and can confirm it is a very nice asphalt roller.
 
-The Cheap Bike Build-Offs prove that a good bike can be pulled off for $150.
-But that all the labor DIY and there's going to be well curated used parts involved.
+The Cheap Bike Build-Offs prove that a good bike can be pulled off for
+$150. But to reach that number requires excluding all the labor
+and building with used parts.
 
-This is a derelict style build i.e. fully restromodded mechanically but kept all the
-patina. Makes for a wolf in dirty old sheeps clothing. The bike is
-a sweet ride without any real worries about bike thieves.
-
-But a lot of vintage road frames are not going to
-handle even 35mm without fenders. In Cascadia I'd want at least a
-32mm. In that size range, [Panaracer Pasela
-tires](https://www.panaracerusa.com/products/pasela-wire-urban-commuter-tires?variant=34487840211106)
-are good and cheap.
-
+All the entries are archived on the web (just enter a fake name and
+password, competition is over):
+https://www.wompybike.com/cheap-bike-build-off
 
 
 ## The Build
 
+- Frame: sport touring from 1981 +/- 3 years.
+  - Seattube: 22", toptube: 22"
 - Cockpit
   - Dropbars replaced with a bullmoose handlebar
   - Installed Shimano friction thumbies for the 2x7 drivetrain
-  - New Corkchop handlebar grips
+  - New PNW Cork Chop handlebar grips
   - New black silicon pads on brake levers
+- Shimano 600 derailleurs
 - Wheels 
   - 27" changed to 700c
-  - New WTB Riddlers 38m, great city tire than can handle grass and potholes
+  - New WTB Riddlers 38mm, great city tire than can handle grass and potholes
+- PDW fenders
 - Used All-City saddle
-- New modern black nylon flat pedals. Pins removed from one side of pedal which with BMX straps makes for modern toe-clips, great for hopping curbs
+- New modern black nylon flat pedals. Pins removed from one side of pedal which with BMX pedal straps makes for modern toe-clips, great for hopping curbs while cargo loaded
 - Modern Axios Dreamliner panniers rack, for Ortlieb panniers (not included in sale price)
-
-## The Cost Sheet
-
-The cost breakdown photo was to prove the max $150 budget of the 2024 Cheap Bike Build Off. Every part sourced,
-priced, and documented. Couldn't have done it without the local bike co-ops rich supply of used parts.

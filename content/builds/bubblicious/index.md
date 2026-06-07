@@ -3,43 +3,46 @@ title: "Bubblicious"
 date: 2024-09-20
 specs: "An homage to the best bubblegum of the 1980s"
 year: "2024"
-price: 1200
+price: 1250
 status: "available"
 summary: "Full-suspension trail bike in bubblegum pink. Trail-tested at Lake Crescent. Rides as fun as it looks."
 weight: 1
 social_image: "0_bubs_at_crescent.jpeg"
 ---
 
-Bubblicious was first released 1977. In the 1980s, it was on top of the
+Bubblicious bubblegum was first released 1977. In the 1980s, it was on top of the
 bubble gum world. This bike imagines what a promo bike for Bubblicious would have looked
 like in 1989.
 
 ## Build
 
-The Bubblicious stickers were orders off of Ebay.
-
 The one picture with the black handlebars is the bike as-is when we
-bought it vai a Craigslist ad, so that is the one "before" picture.
+bought it via a Craigslist ad, so that is the one "before" picture.
 
-- Original wheels 3x6
-- Thumbies
-- Some used cranks that look pretty
-- Gratuitous Campy front derailleur
-- An all metal Shimano rear derailleur [RD-AL11](Shimano-RD-AL11.pdf)
-
+- Frame
+  - Serial number: GP906326
+  - Seat tube (center-to-center): 21.5"
+  - Top tube (c2c): 23.25"
+- Original wheels with that very period unique crosssection
+- Drivetrains
+  - 3x6 original cogs
+  - An all metal Shimano rear derailleur [RD-AL11](Shimano-RD-AL11.pdf)
+  - Gratuitous Campagnolo front derailleur
+  - Thumbies
+  - Some used cranks that look pretty
 - New 
   - All cabling
   - Raceface Chester pedals
-  - Tektro Oryx cantis brakes
-  - Saddle (2x)
-  - Coolstop brake pads
-  - Tires, cheap but right colors
-
+  - Tektro Oryx canti brakes
+  - Saddle
+  - Kool Stop brake pads
+  - Tires, cheap but right colors to match the frame colorway
+  - The Bubblicious stickers were ordered off of Ebay.
 
 These tires were obviously chosen for color, not for tech. They're
 fine for looking cute on an urban "ride out" but these tires are
-leaden footed and would be out of place off asphault. Fashion has a
-long history of uncomfortable shoes yet folks wore them.
+leaden footed and would be out of place off asphault. Face it: fashion
+has a long history of uncomfortable shoes yet folks wore them.
 
 
 ## Hardrock Comp from 1989, probably

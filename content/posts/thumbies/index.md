@@ -62,3 +62,7 @@ Some available thumbies:
   - Note, Silver shifters need to be [mounted on something](ttps://www.rivbike.com/collections/shifting)
 - Note, sometimes mounts come separates. [Paul's are bling](https://www.paulcomp.com/shop/components/drivetrain/shifting/shimanothumbies/)
 
+
+## Underbar thumbies
+
+-[Under bar set-up for thumbies](https://youtu.be/EfLQpdfkw8s)

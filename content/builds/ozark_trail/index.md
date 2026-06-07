@@ -15,19 +15,26 @@ social_image: "0.avif"
 **TL;dr:** At $258 the G1 is best bike in its price range. It's an
 absolutely ridable bike. "G1" is the short answer at a cocktail party
 for when someone asks what is the cheapest entry point bike that I
-wouldn't mind riding nor be seen on.
+wouldn't mind riding nor being seen on.
+
+At Bicyclious, clearly we are into custom one-off artsy-fartsy obsessive
+builds. But if you just want a simple bike, the G1 is really all
+you need. No need to pay for custom work, if that is not important to
+your goals. It's a great ride and one wouldn't have to worry about
+bike thieves all that much.
 
 There are no joker parts on this bike. Nothing special either. Sure
-it's QR wheels but that will do just fine for this kind of bike. This
-is a respectable ride. The rig is good to go as is, and there are sane
-upgrade option.
+it's QR wheels but that technology will do just fine for this kind of
+bike (QR's clamping power is well within real world needs). This is a
+respectable ride. The rig is good to go as is, and there are sane
+upgrade option, and [less sane](https://www.youtube.com/watch?v=ZpoFudxP2MU).
 
 ## Walmart's love letter to the bike world
 
-[Available at walmart.com for $258](https://www.walmart.com/ip/Ozark-Trail-700C-G-1-Explorer-Flat-Bar-Gravel-Bike-Small-Frame-Fits-Riders-5-1-5-5-Green-Adult-Unisex/6156206947), 
-the G.1 Explorer is a stunning demonstration of
-Walmart's supply chain power as well as proof that there are two
-members of the "Walmark family" who genuinely love bicycles. You
+[Available at walmart.com for $258](https://www.walmart.com/ip/Ozark-Trail-700C-G-1-Explorer-Flat-Bar-Gravel-Bike-Small-Frame-Fits-Riders-5-1-5-5-Green-Adult-Unisex/6156206947),
+the G.1 Explorer is a stunning demonstration of Walmart's supply chain
+power as well as proof that there are two members of the "Walmart
+family" (Steuart and Tom Walton) who genuinely love bicycles. You
 could read the G.1 as their little love note to the bicycle world.
 
 The G.1 Explorer is the easiest on-ramp, cheapest bang-for-buck fun

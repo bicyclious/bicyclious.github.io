@@ -32,6 +32,11 @@ while keeping the original core, with a bullmoose handlebar added in
 for period performance with style and comfort.
 
 
+## Build 
+
+- Frame:
+  - Seat tube center to center = 19.75"
+  - Tob tube center to center = 22"
 - Brooks Cambium saddle
 - 3x8 drivetrain
 - Shimano derailleurs

@@ -35,8 +35,7 @@ The blinger options that we return to regularly
   - $27 [SE knockoffs](https://www.amazon.com/SE-Bear-Trap-Pedals-Silver/dp/B0747TMP6V/ref=sr_1_24)
 
 
-[Origin8 Pro-Grip II Pedal
-Straps](https://www.amazon.com/dp/B007JWZ4MG?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_15&th=1)
+[Origin8 Pro-Grip II Pedal Straps](https://www.amazon.com/dp/B007JWZ4MG?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_15&th=1)
 makes the best pedal straps for ~$34. Putting straps on your feet is a
 bit of commitment but not as commited and old-school toe straps in the
 bear cages of old. No thanks to that. But these straps are excellent
