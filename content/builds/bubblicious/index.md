@@ -19,25 +19,29 @@ like in 1989.
 The one picture with the black handlebars is the bike as-is when we
 bought it via a Craigslist ad, so that is the one "before" picture.
 
-- Frame
-  - Serial number: GP906326
-  - Seat tube (center-to-center): 21.5"
-  - Top tube (c2c): 23.25"
-- Original wheels with that very period unique crosssection
-- Drivetrains
-  - 3x6 original cogs
-  - An all metal Shimano rear derailleur [RD-AL11](Shimano-RD-AL11.pdf)
-  - Gratuitous Campagnolo front derailleur
-  - Thumbies
-  - Some used cranks that look pretty
-- New 
-  - All cabling
-  - Raceface Chester pedals
-  - Tektro Oryx canti brakes
-  - Saddle
-  - Kool Stop brake pads
-  - Tires, cheap but right colors to match the frame colorway
-  - The Bubblicious stickers were ordered off of Ebay.
+Frame:
+- Serial number: GP906326
+- Seat tube (center-to-center): 21.5"
+- Top tube (c2c): 23.25"
+
+New:
+- All cables and cable housing
+- Raceface Chester pedals
+- Tektro Oryx canti brakes
+- Saddle
+- Kool Stop brake pads
+- Tires, cheap but right colors to match the frame colorway
+- The Bubblicious stickers were ordered off of Ebay
+
+Misc:
+- Original wheels with that very period unique, cut cross section with outer ridges (strenthening the rim?)
+
+Drivetrain:
+- 3x6 original cogs
+- An all metal Shimano rear derailleur [RD-AL11](Shimano-RD-AL11.pdf)
+- Gratuitous Campagnolo front derailleur
+- Thumbies
+- Some used cranks that look pretty
 
 These tires were obviously chosen for color, not for tech. They're
 fine for looking cute on an urban "ride out" but these tires are

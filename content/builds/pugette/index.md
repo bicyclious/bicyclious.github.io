@@ -4,7 +4,7 @@ date: 2023-08-05
 weight: 3
 specs: "1984 Bridgestone MB3 restomod in gray"
 year: "2023"
-price: 1750
+price: 1500
 status: "available"
 social_image: "0_mb3_hero.jpg"
 images:
