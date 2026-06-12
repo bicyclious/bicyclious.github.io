@@ -63,6 +63,12 @@ Some available thumbies:
 - Note, sometimes mounts come separates. [Paul's are bling](https://www.paulcomp.com/shop/components/drivetrain/shifting/shimanothumbies/)
 
 
+## OG thubmies
+
+If going for Shimano XT level gets a solid cast aluminum base, better than stamped steel baseplate.
+
+{{< youtube id=36YQMzJ_pmw start=235 loading=lazy >}}.
+
 ## Underbar thumbies
 
 -[Under bar set-up for thumbies](https://youtu.be/EfLQpdfkw8s)

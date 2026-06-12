@@ -15,8 +15,10 @@ stains. Cleaner all around. Hard to get off skin too.
 
 So just think of your favorite clothing and add that perma-stain.
 
-Mechanically, there are
-lots of other benefits to nerd out on. 
+Personally, we use both wax and oil separately on different bicycles. For
+the local transport rides wearing nice clothing, we take a waxed bike.
+
+Mechanically, there are lots of other benefits to nerd out on. 
 
 Maintenance (soap, water, dry,
 drip on top-up) is much easier, especially if using a chain rotation
@@ -41,23 +43,43 @@ hand, send the old one to your rewaxing service via post.
 
 - [In wet riding conditions, wax can end out requiring more frequence top-ups that oil](https://youtu.be/pwdViNbR3Gc?t=744)
 
-
-
 The standard slang terms for a simple, old-school pedal bicycle that
 start with "P" are push bike (or pushbike) and its common
-Australian/British nickname **pushie.**
+Australian/British nickname **pushie.** So...
 
 [Put the pushie on the chainwax.](https://www.youtube.com/watch?v=i9RmWK-G0ps)
 
+### Warning: careful with those master links
 
+Originally, master links were to be used only once, after which they
+were considered unsafe (or at least that's what the manufacturers
+lawyers advised), including for KMC's MissingLink: use only
+once. Eventually, [the Connex
+Link](https://connexchain.com/en/connectors/detail/connex-link) came
+out and it is reusable ("Available for all 12-, 11-, 10-, 9- and
+8-speed chains. Colours available: black, silver and gold"). More
+recently, KMC (one of the biggest bike chain makers) released
+[MissingLink, reusable version](https://kmcchain.us/collections/connectors) 
+which [KMC states](https://www.datocms-assets.com/104526/1773241366-kmc-consumer-booklet-2026-en-260311.pdf) 
+can be reused:
 
-# Waxed Chain Simple Maintenance System
+> For usage please mind if you have a Non-Reusable or a Reusable MissingLink Connector.
+> A Non-Reusable has to be replaced once opened a Reusable MissingLink can be opened and
+> closed as many times as you want, but has to be disposed when the chain is worn. 
 
-A low-hassle, no-oil bicycle chain system designed to keep things clean, clothing-safe, and easy to maintain.
+Individual reusable missing links are on the order of $10, while non-reusables are ~$5 each.
+This still costs extremely less than replace clothing that has been
+permanently marked with chain grease.
 
----
+## Waxed Chain Simple Maintenance System
 
-## At-home maintenance (occasional)
+A low-hassle, no-oil bicycle chain system designed to keep things
+clean, clothing-safe, and easy to maintain.
+
+For even less hassle, the reusable Wippermann Connex Link [does not even require tools 
+to remove the chain](https://www.youtube.com/watch?v=3QitTMtxtQg). That's a nice detail, especially for a very casual rider.
+
+### At-home maintenance (occasional)
 
 - Wash the chain with soap and water  
 - Let it dry completely  
@@ -65,9 +87,7 @@ A low-hassle, no-oil bicycle chain system designed to keep things clean, clothin
 - Wipe off excess  
 - Ride normally  
 
----
-
-## Chain rotation (about every ~500 miles)
+### Chain rotation (about every ~500 miles)
 
 - Remove the chain from the bike  
 - Install a freshly waxed chain  
@@ -75,9 +95,7 @@ A low-hassle, no-oil bicycle chain system designed to keep things clean, clothin
 - Send it for cleaning and re-waxing when convenient  
 - Repeat the cycle  
 
----
-
-## Core idea
+### Core idea
 
 - No oil, ever  
 - No daily lubrication  
@@ -85,3 +103,4 @@ A low-hassle, no-oil bicycle chain system designed to keep things clean, clothin
 - Maintenance is split into:
   - light at-home refresh
   - occasional chain swap + service cycle  
+

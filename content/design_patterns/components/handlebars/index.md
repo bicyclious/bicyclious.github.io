@@ -28,6 +28,7 @@ stem-and-bar that is the bullmoose does not suffer from that.
 - Paddle type
   - [PDW's Cork Chop Grips](https://ridepdw.com/products/cork-chop-grips) are my personal favorite, but some folks just do not like the paddle style
   - [Ergon paddle grips](https://ergonbike.shop/collections/grips) are very nice 
+  - If going for the rubberized two-finger bar end type make sure it adjusts independently from the main paddle grip
 - Tubular type
   - [Oury](https://www.lizardskins.com/oury)
   - [ESI silicon foam grips](https://esigrips.com/?srsltid=AfmBOoqNSNk8Ta8pSFXgLX9o0hyK-k18JXdF8GPbpHT_jSWFFP_rmZTJ)
