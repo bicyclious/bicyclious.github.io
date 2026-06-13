@@ -481,8 +481,7 @@ a { color: inherit; }
 .builds-grid,
 .posts-preview {
   width: 100%;
-  max-width: none;
-  padding: 3rem var(--gutter) 0 var(--gutter); /* calc(var(--margin) * 1.5) var(--gutter); */
+  padding-top: 3rem;
 }
 
 /* ── Card Grid ───────────────────────────────────────────────── */
@@ -677,7 +676,7 @@ a { color: inherit; }
 }
 
 /* ── Posts List ─────────────────────────────────────────────── */
-.posts-section { padding: calc(var(--margin) * 1.5) 0; }
+.posts-section { padding-top: calc(var(--margin) * 1.5); padding-bottom: calc(var(--margin) * 1.5); }
 
 .post-list { display: flex; flex-direction: column; }
 
@@ -708,7 +707,17 @@ a { color: inherit; }
 
 /* Full-width variant on list page */
 .post-row--full .post-row-link {
-  grid-template-columns: 96px 1fr;
+  grid-template-columns: 1fr auto;
+}
+
+.post-row--full .post-row-title,
+.post-row--full .post-row-summary,
+.post-row--full .post-row-header {
+  grid-column: 1;
+}
+
+.post-row--full .post-row-cta {
+  grid-column: 2;
 }
 
 .post-row-date {
@@ -1762,7 +1771,8 @@ a { color: inherit; }
 
   .card-grid { grid-template-columns: repeat(1, 1fr); }
 
-  .post-row-link {
+  .post-row-link,
+  .post-row--full .post-row-link {
     grid-template-columns: 1fr;
     row-gap: 6px;
   }

@@ -1,4 +1,7 @@
 ---
+title: "Solopreneur"
+date: 2025-08-20
+summary: "What if the whole story was rewritten for a different hero"
 ---
 
 ## A new small business model for bicycles
