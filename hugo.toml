@@ -1,4 +1,4 @@
-baseURL = "https://bicyclious.github.io/"
+baseURL = "https://bicyclious.com/"
 languageCode = "en-us"
 title = "Bicyclious"
 theme = "bicyclious"
@@ -14,6 +14,9 @@ ignoreFiles = [
   author = "Bicyclious"
   logo = "/images/bicyclious_wordmark.png"
   ogImage = "/images/og-default.jpg"
+  googleAnalyticsID = "G-PXCHK11RCT"
+  posthogToken = "phc_ArED7S7cRFmYm3XyXudADeJYnRhq3Zh7AXD96dkAbPuM"
+  posthogHost = "https://app.posthog.com"
 
 [menus]
   [[menus.main]]

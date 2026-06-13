@@ -3,7 +3,8 @@ title: "About"
 date: 2026-05-17
 summary: "The Bicyclious"
 tags: ["workshop", "philosophy"]
-badraft: false
+social_image: workshop_1.jpg
+draft: false
 ---
 
 ![](workshop_1.jpg)

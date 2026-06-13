@@ -20,6 +20,8 @@
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
   <link rel="icon" href="/favicon.ico">
+
+  {{ partial "analytics.html" . }}
 </head>
 <body>
   <header class="site-header">

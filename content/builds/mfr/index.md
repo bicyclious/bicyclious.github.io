@@ -37,6 +37,11 @@ images:
     focal:
       y: 0.3
       x: 0.25
+  - file: "rainier_at_beerstar.png"
+    focal:
+      y: 0.5
+      x: 0.95
+
 ---
 
 Supposedly, this bike was in one of the 1980s MFR Rainier commercials,

@@ -1,0 +1,18 @@
+{{- if .Site.Params.googleAnalyticsID -}}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ .Site.Params.googleAnalyticsID }}');
+</script>
+{{- end -}}
+
+{{- if .Site.Params.posthogToken -}}
+<!-- PostHog -->
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(g(u,i),g(u,"people.set"),g(u,"people.set_once"),g(u,"people.observer"),g(u,"people.increment"),g(u,"people.append"),g(u,"people.union"),g(u,"people.track"),g(u,"people.identify"),g(u,"people.unset"),g(u,"people.poster"),g(u,"people.reset"),g(u,"people.set_once"),g(u,"people.delete_user"),g(u,"people.get_distinct_id"),g(u,"people.get_alias"),g(u,"people.get_property"),g(u,"people.set_config"),g(u,"people.set_once"),g(u,"identify"),g(u,"alias"),g(u,"track"),g(u,"reset"),u.people=u.people||[],u.people.toString=function(){return u.toString(e)+".people"},u.toString=function(t){var o="posthog";return"posthog"!==t&&(o+="."+t),o},e.__SV=1.1,e.init(i,s,a)});}(document,window.posthog||[]);
+    posthog.init('{{ .Site.Params.posthogToken }}', {api_host: '{{ .Site.Params.posthogHost | default "https://app.posthog.com" }}'})
+</script>
+{{- end -}}
