@@ -10,6 +10,7 @@
   {{ $ogImage = $default.Permalink }}
 {{ end }}
 <meta property="og:image" content="{{ $ogImage }}">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">

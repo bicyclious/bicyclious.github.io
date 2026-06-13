@@ -10,29 +10,21 @@
         </time>
         {{ with .Params.tags }}
         <span class="post-tags">
-          {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+            {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
         </span>
         {{ end }}
       </div>
     </div>
   </header>
 
-  {{ if .Resources.ByType "image" }}
-    {{ if not .Params.hide_hero_image }}
-    <div class="post-hero-img">
-      {{ $hero := index (.Resources.ByType "image") 0 }}
-      <img src="{{ $hero.RelPermalink }}" alt="{{ .Title }}">
-    </div>
-    {{ end }}
-  {{ end }}
-
+  
   <div class="post-body">
     {{ .Content }}
   </div>
 
   <footer class="post-footer">
-    <a href="{{ "/posts/" | relURL }}" class="back-link">← BACK TO BLOG</a>
-    <a href="{{ "/builds/" | relURL }}" class="btn-retro btn-small">BROWSE BUILDS →</a>
+    <a href="{{ "/posts/" | relURL }}" class="back-link">BACK TO BLOG</a>
+    <a href="{{ "/builds/" | relURL }}" class="btn-retro btn-small">BROWSE BUILDS</a>
   </footer>
 </article>
 {{ end }}

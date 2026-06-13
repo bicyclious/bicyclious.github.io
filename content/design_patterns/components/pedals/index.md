@@ -3,7 +3,6 @@ title: "Pedals"
 date: 2026-05-17
 summary: "Nice pedals makes for happy feet"
 tags: ["pedals", "build"]
-hide_hero_image: true
 draft: false
 ---
 

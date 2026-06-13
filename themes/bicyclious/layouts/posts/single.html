@@ -17,13 +17,6 @@
     </div>
   </header>
 
-  {{ if .Resources.ByType "image" }}
-    {{ if not .Params.hide_hero_image }}
-    <div class="post-hero-img">
-      {{ partial "carousel.html" (.Resources.ByType "image") }}
-    </div>
-    {{ end }}
-  {{ end }}
 
   <div class="post-body">
     {{ .Content }}

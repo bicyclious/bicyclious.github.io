@@ -3,7 +3,6 @@ title: "Delicious Wheels"
 date: 2026-05-17
 summary: "Suspension on rigid bikes is mostly pneumatic so balloon tires are key"
 tags: ["tires", "wheels"]
-hide_hero_image: true
 ---
 
 ## Schwalbe balloonbike tires

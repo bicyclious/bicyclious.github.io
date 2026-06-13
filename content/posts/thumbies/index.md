@@ -3,7 +3,6 @@ title: "Thumbies"
 date: 2026-05-17
 summary: "Thumbies are sweet and simple"
 tags: ["drivetrain", "shifters"]
-hide_hero_image: true
 ---
 
 Here's a modern Microshift 3x10 thumbie pair for about $100.

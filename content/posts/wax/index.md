@@ -3,7 +3,6 @@ title: "Chain wax bikes don't leave scars on others"
 date: 2026-05-27
 summary: "Waxing chains used to be for racers shaving watts. Nowadays, for normies it is just  much cleaner."
 tags: ["drivetrain", "shifters"]
-hide_hero_image: true
 ---
 
 **TL;dr:**  

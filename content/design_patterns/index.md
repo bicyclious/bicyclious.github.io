@@ -3,7 +3,6 @@ title: "DIY Bike Build Notes"
 date: 2026-05-17
 summary: "How we source and build bike, and you can too"
 tags: ["DIY", "build"]
-hide_hero_image: true
 draft: false
 ---
 

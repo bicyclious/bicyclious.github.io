@@ -6,7 +6,6 @@ price: 258
 status: "available"
 specs: "Bicyclious prices too much? Just get the Ozark Trail G.1 at Walmart. The green machine is no joke."
 tags: ["Walmart", "philosophy"]
-hide_hero_image: false
 draft: false
 social_image: "0.avif"
 ---

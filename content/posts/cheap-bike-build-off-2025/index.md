@@ -5,21 +5,20 @@ summary: "The 2025 Build-Off budget was $150 and we pulled off a sweet derelict 
 tags: ["build", "budget", "bad banana", "build-off"]
 ---
 
+The Cheap Bike Build-Off has become an annual event. For 2025, we built
+the Bad Banana, named after the children's book, Pete the Cat and the Bad Banana.
+
+![](pete_the_cat_book_cover.jpeg)
+
+
+The Build-Off is simple
+
+/builds/
+
 The rules were simple: build a complete, rideable bicycle for as little money as possible. The result had to actually function — it had to shift, brake, roll, and survive a real ride. That's it.
 
 We named ours the Bad Banana before we even started wrenching.
 
-## Finding the Frame
-
-The frame arrived at a garage sale alongside a rusted lawn mower and a broken treadmill. The seller wanted five dollars. We paid seven because the derailleur hanger was still straight and that felt like a sign.
-
-The yellow was not our choice. The yellow was fate.
-
-## The Component Hunt
-
-Every part on the Bad Banana came from one of four places: the parts bin, the thrift store, Facebook Marketplace, and one very specific dumpster behind a bike co-op in Capitol Hill that we are not going to name.
-
-The complete cost breakdown is photographed and posted in the listing. We documented everything. The total will either impress you or make you feel like you've been overpaying for bikes your entire life. Probably both.
 
 ## The Ride
 

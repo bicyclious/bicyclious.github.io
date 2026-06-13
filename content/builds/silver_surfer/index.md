@@ -6,7 +6,6 @@ price: 700
 status: "sold"
 specs: "Perfect rigid MTB frame with a fork that is modern tech yet elegantly raked. Snow tires are yummy."
 tags: ["Walmart", "philosophy"]
-hide_hero_image: true
 draft: false
 social_image: "0_cover.png"
 ---
