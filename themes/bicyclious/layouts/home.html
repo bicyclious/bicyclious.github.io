@@ -3,8 +3,8 @@
 {{ partial "carousel.html" . }}
 
 {{ $bg := (resources.Get "images/fj55_streetbeater.png").Resize "1600x" }}
-<section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ $bg.RelPermalink }}');">
-    <div class="hero-text">
+<section class="billboard" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ $bg.RelPermalink }}');">
+    <div class="billboard-text">
         {{ $logo := resources.Get .Site.Params.logo }}
 
         {{ $logo400 := $logo.Resize "400x" }}
@@ -19,11 +19,11 @@
                  {{ $logo1200.RelPermalink }} 1200w"
             sizes="(max-width: 768px) 90vw, 800px"
             alt="Bicyclious"
-            class="hero-logo-large">
+            class="billboard-logo-large">
 
         <!-- {{ $logo := (resources.Get .Site.Params.logo).Resize "800x" }} 
-        <img src="{{ $logo.RelPermalink }}" alt="Bicyclious" class="hero-logo-large"> -->
-        <h2 class="hero-sub" style="padding-top:0rem; ">Builders of Delicious Bicycles</h2>
+        <img src="{{ $logo.RelPermalink }}" alt="Bicyclious" class="billboard-logo-large"> -->
+        <h2 class="billboard-sub" style="padding-top:0rem; ">Builders of Delicious Bicycles</h2>
     </div>
 </section>
 
