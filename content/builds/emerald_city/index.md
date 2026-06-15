@@ -16,12 +16,12 @@ bouncer bike and it's colored emerald green so, we are calling this
 one the Emerald City Bouncer.
 
 
-- This Hardrock frame is made of Specialized butted CroMoly. 
+- This Hardrock Sport frame is made of Specialized butted CroMoly manufactured by Tange. 
 - Looks like someone came along and touched up the paint with a pretty
   good color match but not the best handiwork. 
 - Shiny high quality fenders match well in size with the plump but
   athletic tires.
-- Size is medium, optimal fit for someone 5'2" to 5'10". 
+- Size is medium or medium large, optimal fit for someone 5'2" to 5'10". 
 
 The size of the tire for this build are the low end of what we like to
 use for crappy PNW roads, but that makes for sporty and quick
@@ -40,22 +40,33 @@ waste their time on. It could be a commuter with a rack or two but
 as is it is super fun, and will get you home if you get caught riding
 in the rain 
 
-(Note: cantilever brakes are sweet but not the best in the
-rain unless you keep ligthly applying the brakes constantly, squeegeeing
-the rim brake track for quicker stopping).
+(Note: cantilever brakes are sweet but not the best in the rain unless
+you keep ligthly applying the brakes constantly, squeegeeing the rim
+brake track for quicker stopping. So this is not a hardcore commuter.)
+
+Frame
+
+- Specialized Hardrock Sport
+- Specialized DirectDrive. Tubes by Tange.
+- Effective seatpost: 19"
+- Effective toptube: 21"
 
 ### Goals
+
 - Killer commuter (read: fenders) in terms of performance
 - Look cute (nice color scheme and shiny parts)
 - Be of no value to serious bike thieves (of course, we cannot guarantee some methy tweaker will not do something stupid)
 
 ### Restoration work
+
 Full restoration serviced:
+
 - Every bearing disassembled, cleaned, and rebuilt with fresh grease, including the shifters.
 - Shifters: fully overhauled. These Shimano friction ones last forever and the shifting is never de-indexed.
 - Classic 3x7 transmission
 
 ### New parts
+
 - New cable housing for shift and brake
 - New cables for shift and brake
 - New brake pads

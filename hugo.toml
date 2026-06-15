@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Bicyclious"
 theme = "bicyclious"
 
+enableRobotsTXT = true
+
+
 # Suppress theme scaffold sample content
 ignoreFiles = [
   "themes/bicyclious/content/.*"
