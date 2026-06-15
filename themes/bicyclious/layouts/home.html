@@ -6,7 +6,6 @@
 <section class="billboard" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ $bg.RelPermalink }}');">
     <div class="billboard-text">
         {{ $logo := resources.Get .Site.Params.logo }}
-
         {{ $logo400 := $logo.Resize "400x" }}
         {{ $logo800 := $logo.Resize "800x" }}
         {{ $logo1200 := $logo.Resize "1200x" }}

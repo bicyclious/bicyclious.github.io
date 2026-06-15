@@ -6,7 +6,7 @@
 {{ if $ogImage }}
   {{ $ogImage = urls.JoinPath $.Permalink $ogImage | absURL }}
 {{ else }}
-  {{ $default := resources.Get "images/og-default.jpeg" | fingerprint }}
+  {{ $default := resources.Get "images/og-default.png" | fingerprint }}
   {{ $ogImage = $default.Permalink }}
 {{ end }}
 <meta property="og:image" content="{{ $ogImage }}">
