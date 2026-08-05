@@ -35,6 +35,7 @@ for period performance with style and comfort.
 ## Build 
 
 - Frame:
+  - Lugged 1984 MB-3
   - Seat tube center to center = 19.75"
   - Tob tube center to center = 22"
 - Brooks Cambium saddle

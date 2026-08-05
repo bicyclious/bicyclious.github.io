@@ -3,7 +3,7 @@ title: "Bubblicious"
 date: 2024-09-20
 specs: "An homage to the best bubblegum of the 1980s"
 year: "2024"
-price: 1250
+price: 999
 status: "available"
 summary: "Full-suspension trail bike in bubblegum pink. Trail-tested at Lake Crescent. Rides as fun as it looks."
 weight: 1
@@ -68,13 +68,12 @@ search pics of this colorway keep coming up 1989,
 > Here's the reasoning:
 >
 > **The "GP" prefix is the key.**  
-> Many Specialized frames in the 1980s were manufactured by Giant of Taiwan, with the "G" indicating that manufacturer. The second letter likely encodes the year or production line. Critically, a confirmed 1989 Specialized Hardrock Comp in the pink/white/purple bubblegum colorway carries the serial number GP915352 — a "GP9" prefix, just like your GP906326. The digits following are in the same range, which strongly suggests these came off the same production run. Bike ForumsPinterest
+> Many Specialized frames in the 1980s were manufactured by Giant of Taiwan, with the "G" indicating that manufacturer. The second letter likely encodes the year or production line. Critically, a confirmed 1989 Specialized Hardrock Comp in the pink/white/purple bubblegum colorway carries the serial number GP915352 — a "GP9" prefix, just like your GP906326. The digits following are in the same range, which strongly suggests these came off the same production run.
 >
 > So "GP9" almost certainly = **Giant/Taiwan, year 1989,** sequential batch.
 >
 > **The colorway clinches it**  
 > The bubblegum pink/purple two-tone fade was **very specifically a 1989 Specialized thing.** It appeared on the Hardrock Comp and Rockhopper that year and wasn't carried forward into 1990 in the same way.
-
 
 
 ## Outfit

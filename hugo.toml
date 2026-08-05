@@ -13,7 +13,7 @@ ignoreFiles = [
 
 [params]
   subtitle = "a Cascadian bicycle build shop"
-  description = "Bicyclious: builders of delicious bicycles"
+  description = "Builders of delicious bicycles"
   author = "Bicyclious"
   logo = "/images/bicyclious_wordmark.png"
   ogImage = "/images/og-default.jpg"

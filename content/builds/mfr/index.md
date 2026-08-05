@@ -86,8 +86,14 @@ from the Craiglist ad we got the bike from. That's how the bike looked
 before restoration started at all, and supposedly how it looked in the
 Rainier commercial shoot decades ago.
 
+We're pretty sure the bike is a Nishiki Cascade but they removed all
+ID stickers and replaced them with Rainier branding stickers. We did a
+serial numbe4r look-up but that got nowhere. The Cascade was initially
+one of Nishiki’s upper-tier all-terrain bikes. These models were
+originally manufactured by Kawamura Cycle in Japan for West Coast
+Cycle. They only came with bullmoose handlebars from 1984 to 1986.
+
 Details:
-- Think it is a Nishiki Cascade but they removed all ID stickers and replaced them with Rainier branding stickers
 - Frame is 19" center-to-center seatpost, 21" top tube.
 - Serial numbers: TH85 06 and 644666
 - Stuck with the classic 3x7 drivetrain.

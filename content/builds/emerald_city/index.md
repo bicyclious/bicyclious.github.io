@@ -21,7 +21,7 @@ one the Emerald City Bouncer.
   good color match but not the best handiwork. 
 - Shiny high quality fenders match well in size with the plump but
   athletic tires.
-- Size is medium or medium large, optimal fit for someone 5'2" to 5'10". 
+- Size is medium or medium large (19" seat tube), optimal fit for someone 5'2" to 5'10". 
 
 The size of the tire for this build are the low end of what we like to
 use for crappy PNW roads, but that makes for sporty and quick
@@ -46,33 +46,42 @@ brake track for quicker stopping. So this is not a hardcore commuter.)
 
 Frame
 
-- Specialized Hardrock Sport
-- Specialized DirectDrive. Tubes by Tange.
+- Model: Specialized Hardrock Sport
+- Tubes: Specialized DirectDrive chromoly (butted supposedly) tubes by Tange
 - Effective seatpost: 19"
 - Effective toptube: 21"
+- Classic 3x7 transmission with the naturally wide gear ratio of a triple, great for hills
 
 ### Goals
 
 - Killer commuter (read: fenders) in terms of performance
-- Look cute (nice color scheme and shiny parts)
-- Be of no value to serious bike thieves (of course, we cannot guarantee some methy tweaker will not do something stupid)
+- Cute look (nice color scheme and lots of chrome shiny parts)
+- Not a bike thief magnet: be of no value to serious bike thieves (of course, we cannot guarantee some methy tweaker will not do something stupid)
 
 ### Restoration work
 
 Full restoration serviced:
 
-- Every bearing disassembled, cleaned, and rebuilt with fresh grease, including the shifters.
+- Fully regreased
+  - Every bearing disassembled, cleaned, and rebuilt with fresh grease
+  - Shifters got a full overhaul.
 - Shifters: fully overhauled. These Shimano friction ones last forever and the shifting is never de-indexed.
-- Classic 3x7 transmission
+- Derailleurs: Shimano Altus mechs dismounted and put through the ultrasonic cleaner
+- Swapped in a chrome handlebar with some rise and backsweep for comfort
+- Swapped in a (braised?) nice chrome quill stem
+- Configured the thumbies to be under bar 
+- Front wheel replaced with another used wheel, one without bent rim
+- Tires: Continential Town & Country are great city tires, fat (smooths out the bumps), shoulderless for quick steering, unbroken centerline (roll fast) with minor knobs (some minor off-road trackion, maybe anti-hydroplaning tech)
 
 ### New parts
 
-- New cable housing for shift and brake
+- New compressionless cable housing for shift and brake
 - New cables for shift and brake
+- New [Tektro Front Cable Hanger Canti Fork Mount](https://www.jensonusa.com/tektro-front-cable-hanger) (better than original which hung via stem)
 - New brake pads
-- New shiny fenders
-- New super comfortable Corkchop grips
+- New modern shiny aluminum flat pedals, much more comfortable than the stock ones which are usually cheap and small
+- New shiny fenders, with leather washer to muffle fender noises
+- New super comfortable Cork Chop grips
 - Silicon covers on brake levers for comfort and safer handling
-- Tires: fat (smooths out the bumps) slicks (rolls fast) with some siping (anti-hydroplaning tech
-- Modern nylon flat pedals, much more comfortable than the little stock ones
+- A bell
 

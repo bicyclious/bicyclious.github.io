@@ -1,5 +1,5 @@
 ---
-title: "Raleigh Crested Butte"
+title: "1986 Raleigh Crested Butte"
 weight: 5
 date: 2024-05-01
 specs: "OG 26\" MTB · Restored but kept mostly period original"
@@ -12,7 +12,8 @@ social_title: "The Beaut: Restomodded Vintage Rigid Steel Mountain Bike – Size
 ---
 
 This build was kept mostly to original because it is just so nice as
-is. Everything was restored and updates were kept minimal.
+is. The Crested Butte is one of the classics of early mountain bike
+history. Everything was restored and updates were kept minimal.
 
 Nice stable long wheel base. Front reach is long via that
 toptube. This bike is early enough in the timeline that the manic
@@ -25,8 +26,9 @@ the bullmoose in the 1970s.
 
 Beautiful sparkly maroon paint is in great shape (Raleigh was still a
 proud apex beast of the bike world then so their paint jobs were
-solide). Looks like someone did an OK job touching up the paint as
-some point in the bike's history. Bonus: color coordinated jockey pulley wheel!
+solid: beautiful and tough durable). Looks like someone did an OK job
+touching up the paint as some point in the bike's history. Bonus:
+color coordinated jockey pulley wheel!
 
 ## Details
 
@@ -35,6 +37,7 @@ USA's Mountain Tour series. They were produces from 1984 to 1986.
 
 Frame
 
+- Year of manufacture: 1986
 - seat tube: 18.5"
 - top tube: 23.5"
 - Tubing: Raleigh 575MT: triple-butted chromoly on main tubes, all tubes are chromoly

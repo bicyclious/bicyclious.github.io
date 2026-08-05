@@ -33,6 +33,17 @@ We use the term:
 “Cover” is avoided because it typically refers only to an asset (thumbnail/OG/media representation), not layout behavior.
 
 ---
+## Hero image as og:image
+The hero image is also used content/** (builds and posts) pages social
+preview images, not say a site default og:image.
+
+All this ties in with the main goal of css transition effects for bike
+card with hero image. same image before and after link transition in
+browser. One visual representation of a page (post or build), and how
+that object is seen from afar, from distant side of link as seen on
+social sites or marketplaces.
+
+---
 
 ## Frontmatter Contract (Posts Only)
 

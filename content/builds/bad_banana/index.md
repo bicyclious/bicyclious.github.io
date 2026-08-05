@@ -76,16 +76,20 @@ and building with used parts.
 
 All the entries are archived on the web (just enter a fake name and
 password, competition is over):
+
 https://www.wompybike.com/cheap-bike-build-off
 
 
 ## The Build
 
 - Frame: sport touring from 1981 +/- 3 years.
-  - Seattube: 22", toptube: 22"
+  - Seattube: 22"
+  - Toptube: 22"
+  - Chrome tipped fork
 - Cockpit
   - Dropbars replaced with a bullmoose handlebar
   - Installed Shimano friction thumbies for the 2x7 drivetrain
+  - Thumbies set-up in under bar configuration
   - New PNW Cork Chop handlebar grips
   - New black silicon pads on brake levers
 - Shimano 600 derailleurs
@@ -95,4 +99,4 @@ https://www.wompybike.com/cheap-bike-build-off
 - PDW fenders
 - Used All-City saddle
 - New modern black nylon flat pedals. Pins removed from one side of pedal which with BMX pedal straps makes for modern toe-clips, great for hopping curbs while cargo loaded
-- Modern Axios Dreamliner panniers rack, for Ortlieb panniers (not included in sale price)
+- Modern Axios Dreamliner panniers rack, for Ortlieb panniers (not included in sale price, but we have a yellow Ortlieb to match if you're interested)
